@@ -1,8 +1,10 @@
 import asyncio
+from time import perf_counter
 from typing import Any
 
 from app.core.config import Settings
 from app.graph.decision import decide, decision_reason
+from app.graph.state import chunk_field
 from app.llm.groq_client import get_judge
 from app.llm.judge_cache import cache_key, cached_output, load_cache, save_cache
 from app.llm.prompts import EVALUATOR_PROMPT_V1, EVALUATOR_PROMPT_V2, EVALUATOR_PROMPT_V3
@@ -54,7 +56,7 @@ async def evaluate_chunks(state: dict[str, Any], settings: Settings | None = Non
     outputs: list[JudgeOutput | None] = []
     pending: list[tuple[str, str]] = []
     for chunk in state["retrieved"]:
-        chunk_id = chunk["chunk_id"]
+        chunk_id = str(chunk_field(chunk, "chunk_id"))
         cached = cached_output(cache, config.evaluator_prompt_version, question, chunk_id)
         outputs.append(cached)
         if cached is None:
@@ -63,8 +65,8 @@ async def evaluate_chunks(state: dict[str, Any], settings: Settings | None = Non
                     chunk_id,
                     template.format(
                         question=question,
-                        label=chunk.get("citation_label", chunk_id),
-                        text=chunk["display_text"][:1200],
+                        label=str(chunk_field(chunk, "citation_label", chunk_id)),
+                        text=str(chunk_field(chunk, "display_text", ""))[:1200],
                     ),
                 )
             )
@@ -80,10 +82,22 @@ async def evaluate_chunks(state: dict[str, Any], settings: Settings | None = Non
                 cache[key] = output.model_dump()
         save_cache(cache)
 
-    scores = [score_from_output(chunk["chunk_id"], output) for chunk, output in zip(state["retrieved"], outputs)]
+    scores = [
+        score_from_output(str(chunk_field(chunk, "chunk_id")), output)
+        for chunk, output in zip(state["retrieved"], outputs)
+    ]
     return {
         "chunk_scores": scores,
         "retrieval_decision": decide(scores, config.upper_threshold, config.lower_threshold),
         "decision_reason": decision_reason(scores, config.upper_threshold, config.lower_threshold),
         "prompt_versions": {"evaluator": config.evaluator_prompt_version},
     }
+
+
+async def evaluate(state: dict[str, Any], settings: Settings | None = None) -> dict[str, Any]:
+    config = settings or Settings()
+    start = perf_counter()
+    result = await evaluate_chunks(state, config)
+    result.pop("prompt_versions", None)
+    result["timings_ms"] = {"evaluate": int((perf_counter() - start) * 1000)}
+    return result

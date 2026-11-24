@@ -3,11 +3,8 @@ import pymupdf
 from app.ingest.parse_edpb import parse_edpb_document, section_text_to_units
 
 
-def _pdf_with_blocks(blocks: list[tuple[str, float, int]]) -> str:
-    import os
-    from pathlib import Path
-
-    path = Path(os.environ["COMMANDCODE_SCRATCHPAD"]) / "edpb_fixture.pdf"
+def _pdf_with_blocks(blocks: list[tuple[str, float, int]], tmp_path) -> str:
+    path = tmp_path / "edpb_fixture.pdf"
     doc = pymupdf.open()
     page = doc.new_page()
     y = 40
@@ -19,7 +16,7 @@ def _pdf_with_blocks(blocks: list[tuple[str, float, int]]) -> str:
     return str(path)
 
 
-def test_font_size_headings_define_sections_and_strip_page_furniture():
+def test_font_size_headings_define_sections_and_strip_page_furniture(tmp_path):
     path = _pdf_with_blocks(
         [
             ("EDPB Guidelines 05/2020 on consent", 16, 0),
@@ -31,7 +28,8 @@ def test_font_size_headings_define_sections_and_strip_page_furniture():
             ("L 119/1", 8, 0),
             ("Official Journal of the European Union", 8, 0),
             ("EN", 8, 0),
-        ]
+        ],
+        tmp_path,
     )
 
     sections = parse_edpb_document(path, "edpb_consent_05_2020")

@@ -1,5 +1,13 @@
 # Changelog
 
+## Phase 3 — Branches
+
+- Added the `CRAGState` TypedDict with warning and timing reducers.
+- Wrapped retrieval and evaluation as graph nodes and added `passthrough`, `web_correct` and `filter_supplement` branches.
+- Added query rewriting, cross-encoder reranking with domain trust, Tavily search handling and separated corpus/web source lists.
+- Added the compiled LangGraph builder, a temporary generator node and TDD coverage for branches, routing, reranking and web search.
+- Made CI hermetic with placeholder keys, no scratchpad dependency and slow-test exclusion.
+
 ## Phase 2 — CRAG evaluator node
 
 - Added dev and test datasets, explicit hand labels and a recorded-judgment cache for reproducible calibration.

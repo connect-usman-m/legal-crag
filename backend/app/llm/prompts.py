@@ -1,3 +1,8 @@
+REWRITE_PROMPT_V1 = """Turn the question into a short keyword search query. Keep the jurisdiction and instrument named in the question exactly as stated. Do not add GDPR or any other law that the question does not mention. Return only the query.
+
+Question: {question}
+"""
+
 GENERATE_PROMPT_V1 = """You answer questions about EU data-protection law from numbered sources only.
 
 Rules:

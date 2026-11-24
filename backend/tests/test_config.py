@@ -58,6 +58,8 @@ def test_comma_separated_env_lists_are_parsed():
     assert settings.cors_origins == ["http://localhost:5173", "http://localhost:4173"]
 
 
-def test_missing_api_keys_are_rejected():
+def test_missing_api_keys_are_rejected(monkeypatch):
+    monkeypatch.delenv("GROQ_API_KEY", raising=False)
+    monkeypatch.delenv("TAVILY_API_KEY", raising=False)
     with pytest.raises(ValidationError):
         Settings(_env_file=None)
