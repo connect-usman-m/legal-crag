@@ -1,5 +1,12 @@
 # Changelog
 
+## Phase 2 — CRAG evaluator node
+
+- Added dev and test datasets, explicit hand labels and a recorded-judgment cache for reproducible calibration.
+- Added pure `decide()` and `select_kept()` functions with boundary tests.
+- Added an LLM-as-judge evaluator with strict Groq JSON-schema output, bounded concurrency, retry handling and prompt-version metadata.
+- Added calibration analysis and report: 9/10 dev branch accuracy and 28/29 irrelevant chunks below LOWER.
+
 ## Phase 1 — Ingestion + baseline RAG
 
 - Added TDD coverage for GDPR/EDPB parsing, chunking, Chroma cosine configuration, manifest validation, retrieval recall and naive citation handling.

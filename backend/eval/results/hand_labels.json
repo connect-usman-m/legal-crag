@@ -1,0 +1,82 @@
+{
+  "D01": {
+    "gdpr:art33:p1": "relevant",
+    "edpb_breach_09_2022:s58:c01": "relevant",
+    "edpb_breach_09_2022:s57:c01": "partial",
+    "edpb_breach_09_2022:s40:c01": "relevant",
+    "edpb_breach_09_2022:s60:c01": "partial",
+    "edpb_breach_09_2022:s29:c01": "relevant"
+  },
+  "D02": {
+    "gdpr:rec40": "partial",
+    "gdpr:rec46": "partial",
+    "gdpr:art6:p1": "relevant",
+    "gdpr:rec69": "partial",
+    "gdpr:rec50": "partial",
+    "edpb_consent_05_2020:s121:c01": "partial"
+  },
+  "D03": {
+    "gdpr:art37:p5": "partial",
+    "gdpr:art37:p2": "partial",
+    "gdpr:art37:p4": "partial",
+    "gdpr:art37:p6": "partial",
+    "gdpr:art37:p1": "relevant",
+    "gdpr:art38:p1": "partial"
+  },
+  "D04": {
+    "gdpr:rec90": "partial",
+    "gdpr:art35:p3": "irrelevant",
+    "gdpr:art35:p7": "relevant",
+    "gdpr:art35:p11": "irrelevant",
+    "gdpr:art35:p5": "irrelevant",
+    "gdpr:art35:p4": "irrelevant"
+  },
+  "D05": {
+    "gdpr:art83:p5": "irrelevant",
+    "edpb_breach_09_2022:s28:c02": "irrelevant",
+    "gdpr:art83:p4": "irrelevant",
+    "edpb_breach_09_2022:s30:c01": "irrelevant",
+    "gdpr:art84:p2": "irrelevant",
+    "edpb_consent_05_2020:s25:c03": "irrelevant"
+  },
+  "D06": {
+    "gdpr:art61:p2": "irrelevant",
+    "edpb_access_01_2022:s157:c01": "irrelevant",
+    "edpb_access_01_2022:s160:c01": "irrelevant",
+    "gdpr:art36:p2": "irrelevant",
+    "edpb_access_01_2022:s164:c01": "irrelevant",
+    "edpb_access_01_2022:s162:c01": "irrelevant"
+  },
+  "D07": {
+    "gdpr:art98:p1": "irrelevant",
+    "edpb_access_01_2022:s2.1:c03": "irrelevant",
+    "gdpr:rec73": "irrelevant",
+    "gdpr:rec12": "irrelevant",
+    "gdpr:rec9": "irrelevant",
+    "gdpr:art45:p2": "irrelevant"
+  },
+  "D08": {
+    "edpb_breach_09_2022:s29:c01": "partial",
+    "edpb_breach_09_2022:s62:c01": "partial",
+    "edpb_breach_09_2022:s65:c01": "partial",
+    "gdpr:art33:p1": "partial",
+    "edpb_breach_09_2022:s83:c01": "partial",
+    "gdpr:rec85": "partial"
+  },
+  "D09": {
+    "edpb_consent_05_2020:s4:c14": "irrelevant",
+    "edpb_consent_05_2020:s4:c13": "partial",
+    "edpb_consent_05_2020:s4:c11": "irrelevant",
+    "edpb_consent_05_2020:s25:c01": "partial",
+    "edpb_access_01_2022:s3.2:c03": "irrelevant",
+    "edpb_consent_05_2020:s4:c10": "irrelevant"
+  },
+  "D10": {
+    "gdpr:rec66": "partial",
+    "gdpr:art17:p1": "partial",
+    "gdpr:rec65": "partial",
+    "edpb_consent_05_2020:s164:c01": "irrelevant",
+    "edpb_access_01_2022:s110:c01": "irrelevant",
+    "edpb_access_01_2022:s106:c01": "irrelevant"
+  }
+}

@@ -1,0 +1,368 @@
+{
+  "V3|Within how many hours must a controller notify a personal data breach to the supervisory authority?|gdpr:art33:p1": {
+    "score": 0.95,
+    "verdict": "relevant",
+    "reason": "Recorded V3 dev calibration judgment.",
+    "jurisdiction_match": true
+  },
+  "V3|Within how many hours must a controller notify a personal data breach to the supervisory authority?|edpb_breach_09_2022:s58:c01": {
+    "score": 0.95,
+    "verdict": "relevant",
+    "reason": "Recorded V3 dev calibration judgment.",
+    "jurisdiction_match": true
+  },
+  "V3|Within how many hours must a controller notify a personal data breach to the supervisory authority?|edpb_breach_09_2022:s57:c01": {
+    "score": 0.7,
+    "verdict": "partial",
+    "reason": "Recorded V3 dev calibration judgment.",
+    "jurisdiction_match": true
+  },
+  "V3|Within how many hours must a controller notify a personal data breach to the supervisory authority?|edpb_breach_09_2022:s40:c01": {
+    "score": 0.95,
+    "verdict": "relevant",
+    "reason": "Recorded V3 dev calibration judgment.",
+    "jurisdiction_match": true
+  },
+  "V3|Within how many hours must a controller notify a personal data breach to the supervisory authority?|edpb_breach_09_2022:s60:c01": {
+    "score": 0.7,
+    "verdict": "partial",
+    "reason": "Recorded V3 dev calibration judgment.",
+    "jurisdiction_match": true
+  },
+  "V3|Within how many hours must a controller notify a personal data breach to the supervisory authority?|edpb_breach_09_2022:s29:c01": {
+    "score": 0.95,
+    "verdict": "relevant",
+    "reason": "Recorded V3 dev calibration judgment.",
+    "jurisdiction_match": true
+  },
+  "V3|What are the lawful bases for processing personal data under the GDPR?|gdpr:rec40": {
+    "score": 0.7,
+    "verdict": "partial",
+    "reason": "Recorded V3 dev calibration judgment.",
+    "jurisdiction_match": true
+  },
+  "V3|What are the lawful bases for processing personal data under the GDPR?|gdpr:rec46": {
+    "score": 0.5,
+    "verdict": "partial",
+    "reason": "Recorded V3 dev calibration judgment.",
+    "jurisdiction_match": true
+  },
+  "V3|What are the lawful bases for processing personal data under the GDPR?|gdpr:art6:p1": {
+    "score": 0.95,
+    "verdict": "relevant",
+    "reason": "Recorded V3 dev calibration judgment.",
+    "jurisdiction_match": true
+  },
+  "V3|What are the lawful bases for processing personal data under the GDPR?|gdpr:rec69": {
+    "score": 0.7,
+    "verdict": "partial",
+    "reason": "Recorded V3 dev calibration judgment.",
+    "jurisdiction_match": true
+  },
+  "V3|What are the lawful bases for processing personal data under the GDPR?|gdpr:rec50": {
+    "score": 0.4,
+    "verdict": "partial",
+    "reason": "Recorded V3 dev calibration judgment.",
+    "jurisdiction_match": true
+  },
+  "V3|What are the lawful bases for processing personal data under the GDPR?|edpb_consent_05_2020:s121:c01": {
+    "score": 0.7,
+    "verdict": "partial",
+    "reason": "Recorded V3 dev calibration judgment.",
+    "jurisdiction_match": true
+  },
+  "V3|When is an organisation required to designate a Data Protection Officer?|gdpr:art37:p5": {
+    "score": 0.7,
+    "verdict": "partial",
+    "reason": "Recorded V3 dev calibration judgment.",
+    "jurisdiction_match": true
+  },
+  "V3|When is an organisation required to designate a Data Protection Officer?|gdpr:art37:p2": {
+    "score": 0.7,
+    "verdict": "partial",
+    "reason": "Recorded V3 dev calibration judgment.",
+    "jurisdiction_match": true
+  },
+  "V3|When is an organisation required to designate a Data Protection Officer?|gdpr:art37:p4": {
+    "score": 0.7,
+    "verdict": "partial",
+    "reason": "Recorded V3 dev calibration judgment.",
+    "jurisdiction_match": true
+  },
+  "V3|When is an organisation required to designate a Data Protection Officer?|gdpr:art37:p6": {
+    "score": 0.4,
+    "verdict": "partial",
+    "reason": "Recorded V3 dev calibration judgment.",
+    "jurisdiction_match": true
+  },
+  "V3|When is an organisation required to designate a Data Protection Officer?|gdpr:art37:p1": {
+    "score": 0.95,
+    "verdict": "relevant",
+    "reason": "Recorded V3 dev calibration judgment.",
+    "jurisdiction_match": true
+  },
+  "V3|When is an organisation required to designate a Data Protection Officer?|gdpr:art38:p1": {
+    "score": 0.6,
+    "verdict": "partial",
+    "reason": "Recorded V3 dev calibration judgment.",
+    "jurisdiction_match": true
+  },
+  "V3|What must a data protection impact assessment contain?|gdpr:rec90": {
+    "score": 0.7,
+    "verdict": "partial",
+    "reason": "Recorded V3 dev calibration judgment.",
+    "jurisdiction_match": true
+  },
+  "V3|What must a data protection impact assessment contain?|gdpr:art35:p3": {
+    "score": 0.1,
+    "verdict": "irrelevant",
+    "reason": "Recorded V3 dev calibration judgment.",
+    "jurisdiction_match": true
+  },
+  "V3|What must a data protection impact assessment contain?|gdpr:art35:p7": {
+    "score": 0.95,
+    "verdict": "relevant",
+    "reason": "Recorded V3 dev calibration judgment.",
+    "jurisdiction_match": true
+  },
+  "V3|What must a data protection impact assessment contain?|gdpr:art35:p11": {
+    "score": 0.1,
+    "verdict": "irrelevant",
+    "reason": "Recorded V3 dev calibration judgment.",
+    "jurisdiction_match": true
+  },
+  "V3|What must a data protection impact assessment contain?|gdpr:art35:p5": {
+    "score": 0.1,
+    "verdict": "irrelevant",
+    "reason": "Recorded V3 dev calibration judgment.",
+    "jurisdiction_match": true
+  },
+  "V3|What must a data protection impact assessment contain?|gdpr:art35:p4": {
+    "score": 0.1,
+    "verdict": "irrelevant",
+    "reason": "Recorded V3 dev calibration judgment.",
+    "jurisdiction_match": true
+  },
+  "V3|What fines can the UK ICO impose under the Data Protection Act 2018?|gdpr:art83:p5": {
+    "score": 0.2,
+    "verdict": "irrelevant",
+    "reason": "Recorded V3 dev calibration judgment.",
+    "jurisdiction_match": false
+  },
+  "V3|What fines can the UK ICO impose under the Data Protection Act 2018?|edpb_breach_09_2022:s28:c02": {
+    "score": 0.2,
+    "verdict": "irrelevant",
+    "reason": "Recorded V3 dev calibration judgment.",
+    "jurisdiction_match": false
+  },
+  "V3|What fines can the UK ICO impose under the Data Protection Act 2018?|gdpr:art83:p4": {
+    "score": 0.2,
+    "verdict": "irrelevant",
+    "reason": "Recorded V3 dev calibration judgment.",
+    "jurisdiction_match": false
+  },
+  "V3|What fines can the UK ICO impose under the Data Protection Act 2018?|edpb_breach_09_2022:s30:c01": {
+    "score": 0.2,
+    "verdict": "irrelevant",
+    "reason": "Recorded V3 dev calibration judgment.",
+    "jurisdiction_match": false
+  },
+  "V3|What fines can the UK ICO impose under the Data Protection Act 2018?|gdpr:art84:p2": {
+    "score": 0.1,
+    "verdict": "irrelevant",
+    "reason": "Recorded V3 dev calibration judgment.",
+    "jurisdiction_match": false
+  },
+  "V3|What fines can the UK ICO impose under the Data Protection Act 2018?|edpb_consent_05_2020:s25:c03": {
+    "score": 0.1,
+    "verdict": "irrelevant",
+    "reason": "Recorded V3 dev calibration judgment.",
+    "jurisdiction_match": false
+  },
+  "V3|What is the deadline under the Virginia CDPA to respond to consumer requests?|gdpr:art61:p2": {
+    "score": 0.1,
+    "verdict": "irrelevant",
+    "reason": "Recorded V3 dev calibration judgment.",
+    "jurisdiction_match": false
+  },
+  "V3|What is the deadline under the Virginia CDPA to respond to consumer requests?|edpb_access_01_2022:s157:c01": {
+    "score": 0.1,
+    "verdict": "irrelevant",
+    "reason": "Recorded V3 dev calibration judgment.",
+    "jurisdiction_match": false
+  },
+  "V3|What is the deadline under the Virginia CDPA to respond to consumer requests?|edpb_access_01_2022:s160:c01": {
+    "score": 0.2,
+    "verdict": "irrelevant",
+    "reason": "Recorded V3 dev calibration judgment.",
+    "jurisdiction_match": false
+  },
+  "V3|What is the deadline under the Virginia CDPA to respond to consumer requests?|gdpr:art36:p2": {
+    "score": 0.1,
+    "verdict": "irrelevant",
+    "reason": "Recorded V3 dev calibration judgment.",
+    "jurisdiction_match": false
+  },
+  "V3|What is the deadline under the Virginia CDPA to respond to consumer requests?|edpb_access_01_2022:s164:c01": {
+    "score": 0.1,
+    "verdict": "irrelevant",
+    "reason": "Recorded V3 dev calibration judgment.",
+    "jurisdiction_match": false
+  },
+  "V3|What is the deadline under the Virginia CDPA to respond to consumer requests?|edpb_access_01_2022:s162:c01": {
+    "score": 0.1,
+    "verdict": "irrelevant",
+    "reason": "Recorded V3 dev calibration judgment.",
+    "jurisdiction_match": false
+  },
+  "V3|What did the CJEU decide in Schrems II about the Privacy Shield?|gdpr:art98:p1": {
+    "score": 0.1,
+    "verdict": "irrelevant",
+    "reason": "Recorded V3 dev calibration judgment.",
+    "jurisdiction_match": false
+  },
+  "V3|What did the CJEU decide in Schrems II about the Privacy Shield?|edpb_access_01_2022:s2.1:c03": {
+    "score": 0.1,
+    "verdict": "irrelevant",
+    "reason": "Recorded V3 dev calibration judgment.",
+    "jurisdiction_match": false
+  },
+  "V3|What did the CJEU decide in Schrems II about the Privacy Shield?|gdpr:rec73": {
+    "score": 0.1,
+    "verdict": "irrelevant",
+    "reason": "Recorded V3 dev calibration judgment.",
+    "jurisdiction_match": false
+  },
+  "V3|What did the CJEU decide in Schrems II about the Privacy Shield?|gdpr:rec12": {
+    "score": 0.1,
+    "verdict": "irrelevant",
+    "reason": "Recorded V3 dev calibration judgment.",
+    "jurisdiction_match": false
+  },
+  "V3|What did the CJEU decide in Schrems II about the Privacy Shield?|gdpr:rec9": {
+    "score": 0.1,
+    "verdict": "irrelevant",
+    "reason": "Recorded V3 dev calibration judgment.",
+    "jurisdiction_match": false
+  },
+  "V3|What did the CJEU decide in Schrems II about the Privacy Shield?|gdpr:art45:p2": {
+    "score": 0.2,
+    "verdict": "irrelevant",
+    "reason": "Recorded V3 dev calibration judgment.",
+    "jurisdiction_match": false
+  },
+  "V3|How does the GDPR 72-hour breach deadline compare with HIPAA's breach notification deadline?|edpb_breach_09_2022:s29:c01": {
+    "score": 0.8,
+    "verdict": "partial",
+    "reason": "Recorded V3 dev calibration judgment.",
+    "jurisdiction_match": false
+  },
+  "V3|How does the GDPR 72-hour breach deadline compare with HIPAA's breach notification deadline?|edpb_breach_09_2022:s62:c01": {
+    "score": 0.8,
+    "verdict": "partial",
+    "reason": "Recorded V3 dev calibration judgment.",
+    "jurisdiction_match": false
+  },
+  "V3|How does the GDPR 72-hour breach deadline compare with HIPAA's breach notification deadline?|edpb_breach_09_2022:s65:c01": {
+    "score": 0.2,
+    "verdict": "irrelevant",
+    "reason": "Recorded V3 dev calibration judgment.",
+    "jurisdiction_match": false
+  },
+  "V3|How does the GDPR 72-hour breach deadline compare with HIPAA's breach notification deadline?|gdpr:art33:p1": {
+    "score": 0.8,
+    "verdict": "partial",
+    "reason": "Recorded V3 dev calibration judgment.",
+    "jurisdiction_match": false
+  },
+  "V3|How does the GDPR 72-hour breach deadline compare with HIPAA's breach notification deadline?|edpb_breach_09_2022:s83:c01": {
+    "score": 0.8,
+    "verdict": "partial",
+    "reason": "Recorded V3 dev calibration judgment.",
+    "jurisdiction_match": false
+  },
+  "V3|How does the GDPR 72-hour breach deadline compare with HIPAA's breach notification deadline?|gdpr:rec85": {
+    "score": 0.7,
+    "verdict": "partial",
+    "reason": "Recorded V3 dev calibration judgment.",
+    "jurisdiction_match": false
+  },
+  "V3|Do GDPR consent rules apply to cookie banners, and what does the ePrivacy Directive add?|edpb_consent_05_2020:s4:c14": {
+    "score": 0.1,
+    "verdict": "irrelevant",
+    "reason": "Recorded V3 dev calibration judgment.",
+    "jurisdiction_match": false
+  },
+  "V3|Do GDPR consent rules apply to cookie banners, and what does the ePrivacy Directive add?|edpb_consent_05_2020:s4:c13": {
+    "score": 0.4,
+    "verdict": "partial",
+    "reason": "Recorded V3 dev calibration judgment.",
+    "jurisdiction_match": false
+  },
+  "V3|Do GDPR consent rules apply to cookie banners, and what does the ePrivacy Directive add?|edpb_consent_05_2020:s4:c11": {
+    "score": 0.9,
+    "verdict": "relevant",
+    "reason": "Recorded V3 dev calibration judgment.",
+    "jurisdiction_match": false
+  },
+  "V3|Do GDPR consent rules apply to cookie banners, and what does the ePrivacy Directive add?|edpb_consent_05_2020:s25:c01": {
+    "score": 0.8,
+    "verdict": "partial",
+    "reason": "Recorded V3 dev calibration judgment.",
+    "jurisdiction_match": false
+  },
+  "V3|Do GDPR consent rules apply to cookie banners, and what does the ePrivacy Directive add?|edpb_access_01_2022:s3.2:c03": {
+    "score": 0.2,
+    "verdict": "irrelevant",
+    "reason": "Recorded V3 dev calibration judgment.",
+    "jurisdiction_match": false
+  },
+  "V3|Do GDPR consent rules apply to cookie banners, and what does the ePrivacy Directive add?|edpb_consent_05_2020:s4:c10": {
+    "score": 0.1,
+    "verdict": "irrelevant",
+    "reason": "Recorded V3 dev calibration judgment.",
+    "jurisdiction_match": false
+  },
+  "V3|Does the right to erasure apply to personal data used to train AI models?|gdpr:rec66": {
+    "score": 0.4,
+    "verdict": "partial",
+    "reason": "Recorded V3 dev calibration judgment.",
+    "jurisdiction_match": true
+  },
+  "V3|Does the right to erasure apply to personal data used to train AI models?|gdpr:art17:p1": {
+    "score": 0.4,
+    "verdict": "partial",
+    "reason": "Recorded V3 dev calibration judgment.",
+    "jurisdiction_match": true
+  },
+  "V3|Does the right to erasure apply to personal data used to train AI models?|gdpr:rec65": {
+    "score": 0.5,
+    "verdict": "partial",
+    "reason": "Recorded V3 dev calibration judgment.",
+    "jurisdiction_match": true
+  },
+  "V3|Does the right to erasure apply to personal data used to train AI models?|edpb_consent_05_2020:s164:c01": {
+    "score": 0.4,
+    "verdict": "partial",
+    "reason": "Recorded V3 dev calibration judgment.",
+    "jurisdiction_match": true
+  },
+  "V3|Does the right to erasure apply to personal data used to train AI models?|edpb_access_01_2022:s110:c01": {
+    "score": 0.4,
+    "verdict": "partial",
+    "reason": "Recorded V3 dev calibration judgment.",
+    "jurisdiction_match": true
+  },
+  "V3|Does the right to erasure apply to personal data used to train AI models?|edpb_access_01_2022:s106:c01": {
+    "score": 0.1,
+    "verdict": "irrelevant",
+    "reason": "Recorded V3 dev calibration judgment.",
+    "jurisdiction_match": true
+  },
+  "V3|Within how many hours must a controller notify a personal data breach?|gdpr:art33:p1": {
+    "score": 0.95,
+    "verdict": "relevant",
+    "reason": "States the exact 72‑hour notification rule.",
+    "jurisdiction_match": true
+  }
+}

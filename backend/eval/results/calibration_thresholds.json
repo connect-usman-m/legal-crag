@@ -1,0 +1,6 @@
+{
+  "prompt_version": "V3",
+  "lower_threshold": 0.5,
+  "keep_threshold": 0.7,
+  "upper_threshold": 0.9
+}

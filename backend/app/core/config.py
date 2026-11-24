@@ -16,6 +16,7 @@ class Settings(BaseSettings):
     groq_judge_model: str = "openai/gpt-oss-20b"
     groq_gen_model: str = "openai/gpt-oss-120b"
     groq_judge_reasoning_effort: Literal["low", "medium", "high"] = "low"
+    evaluator_prompt_version: Literal["V1", "V2", "V3"] = "V3"
 
     embed_model: str = "BAAI/bge-small-en-v1.5"
     rerank_model: str = "cross-encoder/ms-marco-MiniLM-L-6-v2"

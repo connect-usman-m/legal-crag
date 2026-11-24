@@ -1,0 +1,1386 @@
+{
+  "runs": [
+    {
+      "qid": "D01",
+      "category": "covered",
+      "expected_branch": "CORRECT",
+      "question": "Within how many hours must a controller notify a personal data breach to the supervisory authority?",
+      "retrieved": [
+        {
+          "chunk_id": "gdpr:art33:p1",
+          "display_text": "GDPR > Chapter IV > Section 2 > Article 33 — Notification of a personal data breach to the supervisory authority > (1)\n\nIn the case of a personal data breach, the controller shall without undue delay and, where feasible, not later than 72 hours after having become aware of it, notify the personal data breach to the supervisory authority competent in accordance with Article 55, unless the personal data breach is unlikely to result in a risk to the rights and freedoms of natural persons. Where the notification to the supervisory authority is not made within 72 hours, it shall be accompanied by reasons for the delay.",
+          "similarity": 0.8711386919021606
+        },
+        {
+          "chunk_id": "edpb_breach_09_2022:s58:c01",
+          "display_text": "EDPB Guidelines 9/2022 on personal data breach notification > Section 58 > The focus of the notification requirement is to encourage controllers to act promptly on a breach,\n\ncontain it and, if possible, recover the compromised personal data, and to seek relevant advice from the supervisory authority. notifying the supervisory authority within the first 72 hours can allow the controller to make sure that decisions about notifying or not notifying individuals are correct. adopted",
+          "similarity": 0.8546708822250366
+        },
+        {
+          "chunk_id": "edpb_breach_09_2022:s57:c01",
+          "display_text": "EDPB Guidelines 9/2022 on personal data breach notification > Section 57 > This means that the GDPR recognises that controllers will not always have all of the necessary\n\ninformation concerning a breach within 72 hours of becoming aware of it, as full and comprehensive details of the incident may not always be available during this initial period. as such, it allows for a notification in phases. it is more likely this will be the case for more complex breaches, such as some types of cyber security incidents where, for example, an in - depth forensic investigation may be necessary to fully establish the nature of the breach and the extent to which personal data have been compromised. consequently, in many cases the controller will have to do more investigation and follow - up with additional information at a later point. this is permissible, providing the controller gives reasons for the delay, in accordance with article 33 ( 1 ) gdpr. the edpb recommends that when the controller first notifies the supervisory authority, the controller should also inform the supervisory authority if the controller does not yet have all the required information and will provide more details later on. the supervisory authority should agree how and when additional information should be provided. this does not prevent the controller from providing further information at any other stage, if it becomes aware of additional relevant details about the breach that need to be provided to the supervisory authority.",
+          "similarity": 0.8542009592056274
+        },
+        {
+          "chunk_id": "edpb_breach_09_2022:s40:c01",
+          "display_text": "EDPB Guidelines 9/2022 on personal data breach notification > Section 40 > Accordingly, it should be clear that there is an obligation on the controller to act on any initial alert and\n\nestablish whether or not a breach has, in fact, occurred. this brief period allows for some investigation, and for the controller to gather evidence and other relevant details. however, once the controller has established with a reasonable degree of certainty that a breach has occurred, if the conditions in article 33 ( 1 ) gdpr have been met, it must then notify the supervisory authority without undue delay and, where feasible, not later than 72 hours 27. if a controller fails to act in a timely manner and it becomes apparent that a breach did occur, this could be considered as a failure to notify in accordance with article 33 gdpr.",
+          "similarity": 0.8519908785820007
+        },
+        {
+          "chunk_id": "edpb_breach_09_2022:s60:c01",
+          "display_text": "EDPB Guidelines 9/2022 on personal data breach notification > Section 60 > It should also be clear that after making an initial notification, a controller could update the supervisory\n\nauthority if a follow - up investigation uncovers evidence that the security incident was contained and no breach actually occurred. this information could then be added to the information already given to the supervisory authority and the incident recorded accordingly as not being a breach. there is no penalty for reporting an incident that ultimately transpires not to be a breach. example a controller notifies the supervisory authority within 72 hours of detecting a breach that it has lost a usb key containing a copy of the personal data of some of its customers. the usb key is later found misfiled within the controller ’ s premises and recovered. the controller updates the supervisory authority and requests the notification be amended.",
+          "similarity": 0.8384043574333191
+        },
+        {
+          "chunk_id": "edpb_breach_09_2022:s29:c01",
+          "display_text": "EDPB Guidelines 9/2022 on personal data breach notification > Section 29 > Article 33(1) GDPR provides that:\n\n“ in the case of a personal data breach, the controller shall without undue delay and, where feasible, not later than 72 hours after having become aware of it, notify the personal data breach to the supervisory authority competent in accordance with article 55, unless the personal data breach is unlikely to result in a risk to the rights and freedoms of natural persons. where the notification to the supervisory authority is not made within 72 hours, it shall be accompanied by reasons for the delay. ”",
+          "similarity": 0.8349511027336121
+        }
+      ],
+      "chunk_scores": [
+        {
+          "chunk_id": "gdpr:art33:p1",
+          "score": 0.95,
+          "verdict": "relevant",
+          "reason": "Recorded V3 dev calibration judgment.",
+          "jurisdiction_match": true,
+          "kept": false,
+          "error": false
+        },
+        {
+          "chunk_id": "edpb_breach_09_2022:s58:c01",
+          "score": 0.95,
+          "verdict": "relevant",
+          "reason": "Recorded V3 dev calibration judgment.",
+          "jurisdiction_match": true,
+          "kept": false,
+          "error": false
+        },
+        {
+          "chunk_id": "edpb_breach_09_2022:s57:c01",
+          "score": 0.7,
+          "verdict": "partial",
+          "reason": "Recorded V3 dev calibration judgment.",
+          "jurisdiction_match": true,
+          "kept": false,
+          "error": false
+        },
+        {
+          "chunk_id": "edpb_breach_09_2022:s40:c01",
+          "score": 0.95,
+          "verdict": "relevant",
+          "reason": "Recorded V3 dev calibration judgment.",
+          "jurisdiction_match": true,
+          "kept": false,
+          "error": false
+        },
+        {
+          "chunk_id": "edpb_breach_09_2022:s60:c01",
+          "score": 0.7,
+          "verdict": "partial",
+          "reason": "Recorded V3 dev calibration judgment.",
+          "jurisdiction_match": true,
+          "kept": false,
+          "error": false
+        },
+        {
+          "chunk_id": "edpb_breach_09_2022:s29:c01",
+          "score": 0.95,
+          "verdict": "relevant",
+          "reason": "Recorded V3 dev calibration judgment.",
+          "jurisdiction_match": true,
+          "kept": false,
+          "error": false
+        }
+      ],
+      "retrieval_decision": "CORRECT",
+      "decision_reason": "max=0.95 (gdpr:art33:p1); 4 chunks >= 0.9; 6 chunks >= 0.5"
+    },
+    {
+      "qid": "D02",
+      "category": "covered",
+      "expected_branch": "CORRECT",
+      "question": "What are the lawful bases for processing personal data under the GDPR?",
+      "retrieved": [
+        {
+          "chunk_id": "gdpr:rec40",
+          "display_text": "GDPR > Recital 40\n\nIn order for processing to be lawful, personal data should be processed on the basis of the consent of the data subject concerned or some other legitimate basis, laid down by law, either in this Regulation or in other Union or Member State law as referred to in this Regulation, including the necessity for compliance with the legal obligation to which the controller is subject or the necessity for the performance of a contract to which the data subject is party or in order to take steps at the request of the data subject prior to entering into a contract.",
+          "similarity": 0.8880627155303955
+        },
+        {
+          "chunk_id": "gdpr:rec46",
+          "display_text": "GDPR > Recital 46\n\nThe processing of personal data should also be regarded to be lawful where it is necessary to protect an interest which is essential for the life of the data subject or that of another natural person. Processing of personal data",
+          "similarity": 0.8562779426574707
+        },
+        {
+          "chunk_id": "gdpr:art6:p1",
+          "display_text": "GDPR > Chapter II > Article 6 — Lawfulness of processing > (1)\n\nProcessing shall be lawful only if and to the extent that at least one of the following applies: (a)  the data subject has given consent to the processing of his or her personal data for one or more specific purposes; (b)  processing is necessary for the performance of a contract to which the data subject is party or in order to take steps at the request of the data subject prior to entering into a contract; (c)  processing is necessary for compliance with a legal obligation to which the controller is subject; (d)  processing is necessary in order to protect the vital interests of the data subject or of another natural person; (e)  processing is necessary for the performance of a task carried out in the public interest or in the exercise of official authority vested in the controller; (f)  processing is necessary for the purposes of the legitimate interests pursued by the controller or by a third party, except where such interests are overridden by the interests or fundamental rights and freedoms of the data subject which require protection of personal data, in particular where the data subject is a child. Point (f) of the first subparagraph shall not apply to processing carried out by public authorities in the performance of their tasks.",
+          "similarity": 0.8426859378814697
+        },
+        {
+          "chunk_id": "gdpr:rec69",
+          "display_text": "GDPR > Recital 69\n\nWhere personal data might lawfully be processed because processing is necessary for the performance of a task carried out in the public interest or in the exercise of official authority vested in the controller, or on grounds of the legitimate interests of a controller or a third party, a data subject should, nevertheless, be entitled to object to the processing of any personal data relating to his or her particular situation. It should be for the controller to demonstrate that its compelling legitimate interest overrides the interests or the fundamental rights and freedoms of the data subject.",
+          "similarity": 0.8420872092247009
+        },
+        {
+          "chunk_id": "gdpr:rec50",
+          "display_text": "GDPR > Recital 50\n\nThe processing of personal data for purposes other than those for which the personal data were initially collected should be allowed only where the processing is compatible with the purposes for which the personal data were initially collected. In such a case, no legal basis separate from that which allowed the collection of the personal data is required. If the processing is necessary for the performance of a task carried out in the public interest or in the exercise of official authority vested in the controller, Union or Member State law may determine and specify the tasks and purposes for which the further processing should be regarded as compatible and lawful. Further processing for archiving purposes in the public interest, scientific or historical research purposes or statistical purposes should be considered to be compatible lawful processing operations. The legal basis provided by Union or Member State law for the processing of personal data may also provide a legal basis for further processing. In order to ascertain whether a purpose of further processing is compatible with the purpose for which the personal data are initially collected, the controller, after having met all the requirements for the lawfulness of the original processing, should take into account, inter alia: any link between those purposes and the purposes of the intended further processing; the context in which the personal data have been collected, in particular the reasonable expectations of data subjects based on their relationship with the controller as to their further use; the nature of the personal data; the consequences of the intended further processing for data subjects; and the existence of appropriate safeguards in both the original and intended further processing operations. Where the data subject has given consent or the processing is based on Union or Member State law which constitutes a necessary and proportionate measure in a democratic society to safeguard, in particular, important objectives of general public interest, the controller should be allowed to further process the personal data irrespective of the compatibility of the purposes. In any case, the application of the principles set out in this Regulation and in particular the information of the data subject on those other purposes and on his or her rights including the right to object, should be ensured. Indicating possible criminal acts or threats to public security by the controller and transmitting the relevant personal data in individual cases or in several cases relating to the same criminal act or threats to public security to a competent authority should be regarded as being in the legitimate interest pursued by the controller. However, such transmission in the legitimate interest of the controller or further processing of personal data should be prohibited if the processing is not compatible with a legal, professional or other binding obligation of secrecy.",
+          "similarity": 0.8340682983398438
+        },
+        {
+          "chunk_id": "edpb_consent_05_2020:s121:c01",
+          "display_text": "EDPB Guidelines 05/2020 on consent > Section 121 > Article 6 sets the conditions for a lawful personal data processing and describes six lawful bases on\n\nwhich a controller can rely. the application of one of these six bases must be established prior to the processing activity and in relation to a specific purpose. 59",
+          "similarity": 0.8336225748062134
+        }
+      ],
+      "chunk_scores": [
+        {
+          "chunk_id": "gdpr:rec40",
+          "score": 0.7,
+          "verdict": "partial",
+          "reason": "Recorded V3 dev calibration judgment.",
+          "jurisdiction_match": true,
+          "kept": false,
+          "error": false
+        },
+        {
+          "chunk_id": "gdpr:rec46",
+          "score": 0.5,
+          "verdict": "partial",
+          "reason": "Recorded V3 dev calibration judgment.",
+          "jurisdiction_match": true,
+          "kept": false,
+          "error": false
+        },
+        {
+          "chunk_id": "gdpr:art6:p1",
+          "score": 0.95,
+          "verdict": "relevant",
+          "reason": "Recorded V3 dev calibration judgment.",
+          "jurisdiction_match": true,
+          "kept": false,
+          "error": false
+        },
+        {
+          "chunk_id": "gdpr:rec69",
+          "score": 0.7,
+          "verdict": "partial",
+          "reason": "Recorded V3 dev calibration judgment.",
+          "jurisdiction_match": true,
+          "kept": false,
+          "error": false
+        },
+        {
+          "chunk_id": "gdpr:rec50",
+          "score": 0.4,
+          "verdict": "partial",
+          "reason": "Recorded V3 dev calibration judgment.",
+          "jurisdiction_match": true,
+          "kept": false,
+          "error": false
+        },
+        {
+          "chunk_id": "edpb_consent_05_2020:s121:c01",
+          "score": 0.7,
+          "verdict": "partial",
+          "reason": "Recorded V3 dev calibration judgment.",
+          "jurisdiction_match": true,
+          "kept": false,
+          "error": false
+        }
+      ],
+      "retrieval_decision": "CORRECT",
+      "decision_reason": "max=0.95 (gdpr:art6:p1); 1 chunks >= 0.9; 5 chunks >= 0.5"
+    },
+    {
+      "qid": "D03",
+      "category": "covered",
+      "expected_branch": "CORRECT",
+      "question": "When is an organisation required to designate a Data Protection Officer?",
+      "retrieved": [
+        {
+          "chunk_id": "gdpr:art37:p5",
+          "display_text": "GDPR > Chapter IV > Section 4 > Article 37 — Designation of the data protection officer > (5)\n\nThe data protection officer shall be designated on the basis of professional qualities and, in particular, expert knowledge of data protection law and practices and the ability to fulfil the tasks referred to in Article 39.",
+          "similarity": 0.8512063026428223
+        },
+        {
+          "chunk_id": "gdpr:art37:p2",
+          "display_text": "GDPR > Chapter IV > Section 4 > Article 37 — Designation of the data protection officer > (2)\n\nA group of undertakings may appoint a single data protection officer provided that a data protection officer is easily accessible from each establishment.",
+          "similarity": 0.844205379486084
+        },
+        {
+          "chunk_id": "gdpr:art37:p4",
+          "display_text": "GDPR > Chapter IV > Section 4 > Article 37 — Designation of the data protection officer > (4)\n\nIn cases other than those referred to in paragraph 1, the controller or processor or associations and other bodies representing categories of controllers or processors may or, where required by Union or Member State law shall, designate a data protection officer. The data protection officer may act for such associations and other bodies representing controllers or processors.",
+          "similarity": 0.8394817113876343
+        },
+        {
+          "chunk_id": "gdpr:art37:p6",
+          "display_text": "GDPR > Chapter IV > Section 4 > Article 37 — Designation of the data protection officer > (6)\n\nThe data protection officer may be a staff member of the controller or processor, or fulfil the tasks on the basis of a service contract.",
+          "similarity": 0.8353455066680908
+        },
+        {
+          "chunk_id": "gdpr:art37:p1",
+          "display_text": "GDPR > Chapter IV > Section 4 > Article 37 — Designation of the data protection officer > (1)\n\nThe controller and the processor shall designate a data protection officer in any case where: (a)  the processing is carried out by a public authority or body, except for courts acting in their judicial capacity; (b)  the core activities of the controller or the processor consist of processing operations which, by virtue of their nature, their scope and/or their purposes, require regular and systematic monitoring of data subjects on a large scale; or (c)  the core activities of the controller or the processor consist of processing on a large scale of special categories of data pursuant to Article 9 and personal data relating to criminal convictions and offences referred to in Article 10.",
+          "similarity": 0.8299589157104492
+        },
+        {
+          "chunk_id": "gdpr:art38:p1",
+          "display_text": "GDPR > Chapter IV > Section 4 > Article 38 — Position of the data protection officer > (1)\n\nThe controller and the processor shall ensure that the data protection officer is involved, properly and in a timely manner, in all issues which relate to the protection of personal data.",
+          "similarity": 0.8172272443771362
+        }
+      ],
+      "chunk_scores": [
+        {
+          "chunk_id": "gdpr:art37:p5",
+          "score": 0.7,
+          "verdict": "partial",
+          "reason": "Recorded V3 dev calibration judgment.",
+          "jurisdiction_match": true,
+          "kept": false,
+          "error": false
+        },
+        {
+          "chunk_id": "gdpr:art37:p2",
+          "score": 0.7,
+          "verdict": "partial",
+          "reason": "Recorded V3 dev calibration judgment.",
+          "jurisdiction_match": true,
+          "kept": false,
+          "error": false
+        },
+        {
+          "chunk_id": "gdpr:art37:p4",
+          "score": 0.7,
+          "verdict": "partial",
+          "reason": "Recorded V3 dev calibration judgment.",
+          "jurisdiction_match": true,
+          "kept": false,
+          "error": false
+        },
+        {
+          "chunk_id": "gdpr:art37:p6",
+          "score": 0.4,
+          "verdict": "partial",
+          "reason": "Recorded V3 dev calibration judgment.",
+          "jurisdiction_match": true,
+          "kept": false,
+          "error": false
+        },
+        {
+          "chunk_id": "gdpr:art37:p1",
+          "score": 0.95,
+          "verdict": "relevant",
+          "reason": "Recorded V3 dev calibration judgment.",
+          "jurisdiction_match": true,
+          "kept": false,
+          "error": false
+        },
+        {
+          "chunk_id": "gdpr:art38:p1",
+          "score": 0.6,
+          "verdict": "partial",
+          "reason": "Recorded V3 dev calibration judgment.",
+          "jurisdiction_match": true,
+          "kept": false,
+          "error": false
+        }
+      ],
+      "retrieval_decision": "CORRECT",
+      "decision_reason": "max=0.95 (gdpr:art37:p1); 1 chunks >= 0.9; 5 chunks >= 0.5"
+    },
+    {
+      "qid": "D04",
+      "category": "covered",
+      "expected_branch": "CORRECT",
+      "question": "What must a data protection impact assessment contain?",
+      "retrieved": [
+        {
+          "chunk_id": "gdpr:rec90",
+          "display_text": "GDPR > Recital 90\n\nIn such cases, a data protection impact assessment should be carried out by the controller prior to the processing in order to assess the particular likelihood and severity of the high risk, taking into account the nature, scope, context and purposes of the processing and the sources of the risk. That impact assessment should include, in particular, the measures, safeguards and mechanisms envisaged for mitigating that risk, ensuring the protection of personal data and demonstrating compliance with this Regulation.",
+          "similarity": 0.857196569442749
+        },
+        {
+          "chunk_id": "gdpr:art35:p3",
+          "display_text": "GDPR > Chapter IV > Section 3 > Article 35 — Data protection impact assessment > (3)\n\nA data protection impact assessment referred to in paragraph 1 shall in particular be required in the case of: (a)  a systematic and extensive evaluation of personal aspects relating to natural persons which is based on automated processing, including profiling, and on which decisions are based that produce legal effects concerning the natural person or similarly significantly affect the natural person; (b)  processing on a large scale of special categories of data referred to in Article 9(1), or of personal data relating to criminal convictions and offences referred to in Article 10; or (c)  a systematic monitoring of a publicly accessible area on a large scale.",
+          "similarity": 0.8554506897926331
+        },
+        {
+          "chunk_id": "gdpr:art35:p7",
+          "display_text": "GDPR > Chapter IV > Section 3 > Article 35 — Data protection impact assessment > (7)\n\nThe assessment shall contain at least: (a)  a systematic description of the envisaged processing operations and the purposes of the processing, including, where applicable, the legitimate interest pursued by the controller; (b)  an assessment of the necessity and proportionality of the processing operations in relation to the purposes; (c)  an assessment of the risks to the rights and freedoms of data subjects referred to in paragraph 1; and (d)  the measures envisaged to address the risks, including safeguards, security measures and mechanisms to ensure the protection of personal data and to demonstrate compliance with this Regulation taking into account the rights and legitimate interests of data subjects and other persons concerned.",
+          "similarity": 0.8409295082092285
+        },
+        {
+          "chunk_id": "gdpr:art35:p11",
+          "display_text": "GDPR > Chapter IV > Section 3 > Article 35 — Data protection impact assessment > (11)\n\nWhere necessary, the controller shall carry out a review to assess if processing is performed in accordance with the data protection impact assessment at least when there is a change of the risk represented by processing operations.",
+          "similarity": 0.8217865228652954
+        },
+        {
+          "chunk_id": "gdpr:art35:p5",
+          "display_text": "GDPR > Chapter IV > Section 3 > Article 35 — Data protection impact assessment > (5)\n\nThe supervisory authority may also establish and make public a list of the kind of processing operations for which no data protection impact assessment is required. The supervisory authority shall communicate those lists to the Board.",
+          "similarity": 0.8184345960617065
+        },
+        {
+          "chunk_id": "gdpr:art35:p4",
+          "display_text": "GDPR > Chapter IV > Section 3 > Article 35 — Data protection impact assessment > (4)\n\nThe supervisory authority shall establish and make public a list of the kind of processing operations which are subject to the requirement for a data protection impact assessment pursuant to paragraph 1. The supervisory authority shall communicate those lists to the Board referred to in Article 68.",
+          "similarity": 0.8170003890991211
+        }
+      ],
+      "chunk_scores": [
+        {
+          "chunk_id": "gdpr:rec90",
+          "score": 0.7,
+          "verdict": "partial",
+          "reason": "Recorded V3 dev calibration judgment.",
+          "jurisdiction_match": true,
+          "kept": false,
+          "error": false
+        },
+        {
+          "chunk_id": "gdpr:art35:p3",
+          "score": 0.1,
+          "verdict": "irrelevant",
+          "reason": "Recorded V3 dev calibration judgment.",
+          "jurisdiction_match": true,
+          "kept": false,
+          "error": false
+        },
+        {
+          "chunk_id": "gdpr:art35:p7",
+          "score": 0.95,
+          "verdict": "relevant",
+          "reason": "Recorded V3 dev calibration judgment.",
+          "jurisdiction_match": true,
+          "kept": false,
+          "error": false
+        },
+        {
+          "chunk_id": "gdpr:art35:p11",
+          "score": 0.1,
+          "verdict": "irrelevant",
+          "reason": "Recorded V3 dev calibration judgment.",
+          "jurisdiction_match": true,
+          "kept": false,
+          "error": false
+        },
+        {
+          "chunk_id": "gdpr:art35:p5",
+          "score": 0.1,
+          "verdict": "irrelevant",
+          "reason": "Recorded V3 dev calibration judgment.",
+          "jurisdiction_match": true,
+          "kept": false,
+          "error": false
+        },
+        {
+          "chunk_id": "gdpr:art35:p4",
+          "score": 0.1,
+          "verdict": "irrelevant",
+          "reason": "Recorded V3 dev calibration judgment.",
+          "jurisdiction_match": true,
+          "kept": false,
+          "error": false
+        }
+      ],
+      "retrieval_decision": "CORRECT",
+      "decision_reason": "max=0.95 (gdpr:art35:p7); 1 chunks >= 0.9; 2 chunks >= 0.5"
+    },
+    {
+      "qid": "D05",
+      "category": "not_covered",
+      "expected_branch": "INCORRECT",
+      "question": "What fines can the UK ICO impose under the Data Protection Act 2018?",
+      "retrieved": [
+        {
+          "chunk_id": "gdpr:art83:p5",
+          "display_text": "GDPR > Chapter VIII > Article 83 — General conditions for imposing administrative fines > (5)\n\nInfringements of the following provisions shall, in accordance with paragraph 2, be subject to administrative fines up to 20 000 000 EUR, or in the case of an undertaking, up to 4 % of the total worldwide annual turnover of the preceding financial year, whichever is higher: (a)  the basic principles for processing, including conditions for consent, pursuant to Articles 5, 6, 7 and 9; (b)  the data subjects' rights pursuant to Articles 12 to 22; (c)  the transfers of personal data to a recipient in a third country or an international organisation pursuant to Articles 44 to 49; (d)  any obligations pursuant to Member State law adopted under Chapter IX; (e)  non-compliance with an order or a temporary or definitive limitation on processing or the suspension of data flows by the supervisory authority pursuant to Article 58(2) or failure to provide access in violation of Article 58(1).",
+          "similarity": 0.7292065620422363
+        },
+        {
+          "chunk_id": "edpb_breach_09_2022:s28:c02",
+          "display_text": "EDPB Guidelines 9/2022 on personal data breach notification > Section 28 > March 2023\n\n..... 7 a. basic security considerations..................................................................................................... 7 b. what is a personal data breach?................................................................................................ 7 even though the requirements of articles 33 and / or 34 gdpr are fulfilled, then the supervisory authority is presented with a choice that must include consideration of all of the corrective measures at its disposal, which would include consideration of the imposition of the appropriate administrative fine 22, either accompanying a corrective measure under article 58 ( 2 ) gdpr or on its own. where an administrative fine is chosen, its value can be up to 10, 000, 000 eur or up to 2 % if the total worldwide annual turnover of an undertaking under article 83 ( 4 ) ( a ) of the gdpr. it is also important to bear in mind that in some cases, the failure to notify a breach could reveal either an absence of existing security measures or an inadequacy of the existing security measures. the wp29 guidelines on administrative fines state : “ the occurrence of several different infringements",
+          "similarity": 0.722286581993103
+        },
+        {
+          "chunk_id": "gdpr:art83:p4",
+          "display_text": "GDPR > Chapter VIII > Article 83 — General conditions for imposing administrative fines > (4)\n\nInfringements of the following provisions shall, in accordance with paragraph 2, be subject to administrative fines up to 10 000 000 EUR, or in the case of an undertaking, up to 2 % of the total worldwide annual turnover of the preceding financial year, whichever is higher: (a)  the obligations of the controller and the processor pursuant to Articles 8, 11, 25 to 39 and 42 and 43; (b)  the obligations of the certification body pursuant to Articles 42 and 43; (c)  the obligations of the monitoring body pursuant to Article 41(4).",
+          "similarity": 0.7064152956008911
+        },
+        {
+          "chunk_id": "edpb_breach_09_2022:s30:c01",
+          "display_text": "EDPB Guidelines 9/2022 on personal data breach notification > Section 30 > Recital 87 GDPR states 23 :\n\n21 see also recital 86 gdpr. 22 for further details, please see wp29 guidelines on the application and setting of administrative fines, available here : http : / / ec. europa. eu / newsroom / just / document. cfm? doc _ id = 47889 23 recital 85 gdpr is also important here. adopted “ it should be ascertained whether all appropriate technological protection and organisational measures have been implemented to establish immediately whether a personal data breach has taken place and to inform promptly the supervisory authority and the data subject. the fact that the notification was made without undue delay should be established taking into account in particular the nature and gravity of the personal data breach and its consequences and adverse effects for the data subject. such notification may result in an intervention of the supervisory authority in accordance with its tasks and powers laid down in this regulation. ”",
+          "similarity": 0.7059328556060791
+        },
+        {
+          "chunk_id": "gdpr:art84:p2",
+          "display_text": "GDPR > Chapter VIII > Article 84 — Penalties > (2)\n\nEach Member State shall notify to the Commission the provisions of its law which it adopts pursuant to paragraph 1, by 25 May 2018 and, without delay, any subsequent amendment affecting them.",
+          "similarity": 0.7057570815086365
+        },
+        {
+          "chunk_id": "edpb_consent_05_2020:s25:c03",
+          "display_text": "EDPB Guidelines 05/2020 on consent > Section 25 > May 2018. According to Article 95 GDPR, additional obligations in relation to processing in\n\nfor data",
+          "similarity": 0.7040587663650513
+        }
+      ],
+      "chunk_scores": [
+        {
+          "chunk_id": "gdpr:art83:p5",
+          "score": 0.2,
+          "verdict": "irrelevant",
+          "reason": "Recorded V3 dev calibration judgment.",
+          "jurisdiction_match": false,
+          "kept": false,
+          "error": false
+        },
+        {
+          "chunk_id": "edpb_breach_09_2022:s28:c02",
+          "score": 0.2,
+          "verdict": "irrelevant",
+          "reason": "Recorded V3 dev calibration judgment.",
+          "jurisdiction_match": false,
+          "kept": false,
+          "error": false
+        },
+        {
+          "chunk_id": "gdpr:art83:p4",
+          "score": 0.2,
+          "verdict": "irrelevant",
+          "reason": "Recorded V3 dev calibration judgment.",
+          "jurisdiction_match": false,
+          "kept": false,
+          "error": false
+        },
+        {
+          "chunk_id": "edpb_breach_09_2022:s30:c01",
+          "score": 0.2,
+          "verdict": "irrelevant",
+          "reason": "Recorded V3 dev calibration judgment.",
+          "jurisdiction_match": false,
+          "kept": false,
+          "error": false
+        },
+        {
+          "chunk_id": "gdpr:art84:p2",
+          "score": 0.1,
+          "verdict": "irrelevant",
+          "reason": "Recorded V3 dev calibration judgment.",
+          "jurisdiction_match": false,
+          "kept": false,
+          "error": false
+        },
+        {
+          "chunk_id": "edpb_consent_05_2020:s25:c03",
+          "score": 0.1,
+          "verdict": "irrelevant",
+          "reason": "Recorded V3 dev calibration judgment.",
+          "jurisdiction_match": false,
+          "kept": false,
+          "error": false
+        }
+      ],
+      "retrieval_decision": "INCORRECT",
+      "decision_reason": "max=0.20 (gdpr:art83:p5); 0 chunks >= 0.9; 0 chunks >= 0.5"
+    },
+    {
+      "qid": "D06",
+      "category": "not_covered",
+      "expected_branch": "INCORRECT",
+      "question": "What is the deadline under the Virginia CDPA to respond to consumer requests?",
+      "retrieved": [
+        {
+          "chunk_id": "gdpr:art61:p2",
+          "display_text": "GDPR > Chapter VII > Section 1 > Article 61 — Mutual assistance > (2)\n\nEach supervisory authority shall take all appropriate measures required to reply to a request of another supervisory authority without undue delay and no later than one month after receiving the request. Such measures may include, in particular, the transmission of relevant information on the conduct of an investigation.",
+          "similarity": 0.6295791864395142
+        },
+        {
+          "chunk_id": "edpb_access_01_2022:s157:c01",
+          "display_text": "EDPB Guidelines 01/2022 on data subject rights: right of access > Section 157 > Art. 12(3) GDPR requires that the controller provides information to the data subject regarding action\n\ntaken in respect of a request under art. 15 without undue delay and in any event within one month of receipt of the request. this deadline can be extended by a maximum of two months taking into account the complexity and the number of the requests, provided that the data subject has been informed about the reasons for such delay within one month of the receipt of the request. this obligation to inform the data subject about the extension and its reasons should not be confused with the information that has to be given without delay and at the latest within one month when the controller does not take action on the request, as detailed by art. 12 ( 4 ) gdpr.",
+          "similarity": 0.6124387979507446
+        },
+        {
+          "chunk_id": "edpb_access_01_2022:s160:c01",
+          "display_text": "EDPB Guidelines 01/2022 on data subject rights: right of access > Section 160 > The time period to respond to an access request needs to be calculated in accordance with Regulation\n\nno 1182 / 71 92. example 32 : an organisation receives a request on 5 march. the time limit starts from the same day. this gives the organisation until and including 5 april to comply with the request, at the latest. 89 see section 2. 3. 3 90 in some member states there is national law determining when a message is to be considered as received, taking into account weekends and national holidays. 91 see further section 2. 3. 1. 92 regulation ( eec, euratom ) no 1182 / 71 of the council of 3 june 1971 determining the rules applicable to periods, dates and time limits. adopted example 33 : if the organisation receives a request on 31 august, and as the following month is shorter there is no corresponding date, the date for response, at the latest, is the last day of the following month, hence 30 september.",
+          "similarity": 0.6068116426467896
+        },
+        {
+          "chunk_id": "gdpr:art36:p2",
+          "display_text": "GDPR > Chapter IV > Section 3 > Article 36 — Prior consultation > (2)\n\nWhere the supervisory authority is of the opinion that the intended processing referred to in paragraph 1 would infringe this Regulation, in particular where the controller has insufficiently identified or mitigated the risk, the supervisory authority shall, within period of up to eight weeks of receipt of the request for consultation, provide written advice to the controller and, where applicable to the processor, and may use any of its powers referred to in Article 58. That period may be extended by six weeks, taking into account the complexity of the intended processing. The supervisory authority shall inform the controller and, where applicable, the processor, of any such extension within one month of receipt of the request for consultation together with the reasons for the delay. Those periods may be suspended until the supervisory authority has obtained information it has requested for the purposes of the consultation.",
+          "similarity": 0.6037790179252625
+        },
+        {
+          "chunk_id": "edpb_access_01_2022:s164:c01",
+          "display_text": "EDPB Guidelines 01/2022 on data subject rights: right of access > Section 164 > The mere fact that complying with the request would require a large effort does not make a request\n\ncomplex. similarly, the fact that a big company receives a large number of requests would not automatically trigger an extension of the time limit. however, when a controller temporarily receives a large amount of requests, for example due to an extraordinary publicity regarding their activities, this could be regarded as a legitimate reason for prolonging the time of the response. nevertheless, a controller, especially one who handles a large quantity of data, should have procedures and mechanisms in place in order to be able to handle requests within the time limit under normal circumstances.",
+          "similarity": 0.5971301794052124
+        },
+        {
+          "chunk_id": "edpb_access_01_2022:s162:c01",
+          "display_text": "EDPB Guidelines 01/2022 on data subject rights: right of access > Section 162 > Under certain circumstances the controller can extend the time to respond to a request of access by\n\ntwo further months if necessary, taking into account the complexity and number of the requests. it should be emphasised that this possibility is an exemption from the general rule and should not be overused. if controllers often find themselves forced to extend the time limit, it could be an indication of a need to further develop their general procedures to handle requests.",
+          "similarity": 0.5942660570144653
+        }
+      ],
+      "chunk_scores": [
+        {
+          "chunk_id": "gdpr:art61:p2",
+          "score": 0.1,
+          "verdict": "irrelevant",
+          "reason": "Recorded V3 dev calibration judgment.",
+          "jurisdiction_match": false,
+          "kept": false,
+          "error": false
+        },
+        {
+          "chunk_id": "edpb_access_01_2022:s157:c01",
+          "score": 0.1,
+          "verdict": "irrelevant",
+          "reason": "Recorded V3 dev calibration judgment.",
+          "jurisdiction_match": false,
+          "kept": false,
+          "error": false
+        },
+        {
+          "chunk_id": "edpb_access_01_2022:s160:c01",
+          "score": 0.2,
+          "verdict": "irrelevant",
+          "reason": "Recorded V3 dev calibration judgment.",
+          "jurisdiction_match": false,
+          "kept": false,
+          "error": false
+        },
+        {
+          "chunk_id": "gdpr:art36:p2",
+          "score": 0.1,
+          "verdict": "irrelevant",
+          "reason": "Recorded V3 dev calibration judgment.",
+          "jurisdiction_match": false,
+          "kept": false,
+          "error": false
+        },
+        {
+          "chunk_id": "edpb_access_01_2022:s164:c01",
+          "score": 0.1,
+          "verdict": "irrelevant",
+          "reason": "Recorded V3 dev calibration judgment.",
+          "jurisdiction_match": false,
+          "kept": false,
+          "error": false
+        },
+        {
+          "chunk_id": "edpb_access_01_2022:s162:c01",
+          "score": 0.1,
+          "verdict": "irrelevant",
+          "reason": "Recorded V3 dev calibration judgment.",
+          "jurisdiction_match": false,
+          "kept": false,
+          "error": false
+        }
+      ],
+      "retrieval_decision": "INCORRECT",
+      "decision_reason": "max=0.20 (edpb_access_01_2022:s160:c01); 0 chunks >= 0.9; 0 chunks >= 0.5"
+    },
+    {
+      "qid": "D07",
+      "category": "not_covered",
+      "expected_branch": "INCORRECT",
+      "question": "What did the CJEU decide in Schrems II about the Privacy Shield?",
+      "retrieved": [
+        {
+          "chunk_id": "gdpr:art98:p1",
+          "display_text": "GDPR > Chapter XI > Article 98 — Review of other Union legal acts on data protection > (1)\n\nThe Commission shall, if appropriate, submit legislative proposals with a view to amending other Union legal acts on the protection of personal data, in order to ensure uniform and consistent protection of natural persons with regard to processing. This shall in particular concern the rules relating to the protection of natural persons with regard to processing by Union institutions, bodies, offices and agencies and on the free movement of such data.",
+          "similarity": 0.614292562007904
+        },
+        {
+          "chunk_id": "edpb_access_01_2022:s2.1:c03",
+          "display_text": "EDPB Guidelines 01/2022 on data subject rights: right of access > Section 2.1 > Aim of the right of access\n\npara. 56. 9 questions related to this topic are at issue in a case currently pending before the cjeu ( c - 307 / 22 ). adopted proves to be manifestly unfounded or excessive in accordance with art. 12 ( 5 ) of the gdpr ( see section 6. 3 ), which the controller is required to demonstrate. variation : the data subject exercises the right of access with regard to the personal data relating to him or her during the course of the lawsuit. however, the national law of the member state, which governs the employment relation between the controller and the data subject, contains certain provisions that limit the scope of information to be provided to or exchanged between parties to ongoing or prospective legal proceedings, which are applicable to the unfair dismissal lawsuit that the data subject filed. in this context and provided that, these national provisions comply with the requirements posed by art. 23 gdpr 10, the data subject is not entitled to receive more information from the controller than is prescribed by the national law provisions of the member state governing the information exchange between parties to legal disputes. 14. although the aim of the right of access is broad, the cjeu illustrated also the limits of the remit of data protection law and the right of access. for instance, the cjeu found that the objective of the right of access guaranteed by eu data protection law is to be distinguished from that of the right of access to public documents established by eu and national legislation, the latter aiming at, “ the greatest possible transparency of the decision - making process of the public authorities and to promote good administrative practices ” 11, an objective not sought by data protection law. the cjeu concluded that the right of access to personal data applies irrespective of whether a different kind of right of access with a different aim applies, such as in the context of an examination procedure.",
+          "similarity": 0.613211989402771
+        },
+        {
+          "chunk_id": "gdpr:rec73",
+          "display_text": "GDPR > Recital 73\n\nRestrictions concerning specific principles and the rights of information, access to and rectification or erasure of personal data, the right to data portability, the right to object, decisions based on profiling, as well as the communication of a personal data breach to a data subject and certain related obligations of the controllers may be imposed by Union or Member State law, as far as necessary and proportionate in a democratic society to safeguard public security, including the protection of human life especially in response to natural or manmade disasters, the prevention, investigation and prosecution of criminal offences or the execution of criminal penalties, including the safeguarding against and the prevention of threats to public security, or of breaches of ethics for regulated professions, other important objectives of general public interest of the Union or of a Member State, in particular an important economic or financial interest of the Union or of a Member State, the keeping of public registers kept for reasons of general public interest, further processing of archived personal data to provide specific information related to the political behaviour under former totalitarian state regimes or the protection of the data subject or the rights and freedoms of others, including social protection, public health and humanitarian purposes. Those restrictions should be in accordance with the requirements set out in the Charter and in the European Convention for the Protection of Human Rights and Fundamental Freedoms.",
+          "similarity": 0.6126198768615723
+        },
+        {
+          "chunk_id": "gdpr:rec12",
+          "display_text": "GDPR > Recital 12\n\nArticle 16(2) TFEU mandates the European Parliament and the Council to lay down the rules relating to the protection of natural persons with regard to the processing of personal data and the rules relating to the free movement of personal data.",
+          "similarity": 0.6125173568725586
+        },
+        {
+          "chunk_id": "gdpr:rec9",
+          "display_text": "GDPR > Recital 9\n\nThe objectives and principles of Directive 95/46/EC remain sound, but it has not prevented fragmentation in the implementation of data protection across the Union, legal uncertainty or a widespread public perception that there are significant risks to the protection of natural persons, in particular with regard to online activity. Differences in the level of protection of the rights and freedoms of natural persons, in particular the right to the protection of personal data, with regard to the processing of personal data in the Member States may prevent the free flow of personal data throughout the Union. Those differences may therefore constitute an obstacle to the pursuit of economic activities at the level of the Union, distort competition and impede authorities in the discharge of their responsibilities under Union law. Such a difference in levels of protection is due to the existence of differences in the implementation and application of Directive 95/46/EC.",
+          "similarity": 0.6121618747711182
+        },
+        {
+          "chunk_id": "gdpr:art45:p2",
+          "display_text": "GDPR > Chapter V > Article 45 — Transfers on the basis of an adequacy decision > (2)\n\nWhen assessing the adequacy of the level of protection, the Commission shall, in particular, take account of the following elements: (a)  the rule of law, respect for human rights and fundamental freedoms, relevant legislation, both general and sectoral, including concerning public security, defence, national security and criminal law and the access of public authorities to personal data, as well as the implementation of such legislation, data protection rules, professional rules and security measures, including rules for the onward transfer of personal data to another third country or international organisation which are complied with in that country or international organisation, case-law, as well as effective and enforceable data subject rights and effective administrative and judicial redress for the data subjects whose personal data are being transferred; (b)  the existence and effective functioning of one or more independent supervisory authorities in the third country or to which an international organisation is subject, with responsibility for ensuring and enforcing compliance with the data protection rules, including adequate enforcement powers, for assisting and advising the data subjects in exercising their rights and for cooperation with the supervisory authorities of the Member States; and (c)  the international commitments the third country or international organisation concerned has entered into, or other obligations arising from legally binding conventions or instruments as well as from its participation in multilateral or regional systems, in particular in relation to the protection of personal data.",
+          "similarity": 0.6113582849502563
+        }
+      ],
+      "chunk_scores": [
+        {
+          "chunk_id": "gdpr:art98:p1",
+          "score": 0.1,
+          "verdict": "irrelevant",
+          "reason": "Recorded V3 dev calibration judgment.",
+          "jurisdiction_match": false,
+          "kept": false,
+          "error": false
+        },
+        {
+          "chunk_id": "edpb_access_01_2022:s2.1:c03",
+          "score": 0.1,
+          "verdict": "irrelevant",
+          "reason": "Recorded V3 dev calibration judgment.",
+          "jurisdiction_match": false,
+          "kept": false,
+          "error": false
+        },
+        {
+          "chunk_id": "gdpr:rec73",
+          "score": 0.1,
+          "verdict": "irrelevant",
+          "reason": "Recorded V3 dev calibration judgment.",
+          "jurisdiction_match": false,
+          "kept": false,
+          "error": false
+        },
+        {
+          "chunk_id": "gdpr:rec12",
+          "score": 0.1,
+          "verdict": "irrelevant",
+          "reason": "Recorded V3 dev calibration judgment.",
+          "jurisdiction_match": false,
+          "kept": false,
+          "error": false
+        },
+        {
+          "chunk_id": "gdpr:rec9",
+          "score": 0.1,
+          "verdict": "irrelevant",
+          "reason": "Recorded V3 dev calibration judgment.",
+          "jurisdiction_match": false,
+          "kept": false,
+          "error": false
+        },
+        {
+          "chunk_id": "gdpr:art45:p2",
+          "score": 0.2,
+          "verdict": "irrelevant",
+          "reason": "Recorded V3 dev calibration judgment.",
+          "jurisdiction_match": false,
+          "kept": false,
+          "error": false
+        }
+      ],
+      "retrieval_decision": "INCORRECT",
+      "decision_reason": "max=0.20 (gdpr:art45:p2); 0 chunks >= 0.9; 0 chunks >= 0.5"
+    },
+    {
+      "qid": "D08",
+      "category": "ambiguous",
+      "expected_branch": "AMBIGUOUS",
+      "question": "How does the GDPR 72-hour breach deadline compare with HIPAA's breach notification deadline?",
+      "retrieved": [
+        {
+          "chunk_id": "edpb_breach_09_2022:s29:c01",
+          "display_text": "EDPB Guidelines 9/2022 on personal data breach notification > Section 29 > Article 33(1) GDPR provides that:\n\n“ in the case of a personal data breach, the controller shall without undue delay and, where feasible, not later than 72 hours after having become aware of it, notify the personal data breach to the supervisory authority competent in accordance with article 55, unless the personal data breach is unlikely to result in a risk to the rights and freedoms of natural persons. where the notification to the supervisory authority is not made within 72 hours, it shall be accompanied by reasons for the delay. ”",
+          "similarity": 0.7202666997909546
+        },
+        {
+          "chunk_id": "edpb_breach_09_2022:s62:c01",
+          "display_text": "EDPB Guidelines 9/2022 on personal data breach notification > Section 62 > Article 33(1) GDPR makes it clear that where notification to the supervisory authority is not made\n\nwithin 72 hours, it shall be accompanied by reasons for the delay. this, along with the concept of notification in phases, recognises that a controller may not always be able to notify a breach within that time period, and that a delayed notification may be permissible.",
+          "similarity": 0.7149063348770142
+        },
+        {
+          "chunk_id": "edpb_breach_09_2022:s65:c01",
+          "display_text": "EDPB Guidelines 9/2022 on personal data breach notification > Section 65 > Whilst the GDPR allows for delayed notifications to an extent, this should not be seen as something\n\nthat regularly takes place. it is worth pointing out that bundled notifications can also be made for multiple similar breaches reported within 72 hours. c. cross - border breaches and breaches at non - eu establishments",
+          "similarity": 0.7149050235748291
+        },
+        {
+          "chunk_id": "gdpr:art33:p1",
+          "display_text": "GDPR > Chapter IV > Section 2 > Article 33 — Notification of a personal data breach to the supervisory authority > (1)\n\nIn the case of a personal data breach, the controller shall without undue delay and, where feasible, not later than 72 hours after having become aware of it, notify the personal data breach to the supervisory authority competent in accordance with Article 55, unless the personal data breach is unlikely to result in a risk to the rights and freedoms of natural persons. Where the notification to the supervisory authority is not made within 72 hours, it shall be accompanied by reasons for the delay.",
+          "similarity": 0.7058939337730408
+        },
+        {
+          "chunk_id": "edpb_breach_09_2022:s83:c01",
+          "display_text": "EDPB Guidelines 9/2022 on personal data breach notification > Section 83 > The GDPR states that communication of a breach to individuals should be made “without undue delay,”\n\nwhich means as soon as possible. the main objective of notification to individuals is to provide specific information about steps they should take to protect themselves 40. as noted above, depending on the nature of the breach and the risk posed, timely communication will help individuals to take steps to protect themselves from any negative consequences of the breach.",
+          "similarity": 0.701029360294342
+        },
+        {
+          "chunk_id": "gdpr:rec85",
+          "display_text": "GDPR > Recital 85\n\nA personal data breach may, if not addressed in an appropriate and timely manner, result in physical, material or non-material damage to natural persons such as loss of control over their personal data or limitation of their rights, discrimination, identity theft or fraud, financial loss, unauthorised reversal of pseudonymisation, damage to reputation, loss of confidentiality of personal data protected by professional secrecy or any other significant economic or social disadvantage to the natural person concerned. Therefore, as soon as the controller becomes aware that a personal data breach has occurred, the controller should notify the personal data breach to the supervisory authority without undue delay and, where feasible, not later than 72 hours after having become aware of it, unless the controller is able to demonstrate, in accordance with the accountability principle, that the personal data breach is unlikely to result in a risk to the rights and freedoms of natural persons. Where such notification cannot be achieved within 72 hours, the reasons for the delay should accompany the notification and information may be provided in phases without undue further delay.",
+          "similarity": 0.6955089569091797
+        }
+      ],
+      "chunk_scores": [
+        {
+          "chunk_id": "edpb_breach_09_2022:s29:c01",
+          "score": 0.8,
+          "verdict": "partial",
+          "reason": "Recorded V3 dev calibration judgment.",
+          "jurisdiction_match": false,
+          "kept": false,
+          "error": false
+        },
+        {
+          "chunk_id": "edpb_breach_09_2022:s62:c01",
+          "score": 0.8,
+          "verdict": "partial",
+          "reason": "Recorded V3 dev calibration judgment.",
+          "jurisdiction_match": false,
+          "kept": false,
+          "error": false
+        },
+        {
+          "chunk_id": "edpb_breach_09_2022:s65:c01",
+          "score": 0.2,
+          "verdict": "irrelevant",
+          "reason": "Recorded V3 dev calibration judgment.",
+          "jurisdiction_match": false,
+          "kept": false,
+          "error": false
+        },
+        {
+          "chunk_id": "gdpr:art33:p1",
+          "score": 0.8,
+          "verdict": "partial",
+          "reason": "Recorded V3 dev calibration judgment.",
+          "jurisdiction_match": false,
+          "kept": false,
+          "error": false
+        },
+        {
+          "chunk_id": "edpb_breach_09_2022:s83:c01",
+          "score": 0.8,
+          "verdict": "partial",
+          "reason": "Recorded V3 dev calibration judgment.",
+          "jurisdiction_match": false,
+          "kept": false,
+          "error": false
+        },
+        {
+          "chunk_id": "gdpr:rec85",
+          "score": 0.7,
+          "verdict": "partial",
+          "reason": "Recorded V3 dev calibration judgment.",
+          "jurisdiction_match": false,
+          "kept": false,
+          "error": false
+        }
+      ],
+      "retrieval_decision": "AMBIGUOUS",
+      "decision_reason": "max=0.80 (edpb_breach_09_2022:s29:c01); 0 chunks >= 0.9; 5 chunks >= 0.5"
+    },
+    {
+      "qid": "D09",
+      "category": "ambiguous",
+      "expected_branch": "AMBIGUOUS",
+      "question": "Do GDPR consent rules apply to cookie banners, and what does the ePrivacy Directive add?",
+      "retrieved": [
+        {
+          "chunk_id": "edpb_consent_05_2020:s4:c14",
+          "display_text": "EDPB Guidelines 05/2020 on consent > Section 4 > May 2020\n\n##pb notes that references to the repealed directive 95 / 46 / ec shall be construed as references to the gdpr. 9 this also applies to references to consent in the current directive 2002 / 58 / ec, as the eprivacy regulation will not ( yet ) be in force from",
+          "similarity": 0.7255045771598816
+        },
+        {
+          "chunk_id": "edpb_consent_05_2020:s4:c13",
+          "display_text": "EDPB Guidelines 05/2020 on consent > Section 4 > May 2020\n\nnot legitimise collection of data, which is not necessary in relation to a specified purpose of processing and be fundamentally unfair. 6 2 article 9 gdpr provides a list of possible exemptions to the ban on processing special categories of data. one of the exemptions listed is the situation where the data subject provides explicit consent to the use of this data. 3 see also article 29 working party opinion 15 / 2011 on the definition of consent ( wp 187 ), pp. 6 - 8, and / or opinion 06 / 2014 on the notion of legitimate interests of the data controller under article 7 of directive 95 / 46 / ec ( wp 217 ), pp. 9, 10, 13 and 14. 4 most notably, opinion 15 / 2011 on the definition of consent ( wp 187 ). 5 opinion 15 / 2011, page on the definition of consent ( wp 187 ), p. 8. 6 see also opinion 15 / 2011 on the definition of consent ( wp 187 ), and article 5 gdpr. adopted 6. meanwhile, the edpb is aware of the review of the eprivacy directive ( 2002 / 58 / ec ). the notion of consent in the draft eprivacy regulation remains linked to the notion of consent in the gdpr. 7 organisations are likely to need consent under the eprivacy instrument for most online marketing messages or marketing calls, and online tracking methods including by the use of cookies or apps or other software. the edpb has already provided recommendations and guidance to the european legislator on the proposal for a regulation on eprivacy. 8 7. with regard to the existing e - privacy directive, the edpb notes that references to the repealed directive 95 / 46 / ec shall be construed as references to the gdpr. 9 this also applies to references to consent in the current directive 2002 / 58 / ec, as the eprivacy regulation will not ( yet ) be in force from",
+          "similarity": 0.7161306142807007
+        },
+        {
+          "chunk_id": "edpb_consent_05_2020:s4:c11",
+          "display_text": "EDPB Guidelines 05/2020 on consent > Section 4 > May 2020\n\nof the document was left unchanged, except for editorial changes. the revision concerns, more specifically : section on conditionality ( paragraphs 38 - 41 ). section on unambiguous indication of wishes ( paragraph 86 ) introduction 1. these guidelines provide a thorough analysis of the notion of consent in regulation 2016 / 679, the general data protection regulation ( hereafter : gdpr ). the concept of consent as used in the data 1 references to “ member states ” made throughout this document should be understood as references to “ eea member states ”. adopted protection directive ( hereafter : directive 95 / 46 / ec ) and in the e - privacy directive to date, has evolved. the gdpr provides further clarification and specification of the requirements for obtaining and demonstrating valid consent. these guidelines focus on these changes, providing practical guidance to ensure compliance with the gdpr and building upon the article 29 working party opinion 15 / 2011 on consent. the obligation is on controllers to innovate to find new solutions that operate within the parameters of the law and better support the protection of personal data and the interests of data subjects. 2. consent remains one of six lawful bases to process personal data, as listed in article 6 of the gdpr. 2 when initiating activities that involve processing of personal data, a controller must always take time to consider what would be the appropriate lawful ground for the envisaged processing. 3. generally, consent can only be an appropriate lawful basis if a data subject is offered control and is offered a genuine choice with regard to accepting or declining the terms offered or declining them without detriment. when asking for consent, a controller has the duty to assess whether it will meet all the requirements to obtain valid consent. if obtained in full compliance with the gdpr, consent is a tool that gives data subjects control over whether or not personal data concerning them will be processed. if not, the data subject ’ s control becomes illusory and consent will be an",
+          "similarity": 0.7113451957702637
+        },
+        {
+          "chunk_id": "edpb_consent_05_2020:s25:c01",
+          "display_text": "EDPB Guidelines 05/2020 on consent > Section 25 > May 2018. According to Article 95 GDPR, additional obligations in relation to processing in\n\nconnection with the provision of publicly available electronic communications services in public communication networks shall not be imposed insofar the e - privacy directive imposes specific obligations with the same objective. the edpb notes that the requirements for consent under the gdpr are not considered to be an ‘ additional obligation ’, but rather as preconditions for lawful processing. therefore, the gdpr conditions for obtaining valid consent are applicable in situations falling within the scope of the e - privacy directive. consent in article 4 ( 11 ) of the gdpr 8. article 4 ( 11 ) of the gdpr defines consent as : “ any freely given, specific, informed and unambiguous indication of the data subject's wishes by which he or she, by a statement or by a clear affirmative action, signifies agreement to the processing of personal data relating to him or her. ” 9. the basic concept of consent remains similar to that under the directive 95 / 46 / ec and consent is one of the lawful grounds on which personal data processing has to be based, pursuant to article 6 of the gdpr. 10 besides the amended definition in article 4 ( 11 ), the gdpr provides additional guidance in article 7 and in recitals 32, 33, 42, and 43 as to how the controller must act to comply with the main elements of the consent requirement. 7 according to article 9 of the proposed eprivacy regulation, the definition of and the conditions for consent provided for in articles 4 ( 11 ) and article 7 of the gdpr apply. 8 see edpb statement on eprivacy - 25 / 05 / 2018 and edpb statement 3 / 2019 on an eprivacy regulation. 9 see article 94 gdpr. 10 consent was defined in directive 95 / 46 / ec as “ any freely given specific and informed indication of his wishes by which the data subject signifies his agreement to personal data relating to him being processed ” which must be ‘ unambiguously given ’",
+          "similarity": 0.7045172452926636
+        },
+        {
+          "chunk_id": "edpb_access_01_2022:s3.2:c03",
+          "display_text": "EDPB Guidelines 01/2022 on data subject rights: right of access > Section 3.2 > Identification and authentication\n\n. x to its advertising profile with the cookies dropped in the terminal. c should then also be able to precisely identify mr. x to grant him access to his personal data, as a link between the data processed and the data subject can be found. therefore, and taking into account the principles of the gdpr, the above example would not fall within the scope of art. 11 gdpr. more precisely, in the above example, the purposes of c require the identification of the data subjects while art. 11 gdpr addresses the situation of processing which does not require identification where a controller shall not be obliged to process additional data within the meaning of art. 11 ( 1 ) gdpr for the sole purpose of being able to comply with the gdpr. consequently, in some cases, no additional data should be requested in order to exercise the rights of the data subject. however, if mr. x tries to exercise his access right by e - mail or by regular mail, then, in this context, c will have no other choice but to ask mr. x to provide “ additional information ” ( art. 12 ( 6 ) gdpr ) in order to be able to identify the advertising profile associated with mr. x. in this case, the additional information will be the cookie identifier stored in the terminal equipment of mr. x. 62. in case of demonstrated impossibility to identify the data subject ( art. 11 gdpr ), the controller needs to inform the data subject accordingly, if possible, since the controller shall respond to requests from the data subject without undue delay and give reasons where it does not intend to comply with such requests. this information needs to be provided only “ if possible ”, as the controller may not be in a position to inform the data subjects if their identification is impossible. 63. both where the processing does not require identification and where it requires it, if the controller has reasonable doubts concerning the identity of the natural person making the request, the controller",
+          "similarity": 0.7042769193649292
+        },
+        {
+          "chunk_id": "edpb_consent_05_2020:s4:c10",
+          "display_text": "EDPB Guidelines 05/2020 on consent > Section 4 > May 2020\n\n...... 32 adopted the european data protection board having regard to article 70 ( 1 ) ( e ) of the regulation 2016 / 679 / eu of the european parliament and of the council of 27 april 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing directive 95 / 46 / ec, ( hereinafter “ gdpr ” ), having regard to the eea agreement and in particular to annex xi and protocol 37 thereof, as amended by the decision of the eea joint committee no 154 / 2018 of 6 july 2018 1, having regard to article 12 and article 22 of its rules of procedure, having regard to the article 29 working party guidelines on consent under regulation 2016 / 679, wp259 rev. 01, has adopted the following guidelines preface on 10 april 2018 the article 29 working party adopted its guidelines on consent under regulation 2016 / 679 ( wp259. 01 ), which were endorsed by the european data protection board ( hereinafter “ edpb ” ) at its first plenary meeting. this document is a slightly updated version of those guidelines. any reference to the wp29 guidelines on consent ( wp259 rev. 01 ) should from now on be interpreted as a reference to these guidelines. the edpb has noticed that there was a need for further clarifications, specifically regarding two questions : the validity of consent provided by the data subject when interacting with so - called “ cookie walls ” ; the example 16 on scrolling and consent. the paragraphs concerning these two issues have been revised and updated, while the rest of the document was left unchanged, except for editorial changes. the revision concerns, more specifically : section on conditionality ( paragraphs 38 - 41 ). section on unambiguous indication of wishes ( paragraph 86 ) introduction 1. these guidelines provide a thorough analysis of the notion of consent in regulation",
+          "similarity": 0.7038141489028931
+        }
+      ],
+      "chunk_scores": [
+        {
+          "chunk_id": "edpb_consent_05_2020:s4:c14",
+          "score": 0.1,
+          "verdict": "irrelevant",
+          "reason": "Recorded V3 dev calibration judgment.",
+          "jurisdiction_match": false,
+          "kept": false,
+          "error": false
+        },
+        {
+          "chunk_id": "edpb_consent_05_2020:s4:c13",
+          "score": 0.4,
+          "verdict": "partial",
+          "reason": "Recorded V3 dev calibration judgment.",
+          "jurisdiction_match": false,
+          "kept": false,
+          "error": false
+        },
+        {
+          "chunk_id": "edpb_consent_05_2020:s4:c11",
+          "score": 0.9,
+          "verdict": "relevant",
+          "reason": "Recorded V3 dev calibration judgment.",
+          "jurisdiction_match": false,
+          "kept": false,
+          "error": false
+        },
+        {
+          "chunk_id": "edpb_consent_05_2020:s25:c01",
+          "score": 0.8,
+          "verdict": "partial",
+          "reason": "Recorded V3 dev calibration judgment.",
+          "jurisdiction_match": false,
+          "kept": false,
+          "error": false
+        },
+        {
+          "chunk_id": "edpb_access_01_2022:s3.2:c03",
+          "score": 0.2,
+          "verdict": "irrelevant",
+          "reason": "Recorded V3 dev calibration judgment.",
+          "jurisdiction_match": false,
+          "kept": false,
+          "error": false
+        },
+        {
+          "chunk_id": "edpb_consent_05_2020:s4:c10",
+          "score": 0.1,
+          "verdict": "irrelevant",
+          "reason": "Recorded V3 dev calibration judgment.",
+          "jurisdiction_match": false,
+          "kept": false,
+          "error": false
+        }
+      ],
+      "retrieval_decision": "CORRECT",
+      "decision_reason": "max=0.90 (edpb_consent_05_2020:s4:c11); 1 chunks >= 0.9; 2 chunks >= 0.5"
+    },
+    {
+      "qid": "D10",
+      "category": "ambiguous",
+      "expected_branch": "AMBIGUOUS",
+      "question": "Does the right to erasure apply to personal data used to train AI models?",
+      "retrieved": [
+        {
+          "chunk_id": "gdpr:rec66",
+          "display_text": "GDPR > Recital 66\n\nTo strengthen the right to be forgotten in the online environment, the right to erasure should also be extended in such a way that a controller who has made the personal data public should be obliged to inform the controllers which are processing such personal data to erase any links to, or copies or replications of those personal data. In doing so, that controller should take reasonable steps, taking into account available technology and the means available to the controller, including technical measures, to inform the controllers which are processing the personal data of the data subject's request.",
+          "similarity": 0.7642182111740112
+        },
+        {
+          "chunk_id": "gdpr:art17:p1",
+          "display_text": "GDPR > Chapter III > Section 3 > Article 17 — Right to erasure (‘right to be forgotten’) > (1)\n\nThe data subject shall have the right to obtain from the controller the erasure of personal data concerning him or her without undue delay and the controller shall have the obligation to erase personal data without undue delay where one of the following grounds applies: (a)  the personal data are no longer necessary in relation to the purposes for which they were collected or otherwise processed; (b)  the data subject withdraws consent on which the processing is based according to point (a) of Article 6(1), or point (a) of Article 9(2), and where there is no other legal ground for the processing; (c)  the data subject objects to the processing pursuant to Article 21(1) and there are no overriding legitimate grounds for the processing, or the data subject objects to the processing pursuant to Article 21(2); (d)  the personal data have been unlawfully processed; (e)  the personal data have to be erased for compliance with a legal obligation in Union or Member State law to which the controller is subject; (f)  the personal data have been collected in relation to the offer of information society services referred to in Article 8(1).",
+          "similarity": 0.7607829570770264
+        },
+        {
+          "chunk_id": "gdpr:rec65",
+          "display_text": "GDPR > Recital 65\n\nA data subject should have the right to have personal data concerning him or her rectified and a ‘right to be forgotten’ where the retention of such data infringes this Regulation or Union or Member State law to which the controller is subject. In particular, a data subject should have the right to have his or her personal data erased and no longer processed where the personal data are no longer necessary in relation to the purposes for which they are collected or otherwise processed, where a data subject has withdrawn his or her consent or objects to the processing of personal data concerning him or her, or where the processing of his or her personal data does not otherwise comply with this Regulation. That right is relevant in particular where the data subject has given his or her consent as a child and is not fully aware of the risks involved by the processing, and later wants to remove such personal data, especially on the internet. The data subject should be able to exercise that right notwithstanding the fact that he or she is no longer a child. However, the further retention of the personal data should be lawful where it is necessary, for exercising the right of freedom of expression and information, for compliance with a legal obligation, for the performance of a task carried out in the public interest or in the exercise of official authority vested in the controller, on the grounds of public interest in the area of public health, for archiving purposes in the public interest, scientific or historical research purposes or statistical purposes, or for the establishment, exercise or defence of legal claims.",
+          "similarity": 0.7514563202857971
+        },
+        {
+          "chunk_id": "edpb_consent_05_2020:s164:c01",
+          "display_text": "EDPB Guidelines 05/2020 on consent > Section 164 > If a data processing activity is based on a data subject’s consent, this will affect that individual’s rights.\n\ndata subjects may have the right to data portability ( article 20 ) when processing is based on consent. at the same time, the right to object ( article 21 ) does not apply when processing is based on consent, although the right to withdraw consent at any time may provide a similar outcome. 165. articles 16 to 20 of the gdpr indicate that ( when data processing is based on consent ), data subjects have the right to erasure when consent has been withdrawn and the rights to restriction, rectification and access. 77 consent obtained under directive 95 / 46 / ec",
+          "similarity": 0.7486374378204346
+        },
+        {
+          "chunk_id": "edpb_access_01_2022:s110:c01",
+          "display_text": "EDPB Guidelines 01/2022 on data subject rights: right of access > Section 110 > Archived personal data needs to be distinguished from back-up data that is personal data stored solely\n\nfor the purpose of restoring the data in the case of a data loss event. it should be pointed out, that in respect of the principles of data protection by design and data minimisation, the back - up data is in principle similar to the data in the live system. where there are slight differences between personal data in the back - up and the live production system, these are generally linked to the collection of additional data since the last back - up. a decrease in data in the live system ( e. g. erasure after the retention period of some data came to an end or following an erasure request ) will in some cases only adopted be overwritten in the back - up data at the time of the subsequent back - up. in case there is an access request at the moment where there are more personal data relating to the data subject in the back - up than in the live system or different personal data ( noticeable for example via log of deletions in the live production system implemented in full compliance with the principle of data minimisation ), the controller needs to be transparent about this situation and where technically feasible provide access as requested by the data subject, including to personal data stored in the back - up. for instance, with the aim of being transparent to data subjects who exercise their right, a log of deletions in the live production system may enable the controller to see that there are data in the back - up which are not in the live system anymore as they have been recently deleted has and have not yet been overwritten in the back - up.",
+          "similarity": 0.7417130470275879
+        },
+        {
+          "chunk_id": "edpb_access_01_2022:s106:c01",
+          "display_text": "EDPB Guidelines 01/2022 on data subject rights: right of access > Section 106 > The words “ personal data concerning him or her ” should not be interpreted in an “ overly restrictive ”\n\nway by controllers, as the art. 29 working party already stated with regard to the right to data portability 65. applied to the right of access, the edpb considers for example that recordings of telephone conversations ( and their transcription ) between the data subject that requests access and the controller, may fall under the right of access provided that the latter are personal data 66. provided that the gdpr applies and that the processing is not covered by the household exemption as per art. 2 ( 2 ) ( c ) gdpr, if the data subject uses the obtained record which includes personal data of the interlocutor for other purposes by, for instance, publishing the record, the data subject will become a controller for this processing of personal data relating to the other person whose voice was recorded. although this will not exempt the controller from its data protection obligations when duly analysing whether access to the full record may be given, the controller is encouraged to inform the data subject about the fact that they may become controller in such case. this is without prejudice to any further assessment under art. 15 ( 4 ) gdpr detailed in section 6. in the same vein, messages that data subjects have sent to others in the form of interpersonal messages and deleted themselves from their device, that are still avaible to the service provider, may fall under the right of access.",
+          "similarity": 0.7322098016738892
+        }
+      ],
+      "chunk_scores": [
+        {
+          "chunk_id": "gdpr:rec66",
+          "score": 0.4,
+          "verdict": "partial",
+          "reason": "Recorded V3 dev calibration judgment.",
+          "jurisdiction_match": true,
+          "kept": false,
+          "error": false
+        },
+        {
+          "chunk_id": "gdpr:art17:p1",
+          "score": 0.4,
+          "verdict": "partial",
+          "reason": "Recorded V3 dev calibration judgment.",
+          "jurisdiction_match": true,
+          "kept": false,
+          "error": false
+        },
+        {
+          "chunk_id": "gdpr:rec65",
+          "score": 0.5,
+          "verdict": "partial",
+          "reason": "Recorded V3 dev calibration judgment.",
+          "jurisdiction_match": true,
+          "kept": false,
+          "error": false
+        },
+        {
+          "chunk_id": "edpb_consent_05_2020:s164:c01",
+          "score": 0.4,
+          "verdict": "partial",
+          "reason": "Recorded V3 dev calibration judgment.",
+          "jurisdiction_match": true,
+          "kept": false,
+          "error": false
+        },
+        {
+          "chunk_id": "edpb_access_01_2022:s110:c01",
+          "score": 0.4,
+          "verdict": "partial",
+          "reason": "Recorded V3 dev calibration judgment.",
+          "jurisdiction_match": true,
+          "kept": false,
+          "error": false
+        },
+        {
+          "chunk_id": "edpb_access_01_2022:s106:c01",
+          "score": 0.1,
+          "verdict": "irrelevant",
+          "reason": "Recorded V3 dev calibration judgment.",
+          "jurisdiction_match": true,
+          "kept": false,
+          "error": false
+        }
+      ],
+      "retrieval_decision": "AMBIGUOUS",
+      "decision_reason": "max=0.50 (gdpr:rec65); 0 chunks >= 0.9; 1 chunks >= 0.5"
+    }
+  ],
+  "rows": [
+    {
+      "qid": "D01",
+      "chunk_id": "gdpr:art33:p1",
+      "score": 0.95,
+      "verdict": "relevant",
+      "label": "relevant"
+    },
+    {
+      "qid": "D01",
+      "chunk_id": "edpb_breach_09_2022:s58:c01",
+      "score": 0.95,
+      "verdict": "relevant",
+      "label": "relevant"
+    },
+    {
+      "qid": "D01",
+      "chunk_id": "edpb_breach_09_2022:s57:c01",
+      "score": 0.7,
+      "verdict": "partial",
+      "label": "partial"
+    },
+    {
+      "qid": "D01",
+      "chunk_id": "edpb_breach_09_2022:s40:c01",
+      "score": 0.95,
+      "verdict": "relevant",
+      "label": "relevant"
+    },
+    {
+      "qid": "D01",
+      "chunk_id": "edpb_breach_09_2022:s60:c01",
+      "score": 0.7,
+      "verdict": "partial",
+      "label": "partial"
+    },
+    {
+      "qid": "D01",
+      "chunk_id": "edpb_breach_09_2022:s29:c01",
+      "score": 0.95,
+      "verdict": "relevant",
+      "label": "relevant"
+    },
+    {
+      "qid": "D02",
+      "chunk_id": "gdpr:rec40",
+      "score": 0.7,
+      "verdict": "partial",
+      "label": "partial"
+    },
+    {
+      "qid": "D02",
+      "chunk_id": "gdpr:rec46",
+      "score": 0.5,
+      "verdict": "partial",
+      "label": "partial"
+    },
+    {
+      "qid": "D02",
+      "chunk_id": "gdpr:art6:p1",
+      "score": 0.95,
+      "verdict": "relevant",
+      "label": "relevant"
+    },
+    {
+      "qid": "D02",
+      "chunk_id": "gdpr:rec69",
+      "score": 0.7,
+      "verdict": "partial",
+      "label": "partial"
+    },
+    {
+      "qid": "D02",
+      "chunk_id": "gdpr:rec50",
+      "score": 0.4,
+      "verdict": "partial",
+      "label": "partial"
+    },
+    {
+      "qid": "D02",
+      "chunk_id": "edpb_consent_05_2020:s121:c01",
+      "score": 0.7,
+      "verdict": "partial",
+      "label": "partial"
+    },
+    {
+      "qid": "D03",
+      "chunk_id": "gdpr:art37:p5",
+      "score": 0.7,
+      "verdict": "partial",
+      "label": "partial"
+    },
+    {
+      "qid": "D03",
+      "chunk_id": "gdpr:art37:p2",
+      "score": 0.7,
+      "verdict": "partial",
+      "label": "partial"
+    },
+    {
+      "qid": "D03",
+      "chunk_id": "gdpr:art37:p4",
+      "score": 0.7,
+      "verdict": "partial",
+      "label": "partial"
+    },
+    {
+      "qid": "D03",
+      "chunk_id": "gdpr:art37:p6",
+      "score": 0.4,
+      "verdict": "partial",
+      "label": "partial"
+    },
+    {
+      "qid": "D03",
+      "chunk_id": "gdpr:art37:p1",
+      "score": 0.95,
+      "verdict": "relevant",
+      "label": "relevant"
+    },
+    {
+      "qid": "D03",
+      "chunk_id": "gdpr:art38:p1",
+      "score": 0.6,
+      "verdict": "partial",
+      "label": "partial"
+    },
+    {
+      "qid": "D04",
+      "chunk_id": "gdpr:rec90",
+      "score": 0.7,
+      "verdict": "partial",
+      "label": "partial"
+    },
+    {
+      "qid": "D04",
+      "chunk_id": "gdpr:art35:p3",
+      "score": 0.1,
+      "verdict": "irrelevant",
+      "label": "irrelevant"
+    },
+    {
+      "qid": "D04",
+      "chunk_id": "gdpr:art35:p7",
+      "score": 0.95,
+      "verdict": "relevant",
+      "label": "relevant"
+    },
+    {
+      "qid": "D04",
+      "chunk_id": "gdpr:art35:p11",
+      "score": 0.1,
+      "verdict": "irrelevant",
+      "label": "irrelevant"
+    },
+    {
+      "qid": "D04",
+      "chunk_id": "gdpr:art35:p5",
+      "score": 0.1,
+      "verdict": "irrelevant",
+      "label": "irrelevant"
+    },
+    {
+      "qid": "D04",
+      "chunk_id": "gdpr:art35:p4",
+      "score": 0.1,
+      "verdict": "irrelevant",
+      "label": "irrelevant"
+    },
+    {
+      "qid": "D05",
+      "chunk_id": "gdpr:art83:p5",
+      "score": 0.2,
+      "verdict": "irrelevant",
+      "label": "irrelevant"
+    },
+    {
+      "qid": "D05",
+      "chunk_id": "edpb_breach_09_2022:s28:c02",
+      "score": 0.2,
+      "verdict": "irrelevant",
+      "label": "irrelevant"
+    },
+    {
+      "qid": "D05",
+      "chunk_id": "gdpr:art83:p4",
+      "score": 0.2,
+      "verdict": "irrelevant",
+      "label": "irrelevant"
+    },
+    {
+      "qid": "D05",
+      "chunk_id": "edpb_breach_09_2022:s30:c01",
+      "score": 0.2,
+      "verdict": "irrelevant",
+      "label": "irrelevant"
+    },
+    {
+      "qid": "D05",
+      "chunk_id": "gdpr:art84:p2",
+      "score": 0.1,
+      "verdict": "irrelevant",
+      "label": "irrelevant"
+    },
+    {
+      "qid": "D05",
+      "chunk_id": "edpb_consent_05_2020:s25:c03",
+      "score": 0.1,
+      "verdict": "irrelevant",
+      "label": "irrelevant"
+    },
+    {
+      "qid": "D06",
+      "chunk_id": "gdpr:art61:p2",
+      "score": 0.1,
+      "verdict": "irrelevant",
+      "label": "irrelevant"
+    },
+    {
+      "qid": "D06",
+      "chunk_id": "edpb_access_01_2022:s157:c01",
+      "score": 0.1,
+      "verdict": "irrelevant",
+      "label": "irrelevant"
+    },
+    {
+      "qid": "D06",
+      "chunk_id": "edpb_access_01_2022:s160:c01",
+      "score": 0.2,
+      "verdict": "irrelevant",
+      "label": "irrelevant"
+    },
+    {
+      "qid": "D06",
+      "chunk_id": "gdpr:art36:p2",
+      "score": 0.1,
+      "verdict": "irrelevant",
+      "label": "irrelevant"
+    },
+    {
+      "qid": "D06",
+      "chunk_id": "edpb_access_01_2022:s164:c01",
+      "score": 0.1,
+      "verdict": "irrelevant",
+      "label": "irrelevant"
+    },
+    {
+      "qid": "D06",
+      "chunk_id": "edpb_access_01_2022:s162:c01",
+      "score": 0.1,
+      "verdict": "irrelevant",
+      "label": "irrelevant"
+    },
+    {
+      "qid": "D07",
+      "chunk_id": "gdpr:art98:p1",
+      "score": 0.1,
+      "verdict": "irrelevant",
+      "label": "irrelevant"
+    },
+    {
+      "qid": "D07",
+      "chunk_id": "edpb_access_01_2022:s2.1:c03",
+      "score": 0.1,
+      "verdict": "irrelevant",
+      "label": "irrelevant"
+    },
+    {
+      "qid": "D07",
+      "chunk_id": "gdpr:rec73",
+      "score": 0.1,
+      "verdict": "irrelevant",
+      "label": "irrelevant"
+    },
+    {
+      "qid": "D07",
+      "chunk_id": "gdpr:rec12",
+      "score": 0.1,
+      "verdict": "irrelevant",
+      "label": "irrelevant"
+    },
+    {
+      "qid": "D07",
+      "chunk_id": "gdpr:rec9",
+      "score": 0.1,
+      "verdict": "irrelevant",
+      "label": "irrelevant"
+    },
+    {
+      "qid": "D07",
+      "chunk_id": "gdpr:art45:p2",
+      "score": 0.2,
+      "verdict": "irrelevant",
+      "label": "irrelevant"
+    },
+    {
+      "qid": "D08",
+      "chunk_id": "edpb_breach_09_2022:s29:c01",
+      "score": 0.8,
+      "verdict": "partial",
+      "label": "partial"
+    },
+    {
+      "qid": "D08",
+      "chunk_id": "edpb_breach_09_2022:s62:c01",
+      "score": 0.8,
+      "verdict": "partial",
+      "label": "partial"
+    },
+    {
+      "qid": "D08",
+      "chunk_id": "edpb_breach_09_2022:s65:c01",
+      "score": 0.2,
+      "verdict": "irrelevant",
+      "label": "partial"
+    },
+    {
+      "qid": "D08",
+      "chunk_id": "gdpr:art33:p1",
+      "score": 0.8,
+      "verdict": "partial",
+      "label": "partial"
+    },
+    {
+      "qid": "D08",
+      "chunk_id": "edpb_breach_09_2022:s83:c01",
+      "score": 0.8,
+      "verdict": "partial",
+      "label": "partial"
+    },
+    {
+      "qid": "D08",
+      "chunk_id": "gdpr:rec85",
+      "score": 0.7,
+      "verdict": "partial",
+      "label": "partial"
+    },
+    {
+      "qid": "D09",
+      "chunk_id": "edpb_consent_05_2020:s4:c14",
+      "score": 0.1,
+      "verdict": "irrelevant",
+      "label": "irrelevant"
+    },
+    {
+      "qid": "D09",
+      "chunk_id": "edpb_consent_05_2020:s4:c13",
+      "score": 0.4,
+      "verdict": "partial",
+      "label": "partial"
+    },
+    {
+      "qid": "D09",
+      "chunk_id": "edpb_consent_05_2020:s4:c11",
+      "score": 0.9,
+      "verdict": "relevant",
+      "label": "irrelevant"
+    },
+    {
+      "qid": "D09",
+      "chunk_id": "edpb_consent_05_2020:s25:c01",
+      "score": 0.8,
+      "verdict": "partial",
+      "label": "partial"
+    },
+    {
+      "qid": "D09",
+      "chunk_id": "edpb_access_01_2022:s3.2:c03",
+      "score": 0.2,
+      "verdict": "irrelevant",
+      "label": "irrelevant"
+    },
+    {
+      "qid": "D09",
+      "chunk_id": "edpb_consent_05_2020:s4:c10",
+      "score": 0.1,
+      "verdict": "irrelevant",
+      "label": "irrelevant"
+    },
+    {
+      "qid": "D10",
+      "chunk_id": "gdpr:rec66",
+      "score": 0.4,
+      "verdict": "partial",
+      "label": "partial"
+    },
+    {
+      "qid": "D10",
+      "chunk_id": "gdpr:art17:p1",
+      "score": 0.4,
+      "verdict": "partial",
+      "label": "partial"
+    },
+    {
+      "qid": "D10",
+      "chunk_id": "gdpr:rec65",
+      "score": 0.5,
+      "verdict": "partial",
+      "label": "partial"
+    },
+    {
+      "qid": "D10",
+      "chunk_id": "edpb_consent_05_2020:s164:c01",
+      "score": 0.4,
+      "verdict": "partial",
+      "label": "irrelevant"
+    },
+    {
+      "qid": "D10",
+      "chunk_id": "edpb_access_01_2022:s110:c01",
+      "score": 0.4,
+      "verdict": "partial",
+      "label": "irrelevant"
+    },
+    {
+      "qid": "D10",
+      "chunk_id": "edpb_access_01_2022:s106:c01",
+      "score": 0.1,
+      "verdict": "irrelevant",
+      "label": "irrelevant"
+    }
+  ]
+}
