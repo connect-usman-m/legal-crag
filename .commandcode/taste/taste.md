@@ -1,0 +1,6 @@
+- Prefers reading all relevant context files fully before taking any action, and defers code changes until context has been fully gathered. Confidence: 0.85
+- Prefers verifying current third-party library versions and APIs against official documentation rather than relying on memory. Confidence: 0.8
+- Prefers capping design iteration loops (~3–4 attempts) before breaking, to avoid endless loops when making design changes. Confidence: 0.8
+- Prefers that only actually-installed skills be listed or used, and not referencing retired or missing skills. Confidence: 0.8
+- Uses test-driven development for any logic; rejects placeholder code, TODO stubs, and comments that merely restate the code. Confidence: 0.9
+- Never hardcodes or prints API keys and keeps `.env` out of git; asks before adding dependencies not already listed in the project docs. Confidence: 0.9
