@@ -1,11 +1,14 @@
+from pathlib import Path
 from typing import Annotated, Literal
 
 from pydantic import Field, field_validator, model_validator
 from pydantic_settings import BaseSettings, NoDecode, SettingsConfigDict
 
+PROJECT_ENV_FILE = Path(__file__).resolve().parents[3] / ".env"
+
 
 class Settings(BaseSettings):
-    model_config = SettingsConfigDict(env_file=".env", extra="ignore")
+    model_config = SettingsConfigDict(env_file=str(PROJECT_ENV_FILE), extra="ignore")
 
     groq_api_key: str
     tavily_api_key: str
@@ -37,9 +40,7 @@ class Settings(BaseSettings):
     langsmith_project: str = "legal-crag"
 
     demo_api_key: str | None = None
-    cors_origins: Annotated[list[str], NoDecode] = Field(
-        default_factory=lambda: ["http://localhost:5173"]
-    )
+    cors_origins: Annotated[list[str], NoDecode] = Field(default_factory=lambda: ["http://localhost:5173"])
     rate_limit: str = "10/minute"
     query_log_enabled: bool = False
 
