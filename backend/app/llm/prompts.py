@@ -88,6 +88,21 @@ Chunk label: {label}
 Chunk text: {text}
 """
 
+GRADER_PROMPT_V1 = """Grade the answer against the reference points and the sources given to the generator.
+
+Rules:
+- correct means every reference point is present and every factual claim is supported by the sources.
+- partial means some reference points are present, or a minor claim is unsupported.
+- incorrect means the answer misses the reference points or states an unsupported material fact.
+- abstained means the answer says there is insufficient evidence.
+Count unsupported_claims as factual claims absent from the sources. Return JSON only with verdict, unsupported_claims, reference_points_met and rationale.
+
+Question: {question}
+Reference points: {reference_points}
+Sources: {sources}
+Answer: {answer}
+"""
+
 EVALUATOR_PROMPT_V3 = """Score one source chunk for one legal question. Strict scoring is required.
 
 Bands:

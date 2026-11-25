@@ -1,5 +1,12 @@
 # Changelog
 
+## Phase 5 — Evaluation harness and README
+
+- Verified reference points against primary sources where reachable; recorded source URLs in the frozen test set.
+- Added LLM grader, manual overrides, eval runner with answer/grade caches, and report generation.
+- Generated `results.json` and `results.md` from the 15-question test set in both modes.
+- Rewrote README with results table, architecture, setup, failure cases and limitations.
+
 ## Phase 4 — Generation, citations, API and tracing
 
 - Added final structured generation prompt and citation enforcement with invalid-marker detection, coverage, renumbering and one corrective regeneration.

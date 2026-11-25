@@ -3,6 +3,7 @@ import pytest
 from app.graph.nodes.evaluate import evaluate_chunks
 from app.llm.prompts import EVALUATOR_PROMPT_V1
 from app.schemas.llm import JudgeOutput
+from app.schemas.retrieval import RetrievedChunk
 
 
 @pytest.fixture(autouse=True)
@@ -89,6 +90,22 @@ async def test_evaluate_scores_each_chunk_and_sets_decision(monkeypatch):
     assert result["decision_reason"]
     assert judge.configs == [{"max_concurrency": 6}]
     assert result["prompt_versions"] == {"evaluator": "V3"}
+
+
+@pytest.mark.asyncio
+async def test_evaluate_accepts_pydantic_retrieved_chunks(monkeypatch):
+    judge = _FakeStructuredJudge([JudgeOutput(score=0.9, verdict="relevant", reason="exact", jurisdiction_match=True)])
+    monkeypatch.setattr("app.graph.nodes.evaluate.get_judge", lambda _settings=None: judge)
+    chunk = RetrievedChunk(
+        chunk_id="gdpr:art33:p1",
+        citation_label="GDPR Art. 33(1)",
+        display_text="72 hours",
+        similarity=0.9,
+    )
+
+    result = await evaluate_chunks({"question": "Deadline?", "retrieved": [chunk]})
+
+    assert result["chunk_scores"][0].chunk_id == "gdpr:art33:p1"
 
 
 @pytest.mark.asyncio

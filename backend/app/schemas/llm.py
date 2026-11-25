@@ -24,3 +24,4 @@ class GradeOutput(BaseModel):
     verdict: Literal["correct", "partial", "incorrect", "abstained"]
     unsupported_claims: int
     rationale: str
+    reference_points_met: list[str] = Field(default_factory=list)

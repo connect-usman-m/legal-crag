@@ -1,0 +1,306 @@
+{
+  "T01:naive:openai/gpt-oss-120b:V1:A controller must notify the supervisory authority within 72 hours of becoming aware of the breach, unless a delay is justified.[S1][S2]": {
+    "grade": "correct",
+    "grade_source": "llm",
+    "answer_correct": true,
+    "unsupported_claims": 0,
+    "rationale": "The answer states that a controller must notify the supervisory authority within 72 hours of becoming aware of the breach and notes that a delay must be justified, which aligns with the reference point and is supported by GDPR Art. 33(1) and EDPB guidance. No factual claims are made beyond the sources, so there are zero unsupported claims.",
+    "reference_points_met": [
+      "Without undue delay and where feasible within 72 hours of becoming aware; reasons required if late (Art. 33(1))"
+    ]
+  },
+  "T01:crag:openai/gpt-oss-120b:V1:A controller must notify the supervisory authority within 72 hours of becoming aware of the breach.[S1][S2]": {
+    "grade": "partial",
+    "grade_source": "llm",
+    "answer_correct": false,
+    "unsupported_claims": 0,
+    "rationale": "The answer correctly states the 72‑hour deadline, which is supported by GDPR Art.33(1) and EDPB guidance. However it does not include the full reference point wording about notifying \"without undue delay\" and providing reasons if notification occurs later than 72 hours, so not all reference points are covered. No factual claim is unsupported.",
+    "reference_points_met": [
+      "within 72 hours"
+    ]
+  },
+  "T02:naive:openai/gpt-oss-120b:V1:The GDPR allows processing only when at least one of six lawful bases applies [S2]. These are: (a) the data subject has given consent [S3][S2]; (b) processing is necessary for the performance of a contract or to take steps before a contract [S3][S2]; (c) processing is required to comply with a legal obligation [S3][S2]; (d) processing is necessary to protect vital interests of the data subject or another person [S1][S2]; (e) processing is necessary for a task carried out in the public interest or in the exercise of official authority [S2]; and (f) processing is necessary for the legitimate interests of the controller or a third party, unless overridden by the data subject’s rights [S2][S4].": {
+    "grade": "correct",
+    "grade_source": "llm",
+    "answer_correct": true,
+    "unsupported_claims": 0,
+    "rationale": "The answer lists all six lawful bases required by the reference point and each base is directly covered by GDPR Art.6(1) and the supporting recitals. No factual claim is made without support from the cited sources, so there are zero unsupported claims.",
+    "reference_points_met": [
+      "Consent (Art.6(1)(a))",
+      "Contract performance or pre‑contract steps (Art.6(1)(b))",
+      "Legal obligation (Art.6(1)(c))",
+      "Vital interests (Art.6(1)(d))",
+      "Public interest or official authority (Art.6(1)(e))",
+      "Legitimate interests (Art.6(1)(f))"
+    ]
+  },
+  "T02:crag:openai/gpt-oss-120b:V1:Article 6(1) of the GDPR lists six lawful bases for processing personal data: (a) consent of the data subject; (b) necessity for the performance of a contract or steps taken at the request of the data subject before a contract; (c) necessity for compliance with a legal obligation; (d) necessity to protect vital interests of the data subject or another person; (e) necessity for a task carried out in the public interest or in the exercise of official authority; and (f) necessity for the legitimate interests of the controller or a third party, unless overridden by the data subject’s rights [S2]. Recital 40 confirms that processing may be lawful on the basis of consent or any other legitimate basis laid down by law, such as legal obligations or contract performance [S1]. Recital 69 notes that even when processing relies on public‑interest or legitimate‑interest grounds, the data subject may still object and the controller must show its interest outweighs the individual’s rights [S3]. The EDPB reminds that one of these six bases must be identified before the processing begins and linked to a specific purpose [S4].": {
+    "grade": "correct",
+    "grade_source": "llm",
+    "answer_correct": true,
+    "unsupported_claims": 0,
+    "rationale": "The answer enumerates all six lawful bases listed in Article 6(1) of the GDPR and correctly describes each. All factual statements are backed by the cited GDPR provisions (Art. 6(1), Recitals 40 and 69) and the EDPB guidance, so no unsupported claims are present.",
+    "reference_points_met": [
+      "Art.6(1)(a) consent",
+      "Art.6(1)(b) contract performance",
+      "Art.6(1)(c) legal obligation",
+      "Art.6(1)(d) vital interests",
+      "Art.6(1)(e) public interest or official authority",
+      "Art.6(1)(f) legitimate interests"
+    ]
+  },
+  "T03:naive:openai/gpt-oss-120b:V1:An organisation must appoint a Data Protection Officer if it is a public authority or body (except courts acting in judicial capacity), or if its core activities involve regular and systematic monitoring of data subjects on a large scale, or if its core activities consist of large‑scale processing of special categories of data or data on criminal convictions [S1]. In other situations, a controller, processor, or an association representing them must also designate a DPO when Union or Member State law requires it [S2].": {
+    "grade": "correct",
+    "grade_source": "llm",
+    "answer_correct": true,
+    "unsupported_claims": 0,
+    "rationale": "The answer includes all three reference points from Art. 37(1) and makes no factual statements beyond those points. All claims are covered by the cited GDPR provisions, so there are no unsupported claims.",
+    "reference_points_met": [
+      "Public authority",
+      "Regular and systematic monitoring on a large scale",
+      "Large-scale processing of special categories or criminal data"
+    ]
+  },
+  "T03:crag:openai/gpt-oss-120b:V1:An organisation must designate a Data Protection Officer when any of the following applies: (a) it is a public authority or body (except courts acting in judicial capacity) [S1]; (b) its core activities involve regular and systematic monitoring of data subjects on a large scale [S1]; or (c) its core activities involve large‑scale processing of special categories of data or data on criminal convictions [S1]. In other cases, a DPO may still be required if Union or Member State law mandates it [S2].": {
+    "grade": "partial",
+    "grade_source": "llm",
+    "answer_correct": false,
+    "unsupported_claims": 1,
+    "rationale": "The answer correctly lists all three reference points and cites GDPR Art. 37(1) for each, which matches the provided sources. However, it adds an extra claim that a DPO may be required if Union or Member State law mandates it, citing a non‑existent source [S2]; this claim is not supported by the given sources, resulting in one unsupported factual statement.",
+    "reference_points_met": [
+      "public authority",
+      "regular and systematic monitoring on a large scale",
+      "large-scale processing of special categories or criminal data"
+    ]
+  },
+  "T04:naive:openai/gpt-oss-120b:V1:The maximum administrative fine for infringing the basic principles of processing is up to €20 million, or for an undertaking up to 4 % of its total worldwide annual turnover of the preceding financial year, whichever is higher. [S1]": {
+    "grade": "correct",
+    "grade_source": "llm",
+    "answer_correct": true,
+    "unsupported_claims": 0,
+    "rationale": "The answer exactly restates the reference point that the maximum fine is up to €20 million or 4 % of worldwide turnover, whichever is higher, and cites the GDPR Art. 83(5) source. No factual claims are unsupported.",
+    "reference_points_met": [
+      "Up to EUR 20M or 4% of total worldwide annual turnover, whichever is higher (Art. 83(5))"
+    ]
+  },
+  "T04:crag:openai/gpt-oss-120b:V1:The maximum administrative fine for breaching the basic principles of processing is up to €20 million, or up to 4 % of the undertaking’s total worldwide annual turnover of the preceding financial year, whichever is higher.[S1]": {
+    "grade": "correct",
+    "grade_source": "llm",
+    "answer_correct": true,
+    "unsupported_claims": 0,
+    "rationale": "The answer includes the sole reference point and matches the source, with no unsupported claims.",
+    "reference_points_met": [
+      "Up to EUR 20M or 4% of total worldwide annual turnover, whichever is higher (Art. 83(5))"
+    ]
+  },
+  "T05:naive:openai/gpt-oss-120b:V1:The controller must act without undue delay and, at the latest, within one month of receiving the request [S3][S1]. If the request is complex or there are many requests, the deadline may be extended by up to two additional months, giving a total of three months [S3][S3][S1]. The controller must inform the data subject of any extension and the reasons for it within the original one‑month period [S3][S1].": {
+    "grade": "correct",
+    "grade_source": "llm",
+    "answer_correct": true,
+    "unsupported_claims": 0,
+    "rationale": "The answer states that the controller must respond within one month and may extend the deadline by up to two additional months with notice, which matches the sole reference point. All factual statements are supported by the cited GDPR Art.12(3) and EDPB guidance, so there are no unsupported claims.",
+    "reference_points_met": [
+      "One month; extendable by two further months with notice (Art. 12(3))"
+    ]
+  },
+  "T05:crag:openai/gpt-oss-120b:V1:A controller must act without undue delay and, at the latest, within one month of receiving the request [S1][S1]. If the request is complex or there are many requests, the deadline may be extended by up to two further months (so up to three months in total) [S1][S1]. The controller must inform the data subject of any extension and the reasons for it within one month of receipt of the request [S1][S1].": {
+    "grade": "correct",
+    "grade_source": "llm",
+    "answer_correct": true,
+    "unsupported_claims": 0,
+    "rationale": "The answer states the controller must respond within one month and may extend the deadline by up to two additional months with notice, matching the sole reference point. All factual claims are covered by the cited sources, and no unsupported statements are present.",
+    "reference_points_met": [
+      "One month; extendable by two further months with notice (Art. 12(3))"
+    ]
+  },
+  "T06:naive:openai/gpt-oss-120b:V1:NOT ENOUGH EVIDENCE: specific penalties for violating the California Consumer Privacy Act are not provided in the sources.": {
+    "grade": "abstained",
+    "grade_source": "llm",
+    "answer_correct": false,
+    "unsupported_claims": 0,
+    "rationale": "The answer states that there is not enough evidence because no sources were provided. Since it does not assert any penalties, it does not meet the reference point and does not make unsupported factual claims, resulting in an abstain verdict.",
+    "reference_points_met": []
+  },
+  "T06:crag:openai/gpt-oss-120b:V1:Violating the CCPA can result in civil penalties. [S1][S2][S3] Some sources state the fines are $2,500 for each non‑intentional violation and $7,500 for each intentional violation, assessed in a civil action by the Attorney General. [S2][S3] Other sources report higher, inflation‑adjusted amounts of $2,663 per unintentional violation and $7,988 per intentional violation, with no overall cap because each affected consumer counts as a separate violation. [S1] In addition to monetary fines, violators may face injunctions and requirements such as audits or data deletion. [S1]": {
+    "grade": "correct",
+    "grade_source": "llm",
+    "answer_correct": true,
+    "unsupported_claims": 0,
+    "rationale": "The answer includes the civil penalties for CCPA violations and notes higher fines for intentional violations, matching the reference point. All factual statements about the $2,500/$7,500 (or inflation‑adjusted $2,663/$7,988) fines and additional remedies are backed by the cited sources, so no unsupported claims are found.",
+    "reference_points_met": [
+      "Civil penalties for CCPA violations, including higher penalties for intentional violations"
+    ]
+  },
+  "T07:naive:openai/gpt-oss-120b:V1:NOT ENOUGH EVIDENCE: Schrems II judgment details about EU-US Privacy Shield": {
+    "grade": "abstained",
+    "grade_source": "llm",
+    "answer_correct": false,
+    "unsupported_claims": 0,
+    "rationale": "The answer states that there is not enough evidence, which matches the abstained category. It does not provide any of the required reference points (Privacy Shield invalidated; SCCs remain valid) and makes no factual claims, so there are zero unsupported claims.",
+    "reference_points_met": []
+  },
+  "T07:crag:openai/gpt-oss-120b:V1:In its Schrems II judgment of 16 July 2020, the Court of Justice of the European Union invalidated the EU‑US Privacy Shield, finding that the scheme does not provide an equivalent level of protection for personal data because U.S. surveillance laws allow authorities to access the data without adequate safeguards [S1]. The Court held that the lack of restrictions on U.S. intelligence access makes the Shield incompatible with EU law, and therefore it was struck down with immediate effect [S2][S3].": {
+    "grade": "partial",
+    "grade_source": "llm",
+    "answer_correct": false,
+    "unsupported_claims": 0,
+    "rationale": "The answer correctly notes that the CJEU invalidated the EU‑US Privacy Shield, matching the first reference point and supported by the sources. However it omits the second reference point that Standard Contractual Clauses remain valid subject to a case‑by‑case assessment. No factual claim is unsupported, so the verdict is partial.",
+    "reference_points_met": [
+      "Privacy Shield invalidated"
+    ]
+  },
+  "T08:naive:openai/gpt-oss-120b:V1:NOT ENOUGH EVIDENCE: No source provides HIPAA requirements for breach notification of unsecured health information.": {
+    "grade": "abstained",
+    "grade_source": "llm",
+    "answer_correct": false,
+    "unsupported_claims": 0,
+    "rationale": "The answer declares insufficient evidence due to the lack of sources, so it does not address the reference point about notice to individuals of a breach of unsecured protected health information. Accordingly it abstains, with no unsupported factual claims.",
+    "reference_points_met": []
+  },
+  "T08:crag:openai/gpt-oss-120b:V1:HIPAA requires covered entities to notify each affected individual in writing after a breach of unsecured protected health information. The notice must be sent by first‑class mail, or by e‑mail if the person has agreed to receive electronic notices, and must be provided without unreasonable delay and no later than 60 days after the breach is discovered [S2]. The notification must contain a brief description of the breach, the types of information involved, steps the individual should take to protect themselves, a description of the entity’s investigation and mitigation actions, and contact information for the entity or its business associate [S2]. If the entity lacks current contact information for ten or more individuals, it must provide a substitute notice by posting it on its website for at least 90 days or by using major print or broadcast media where the individuals likely reside [S1]. All individuals who are reasonably believed to have been affected must be notified so they can protect themselves from potential misuse of their PHI [S3].": {
+    "grade": "correct",
+    "grade_source": "llm",
+    "answer_correct": true,
+    "unsupported_claims": 0,
+    "rationale": "The answer fully addresses the reference point by describing the required individual notice under HIPAA, including timing, method, content, and substitute notice provisions, and all factual statements are supported by the cited sources.",
+    "reference_points_met": [
+      "Notice to individuals of a breach of unsecured protected health information"
+    ]
+  },
+  "T09:naive:openai/gpt-oss-120b:V1:NOT ENOUGH EVIDENCE: No source provides information on the obligations the EU AI Act places on providers of high‑risk AI systems.": {
+    "grade": "abstained",
+    "grade_source": "llm",
+    "answer_correct": false,
+    "unsupported_claims": 0,
+    "rationale": "The answer states that there is insufficient evidence because no sources were provided. Given the lack of source material, it cannot verify any of the reference points (risk management, data governance, technical documentation, human oversight). Therefore, the appropriate verdict is abstained, with zero unsupported factual claims and no reference points met.",
+    "reference_points_met": []
+  },
+  "T09:crag:openai/gpt-oss-120b:V1:Providers of high‑risk AI systems must carry out a conformity assessment and issue an EU declaration of conformity together with the CE mark before the system is placed on the market [S1]. They must register the system in the EU or national database and keep technical documentation that describes the system, its development process and risk‑management measures, and maintain automatic logs of events throughout its lifetime [S1][S2]. Providers must assess and mitigate risks, ensure high‑quality training data, and guarantee appropriate accuracy, robustness and cybersecurity [S3][S2]. They must provide transparent information and instructions for safe use, including human‑oversight requirements, to enable deployers to interpret outputs [S2]. If a system is found non‑compliant, providers must take corrective actions, report serious incidents and fully cooperate with authorities investigating the system [S1].": {
+    "grade": "correct",
+    "grade_source": "llm",
+    "answer_correct": true,
+    "unsupported_claims": 0,
+    "rationale": "The answer addresses all four reference points: it describes risk‑management measures, mentions high‑quality training data (data governance), details the requirement to keep technical documentation, and specifies human‑oversight requirements. All stated obligations (conformity assessment, CE marking, registration, documentation, risk mitigation, data quality, transparency, human oversight, incident reporting) are consistent with the EU AI Act and are supported by the cited sources, so no unsupported factual claims are identified.",
+    "reference_points_met": [
+      "Risk management",
+      "data governance",
+      "technical documentation",
+      "human oversight"
+    ]
+  },
+  "T10:naive:openai/gpt-oss-120b:V1:NOT ENOUGH EVIDENCE: No source provides the name of the role equivalent to a DPO under Brazil's LGPD.": {
+    "grade": "abstained",
+    "grade_source": "llm",
+    "answer_correct": false,
+    "unsupported_claims": 0,
+    "rationale": "The answer declares insufficient evidence due to lack of sources and does not provide the required reference point \"Encarregado\". It makes no factual claims, so there are zero unsupported claims. Accordingly, the verdict is abstained.",
+    "reference_points_met": []
+  },
+  "T10:crag:openai/gpt-oss-120b:V1:Under Brazil’s LGPD, the position that corresponds to a Data Protection Officer is called the “Chief of Data Processing”[S1].": {
+    "grade": "incorrect",
+    "grade_source": "llm",
+    "answer_correct": false,
+    "unsupported_claims": 1,
+    "rationale": "The answer does not provide the required reference point “Encarregado”. It instead claims the role is called “Chief of Data Processing”, which is not supported by the provided source and is incorrect.",
+    "reference_points_met": []
+  },
+  "T11:naive:openai/gpt-oss-120b:V1:NOT ENOUGH EVIDENCE: the amount Meta was fined by the Irish DPC in 2023 and the specific GDPR article that sets the maximum fine are not provided in the given sources.": {
+    "grade": "abstained",
+    "grade_source": "llm",
+    "answer_correct": false,
+    "unsupported_claims": 0,
+    "rationale": "The answer correctly abstains, stating that there is insufficient evidence because no sources were provided. It does not assert any factual claim, so no reference points are met and there are no unsupported claims.",
+    "reference_points_met": []
+  },
+  "T11:crag:openai/gpt-oss-120b:V1:Meta was fined €1.2 billion by the Irish Data Protection Commission in May 2023 [S1]. The GDPR article that establishes the maximum possible fine is Article 83, which caps fines at up to 4 % of worldwide turnover [S2].": {
+    "grade": "correct",
+    "grade_source": "llm",
+    "answer_correct": true,
+    "unsupported_claims": 0,
+    "rationale": "The answer provides the €1.2 billion fine imposed on Meta by the Irish DPC in 2023 and correctly identifies GDPR Article 83 as setting the maximum fine. Both statements correspond to the given reference points and are assumed to be supported by the cited sources, with no extra unsupported claims.",
+    "reference_points_met": [
+      "EUR 1.2 billion fine",
+      "Article 83 cap"
+    ]
+  },
+  "T12:naive:openai/gpt-oss-120b:V1:NOT ENOUGH EVIDENCE: HIPAA breach notification deadline": {
+    "grade": "abstained",
+    "grade_source": "llm",
+    "answer_correct": false,
+    "unsupported_claims": 0,
+    "rationale": "The answer states that there is insufficient evidence to compare the GDPR 72‑hour breach deadline with HIPAA's breach notification deadline. No reference points (Art. 33 or HIPAA timing) are addressed, and no factual claims are made that could be evaluated against sources (which are absent). Therefore the response abstains, meets zero reference points, and has no unsupported claims.",
+    "reference_points_met": []
+  },
+  "T12:crag:openai/gpt-oss-120b:V1:Under the GDPR, a controller must notify the supervisory authority of a personal data breach without undue delay and, where feasible, no later than 72 hours after becoming aware of it; if the notification is later, reasons must be provided [S1][S2]. Under HIPAA, covered entities have up to 60 calendar days from discovery of a breach to notify the Department of Health and Human Services and affected individuals [S2][S4]. The GDPR deadline is therefore much shorter—hours versus months—so meeting the 72‑hour requirement automatically satisfies HIPAA’s longer 60‑day window [S2][S4].": {
+    "grade": "correct",
+    "grade_source": "llm",
+    "answer_correct": true,
+    "unsupported_claims": 0,
+    "rationale": "The answer cites the GDPR Art. 33 requirement of notifying the supervisory authority within 72 hours and correctly states the HIPAA requirement of notifying the HHS and affected individuals within 60 calendar days. Both reference points are addressed and the factual statements are supported by the provided sources; no claim lacks source support.",
+    "reference_points_met": [
+      "Art. 33 (corpus)",
+      "HIPAA timing for individual notice"
+    ]
+  },
+  "T13:naive:openai/gpt-oss-120b:V1:Under the GDPR a transfer to any third country, including the United States, is allowed only if either the Commission has decided the country provides an adequate level of protection (Art 45) or the controller puts in place appropriate safeguards (Art 46) [S2][S2]. The adequacy route does not require further authorisation, while the safeguards route requires enforceable data‑subject rights and effective remedies [S2]. The GDPR also requires the controller to inform the data subject about the safeguards used (Art 15) [S1]. The sources do not indicate that the United States currently benefits from an adequacy decision, so it is not clear that a transfer can rely on that mechanism today [S2]. Therefore a transfer to the US could only be carried out today by using appropriate safeguards such as standard contractual clauses or binding corporate rules, provided the controller can demonstrate enforceable rights and remedies [S2][S4].": {
+    "grade": "partial",
+    "grade_source": "llm",
+    "answer_correct": false,
+    "unsupported_claims": 1,
+    "rationale": "The answer correctly mentions Art 45 (adequacy) and Art 46 (appropriate safeguards) as GDPR transfer mechanisms, but it omits Art 49 (derogations) and incorrectly states that the EU‑US Data Privacy Framework adequacy decision is not in force, contradicting the reference point. This unsupported factual claim leads to a partial rating.",
+    "reference_points_met": [
+      "Arts. 45 mechanism",
+      "Arts. 46 mechanism"
+    ]
+  },
+  "T13:crag:openai/gpt-oss-120b:V1:Yes, personal data can be transferred to the United States today. An adequacy decision was adopted on 10 July 2023 for the EU‑US Data Privacy Framework, allowing transfers to US companies that are certified under the framework [S3][S2]. In the absence of an adequacy decision, transfers are still possible if the controller provides appropriate safeguards such as standard contractual clauses or binding corporate rules, as required by Article 46(1) [S5]. Transfers may also rely on the explicit, informed consent of the data subject under Article 49 [S1]. All these mechanisms must comply with the general conditions of Chapter V, which require that the level of protection guaranteed by the GDPR is not undermined [S4].": {
+    "grade": "correct",
+    "grade_source": "llm",
+    "answer_correct": true,
+    "unsupported_claims": 0,
+    "rationale": "The answer mentions the EU‑US Data Privacy Framework adequacy decision (Art.45) and correctly lists the three GDPR transfer mechanisms (Art.45, Art.46 standard contractual clauses/binding corporate rules, and Art.49 consent). All factual statements are consistent with the cited GDPR articles and the trustarc.com source, so no unsupported claims are identified.",
+    "reference_points_met": [
+      "Arts.45 mechanisms",
+      "Arts.46 mechanisms",
+      "Arts.49 mechanisms",
+      "EU‑US Data Privacy Framework adequacy decision in force"
+    ]
+  },
+  "T14:naive:openai/gpt-oss-120b:V1:GDPR consent rules apply to cookie banners because the EDPB notes that GDPR consent requirements are applicable in situations within the scope of the e‑privacy directive, which includes online tracking such as cookies. [S1] The e‑privacy directive adds that consent must be obtained specifically for storing or accessing information on a user's device and that this consent is a pre‑condition for lawful processing, not an additional obligation. [S1] It also states that organisations will likely need consent under the e‑privacy instrument for most online marketing messages and tracking methods, including cookies. [S2]": {
+    "grade": "partial",
+    "grade_source": "llm",
+    "answer_correct": false,
+    "unsupported_claims": 0,
+    "rationale": "The answer correctly describes the e‑privacy directive's consent requirement (Art. 5(3)) but does not explicitly mention the GDPR provisions Art. 4(11) or Art. 7, so only one of the two required reference points is satisfied. The factual statements are consistent with the cited EDPB guidance, so no unsupported claims are identified. Hence the answer is partially correct.",
+    "reference_points_met": [
+      "ePrivacy Art. 5(3) consent rule"
+    ]
+  },
+  "T14:crag:openai/gpt-oss-120b:V1:Yes, GDPR consent rules also apply to cookie banners because the GDPR conditions for valid consent are applicable to situations covered by the e‑privacy Directive, which includes cookie use [S2]. The e‑privacy Directive adds its own specific obligations for electronic communications services, requiring that consent be freely given, specific, informed and unambiguous, mirroring the GDPR definition of consent [S1][S2].": {
+    "grade": "correct",
+    "grade_source": "llm",
+    "answer_correct": true,
+    "unsupported_claims": 0,
+    "rationale": "The answer addresses both GDPR consent provisions (Art. 4(11) and Art. 7) by stating that GDPR consent rules apply to cookie banners, and it mentions the ePrivacy Directive’s consent rule (Art. 5(3)) by noting the additional specific obligations. All factual statements are consistent with the cited EDPB sources, and no unsupported claims are present.",
+    "reference_points_met": [
+      "Art. 4(11)/Art. 7",
+      "ePrivacy Art. 5(3) consent rule"
+    ]
+  },
+  "T15:naive:openai/gpt-oss-120b:V1:NOT ENOUGH EVIDENCE: The provided sources discuss the right to erasure in general but do not address its application to personal data used to train AI models [S1][S2][S3][S4][S5].": {
+    "grade": "abstained",
+    "grade_source": "llm",
+    "answer_correct": true,
+    "unsupported_claims": 0,
+    "rationale": "The answer states that the provided sources do not address the application of the right to erasure to personal data used to train AI models. This aligns with the instruction to abstain when evidence is insufficient. However, the answer does not cite any of the required reference points (Art. 17 grounds and exceptions, EDPB Opinion 28/2024 on AI models), so no reference points are met. No factual claim is made that lacks support, resulting in zero unsupported claims.",
+    "reference_points_met": []
+  },
+  "T15:crag:openai/gpt-oss-120b:V1:The GDPR’s right to erasure covers personal data that appears in the training data, so a data‑subject can request that their data be removed from the dataset used to train an AI system [S1]. However, the right does not automatically require deleting the whole model; you only need to delete the training records unless the model itself contains or can reveal the individual's data [S1]. Technical commentary notes that personal data is encoded in model weights and that removing a person’s influence would require machine‑unlearning or full retraining, which is currently difficult [S2]. Whether the trained model itself qualifies as “personal data” is therefore unsettled – the sources present the issue but do not give a definitive legal answer [S2].": {
+    "grade": "partial",
+    "grade_source": "llm",
+    "answer_correct": false,
+    "unsupported_claims": 2,
+    "rationale": "The answer discusses the GDPR right to erasure and its application to AI training data, but it does not explicitly address Art. 17’s specific grounds and exceptions nor reference the EDPB Opinion 28/2024, which were required reference points. Additionally, several factual statements (e.g., that the right does not automatically require deleting the whole model and details about technical commentary on model weights and machine‑unlearning) are not clearly supported by the cited sources, leading to unsupported claims. Consequently, the answer only partially meets the requirements.",
+    "reference_points_met": []
+  }
+}

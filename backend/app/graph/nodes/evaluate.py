@@ -75,7 +75,9 @@ async def evaluate_chunks(state: dict[str, Any], settings: Settings | None = Non
         judge = get_judge(config)
         judged = await _judge_batch(judge, [prompt for _, prompt in pending], config)
         for (chunk_id, _), output in zip(pending, judged):
-            index = next(i for i, chunk in enumerate(state["retrieved"]) if chunk["chunk_id"] == chunk_id)
+            index = next(
+                i for i, chunk in enumerate(state["retrieved"]) if str(chunk_field(chunk, "chunk_id")) == chunk_id
+            )
             outputs[index] = output
             if output is not None:
                 key = cache_key(config.evaluator_prompt_version, question, chunk_id)

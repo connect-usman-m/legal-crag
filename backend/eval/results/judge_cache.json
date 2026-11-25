@@ -364,5 +364,329 @@
     "verdict": "relevant",
     "reason": "States the exact 72‑hour notification rule.",
     "jurisdiction_match": true
+  },
+  "V3|What is the maximum administrative fine for infringing the basic principles of processing?|gdpr:art83:p3": {
+    "score": 0.6,
+    "verdict": "partial",
+    "reason": "States fine cap rule but not the exact maximum amount.",
+    "jurisdiction_match": true
+  },
+  "V3|What is the maximum administrative fine for infringing the basic principles of processing?|gdpr:rec148": {
+    "score": 0.1,
+    "verdict": "irrelevant",
+    "reason": "Recital does not state the maximum fine.",
+    "jurisdiction_match": true
+  },
+  "V3|What is the maximum administrative fine for infringing the basic principles of processing?|gdpr:art83:p5": {
+    "score": 0.95,
+    "verdict": "relevant",
+    "reason": "States exact fine limits for basic principles infringement.",
+    "jurisdiction_match": true
+  },
+  "V3|What is the maximum administrative fine for infringing the basic principles of processing?|gdpr:art83:p2": {
+    "score": 0.3,
+    "verdict": "partial",
+    "reason": "Lists fine factors but omits maximum amount.",
+    "jurisdiction_match": true
+  },
+  "V3|What is the maximum administrative fine for infringing the basic principles of processing?|gdpr:art83:p6": {
+    "score": 0.95,
+    "verdict": "relevant",
+    "reason": "States exact fine limits for basic principle violations.",
+    "jurisdiction_match": true
+  },
+  "V3|What is the maximum administrative fine for infringing the basic principles of processing?|gdpr:art83:p1": {
+    "score": 0.3,
+    "verdict": "partial",
+    "reason": "States fine must be effective, proportionate, dissuasive but not the maximum amount.",
+    "jurisdiction_match": true
+  },
+  "V3|How long does a controller have to respond to a data subject access request, and can it be extended?|edpb_access_01_2022:s162:c01": {
+    "score": 0.7,
+    "verdict": "partial",
+    "reason": "Mentions two-month extension but omits the base one-month rule.",
+    "jurisdiction_match": true
+  },
+  "V3|How long does a controller have to respond to a data subject access request, and can it be extended?|edpb_access_01_2022:s157:c01": {
+    "score": 0.95,
+    "verdict": "relevant",
+    "reason": "States 1‑month response and 2‑month extension with notice.",
+    "jurisdiction_match": true
+  },
+  "V3|How long does a controller have to respond to a data subject access request, and can it be extended?|edpb_access_01_2022:s159:c01": {
+    "score": 0.6,
+    "verdict": "partial",
+    "reason": "Mentions suspension but not the 30‑day response rule.",
+    "jurisdiction_match": true
+  },
+  "V3|How long does a controller have to respond to a data subject access request, and can it be extended?|gdpr:art12:p3": {
+    "score": 0.95,
+    "verdict": "relevant",
+    "reason": "States 1‑month response, extendable 2 months.",
+    "jurisdiction_match": true
+  },
+  "V3|How long does a controller have to respond to a data subject access request, and can it be extended?|edpb_access_01_2022:s2.3.3:c01": {
+    "score": 0.6,
+    "verdict": "partial",
+    "reason": "Mentions Art.12(3) but lacks explicit 1‑month rule.",
+    "jurisdiction_match": true
+  },
+  "V3|How long does a controller have to respond to a data subject access request, and can it be extended?|edpb_access_01_2022:s174:c01": {
+    "score": 0.7,
+    "verdict": "partial",
+    "reason": "States 1‑month response, but omits the 2‑month extension.",
+    "jurisdiction_match": true
+  },
+  "V3|What are the penalties for violating the California Consumer Privacy Act?|gdpr:art84:p1": {
+    "score": 0.2,
+    "verdict": "irrelevant",
+    "reason": "GDPR text does not address CCPA penalties.",
+    "jurisdiction_match": false
+  },
+  "V3|What are the penalties for violating the California Consumer Privacy Act?|gdpr:rec149": {
+    "score": 0.2,
+    "verdict": "irrelevant",
+    "reason": "GDPR recital, not CCPA penalties",
+    "jurisdiction_match": false
+  },
+  "V3|What are the penalties for violating the California Consumer Privacy Act?|gdpr:rec148": {
+    "score": 0.2,
+    "verdict": "irrelevant",
+    "reason": "GDPR recital, not CCPA penalties",
+    "jurisdiction_match": false
+  },
+  "V3|What are the penalties for violating the California Consumer Privacy Act?|gdpr:art23:p2": {
+    "score": 0.1,
+    "verdict": "irrelevant",
+    "reason": "GDPR text does not address CCPA penalties.",
+    "jurisdiction_match": false
+  },
+  "V3|What are the penalties for violating the California Consumer Privacy Act?|gdpr:rec153": {
+    "score": 0.1,
+    "verdict": "irrelevant",
+    "reason": "Recital does not address CCPA penalties.",
+    "jurisdiction_match": false
+  },
+  "V3|What are the penalties for violating the California Consumer Privacy Act?|gdpr:art83:p5": {
+    "score": 0.2,
+    "verdict": "irrelevant",
+    "reason": "GDPR fines not applicable to CCPA.",
+    "jurisdiction_match": false
+  },
+  "V3|What did the CJEU decide in the Schrems II judgment about the EU-US Privacy Shield?|gdpr:rec9": {
+    "score": 0.2,
+    "verdict": "irrelevant",
+    "reason": "Recital does not address Schrems II decision.",
+    "jurisdiction_match": false
+  },
+  "V3|What did the CJEU decide in the Schrems II judgment about the EU-US Privacy Shield?|gdpr:rec12": {
+    "score": 0.1,
+    "verdict": "irrelevant",
+    "reason": "Recital does not address Schrems II decision.",
+    "jurisdiction_match": false
+  },
+  "V3|What did the CJEU decide in the Schrems II judgment about the EU-US Privacy Shield?|gdpr:art68:p6": {
+    "score": 0.1,
+    "verdict": "irrelevant",
+    "reason": "Does not address Schrems II decision.",
+    "jurisdiction_match": false
+  },
+  "V3|What did the CJEU decide in the Schrems II judgment about the EU-US Privacy Shield?|gdpr:rec172": {
+    "score": 0.2,
+    "verdict": "irrelevant",
+    "reason": "Recital does not address Schrems II decision.",
+    "jurisdiction_match": false
+  },
+  "V3|What did the CJEU decide in the Schrems II judgment about the EU-US Privacy Shield?|gdpr:rec103": {
+    "score": 0.2,
+    "verdict": "irrelevant",
+    "reason": "Recital does not address Schrems II decision.",
+    "jurisdiction_match": false
+  },
+  "V3|What did the CJEU decide in the Schrems II judgment about the EU-US Privacy Shield?|gdpr:art45:p2": {
+    "score": 0.1,
+    "verdict": "irrelevant",
+    "reason": "Does not address Schrems II decision.",
+    "jurisdiction_match": false
+  },
+  "V3|What does HIPAA require for notifying individuals of a breach of unsecured health information?|edpb_breach_09_2022:s78:c01": {
+    "score": 0.2,
+    "verdict": "irrelevant",
+    "reason": "Not HIPAA guidance, only GDPR/EDPB text.",
+    "jurisdiction_match": false
+  },
+  "V3|What does HIPAA require for notifying individuals of a breach of unsecured health information?|edpb_breach_09_2022:s82:c01": {
+    "score": 0.2,
+    "verdict": "irrelevant",
+    "reason": "GDPR guidance, not HIPAA rule.",
+    "jurisdiction_match": false
+  },
+  "V3|What does HIPAA require for notifying individuals of a breach of unsecured health information?|edpb_breach_09_2022:s22:c01": {
+    "score": 0.2,
+    "verdict": "irrelevant",
+    "reason": "GDPR text irrelevant to HIPAA breach notification.",
+    "jurisdiction_match": false
+  },
+  "V3|What does HIPAA require for notifying individuals of a breach of unsecured health information?|edpb_breach_09_2022:s99:c18": {
+    "score": 0.1,
+    "verdict": "irrelevant",
+    "reason": "Not HIPAA text, irrelevant.",
+    "jurisdiction_match": false
+  },
+  "V3|What does HIPAA require for notifying individuals of a breach of unsecured health information?|edpb_breach_09_2022:s5:c01": {
+    "score": 0.2,
+    "verdict": "irrelevant",
+    "reason": "EDPB guidance, not HIPAA breach rule.",
+    "jurisdiction_match": false
+  },
+  "V3|What does HIPAA require for notifying individuals of a breach of unsecured health information?|edpb_breach_09_2022:s97:c01": {
+    "score": 0.2,
+    "verdict": "irrelevant",
+    "reason": "Not HIPAA guidance, unrelated instrument",
+    "jurisdiction_match": false
+  },
+  "V3|What obligations does the EU AI Act place on providers of high-risk AI systems?|gdpr:art28:p4": {
+    "score": 0.1,
+    "verdict": "irrelevant",
+    "reason": "GDPR processor clause not AI Act obligations.",
+    "jurisdiction_match": false
+  },
+  "V3|What obligations does the EU AI Act place on providers of high-risk AI systems?|edpb_breach_09_2022:s4:c02": {
+    "score": 0.1,
+    "verdict": "irrelevant",
+    "reason": "Does not address AI Act obligations.",
+    "jurisdiction_match": false
+  },
+  "V3|What obligations does the EU AI Act place on providers of high-risk AI systems?|gdpr:art32:p1": {
+    "score": 0.2,
+    "verdict": "irrelevant",
+    "reason": "GDPR security rule not AI Act obligation.",
+    "jurisdiction_match": false
+  },
+  "V3|What obligations does the EU AI Act place on providers of high-risk AI systems?|edpb_consent_05_2020:s25:c13": {
+    "score": 0.1,
+    "verdict": "irrelevant",
+    "reason": "Does not address AI Act obligations.",
+    "jurisdiction_match": false
+  },
+  "V3|What obligations does the EU AI Act place on providers of high-risk AI systems?|edpb_breach_09_2022:s4:c01": {
+    "score": 0.1,
+    "verdict": "irrelevant",
+    "reason": "Chunk does not contain AI Act obligations for high‑risk providers.",
+    "jurisdiction_match": true
+  },
+  "V3|What obligations does the EU AI Act place on providers of high-risk AI systems?|gdpr:art35:p1": {
+    "score": 0.2,
+    "verdict": "irrelevant",
+    "reason": "GDPR text not AI Act obligations.",
+    "jurisdiction_match": false
+  },
+  "V3|What is the role called that corresponds to a DPO under Brazil's LGPD?|edpb_breach_09_2022:s99:c11": {
+    "score": 0.1,
+    "verdict": "irrelevant",
+    "reason": "GDPR DPO text, not LGPD role.",
+    "jurisdiction_match": false
+  },
+  "V3|What is the role called that corresponds to a DPO under Brazil's LGPD?|edpb_breach_09_2022:s99:c12": {
+    "score": 0.2,
+    "verdict": "irrelevant",
+    "reason": "Not LGPD, only GDPR/EDPB guidance.",
+    "jurisdiction_match": false
+  },
+  "V3|What is the role called that corresponds to a DPO under Brazil's LGPD?|gdpr:art68:p4": {
+    "score": 0.1,
+    "verdict": "irrelevant",
+    "reason": "GDPR joint representative not LGPD DPO role.",
+    "jurisdiction_match": false
+  },
+  "V3|What is the role called that corresponds to a DPO under Brazil's LGPD?|gdpr:art45:p3": {
+    "score": 0.1,
+    "verdict": "irrelevant",
+    "reason": "GDPR text does not address LGPD DPO role.",
+    "jurisdiction_match": false
+  },
+  "V3|What is the role called that corresponds to a DPO under Brazil's LGPD?|gdpr:art38:p2": {
+    "score": 0.2,
+    "verdict": "irrelevant",
+    "reason": "GDPR text does not address LGPD role.",
+    "jurisdiction_match": false
+  },
+  "V3|What is the role called that corresponds to a DPO under Brazil's LGPD?|gdpr:art27:p4": {
+    "score": 0.1,
+    "verdict": "irrelevant",
+    "reason": "GDPR text does not address LGPD DPO role.",
+    "jurisdiction_match": false
+  },
+  "V3|How much was Meta fined by the Irish DPC in 2023, and which GDPR article sets the maximum such fine?|edpb_breach_09_2022:s30:c01": {
+    "score": 0.1,
+    "verdict": "irrelevant",
+    "reason": "Recitals, no fine amount or article.",
+    "jurisdiction_match": true
+  },
+  "V3|How much was Meta fined by the Irish DPC in 2023, and which GDPR article sets the maximum such fine?|edpb_breach_09_2022:s28:c02": {
+    "score": 0.6,
+    "verdict": "partial",
+    "reason": "Mentions fine limits under Article 83 but not the 2023 Meta fine amount.",
+    "jurisdiction_match": true
+  },
+  "V3|How much was Meta fined by the Irish DPC in 2023, and which GDPR article sets the maximum such fine?|edpb_consent_05_2020:s25:c03": {
+    "score": 0.1,
+    "verdict": "irrelevant",
+    "reason": "Chunk does not mention fine amount or GDPR article.",
+    "jurisdiction_match": false
+  },
+  "V3|How much was Meta fined by the Irish DPC in 2023, and which GDPR article sets the maximum such fine?|edpb_access_01_2022:s30:c21": {
+    "score": 0.1,
+    "verdict": "irrelevant",
+    "reason": "Does not state fine amount or GDPR article.",
+    "jurisdiction_match": true
+  },
+  "V3|How much was Meta fined by the Irish DPC in 2023, and which GDPR article sets the maximum such fine?|edpb_consent_05_2020:s25:c10": {
+    "score": 0.1,
+    "verdict": "irrelevant",
+    "reason": "Chunk does not provide fine amount or GDPR article.",
+    "jurisdiction_match": false
+  },
+  "V3|How much was Meta fined by the Irish DPC in 2023, and which GDPR article sets the maximum such fine?|gdpr:art83:p5": {
+    "score": 0.6,
+    "verdict": "partial",
+    "reason": "States Article 83(5) but lacks fine amount.",
+    "jurisdiction_match": true
+  },
+  "V3|Can personal data be transferred to the US today, and under which GDPR transfer mechanisms?|gdpr:art46:p1": {
+    "score": 0.7,
+    "verdict": "partial",
+    "reason": "Mentions safeguards but not specific mechanisms for US transfer.",
+    "jurisdiction_match": true
+  },
+  "V3|Can personal data be transferred to the US today, and under which GDPR transfer mechanisms?|gdpr:rec101": {
+    "score": 0.4,
+    "verdict": "partial",
+    "reason": "Mentions transfer conditions but not specific mechanisms.",
+    "jurisdiction_match": true
+  },
+  "V3|Can personal data be transferred to the US today, and under which GDPR transfer mechanisms?|gdpr:art45:p1": {
+    "score": 0.7,
+    "verdict": "partial",
+    "reason": "States adequacy basis for transfers, but lacks US-specific detail.",
+    "jurisdiction_match": true
+  },
+  "V3|Can personal data be transferred to the US today, and under which GDPR transfer mechanisms?|gdpr:art44:p1": {
+    "score": 0.7,
+    "verdict": "partial",
+    "reason": "States transfer condition but not specific mechanisms.",
+    "jurisdiction_match": true
+  },
+  "V3|Can personal data be transferred to the US today, and under which GDPR transfer mechanisms?|gdpr:art15:p2": {
+    "score": 0.1,
+    "verdict": "irrelevant",
+    "reason": "Does not address transfer possibility or mechanisms.",
+    "jurisdiction_match": true
+  },
+  "V3|Can personal data be transferred to the US today, and under which GDPR transfer mechanisms?|gdpr:art45:p7": {
+    "score": 0.6,
+    "verdict": "partial",
+    "reason": "Mentions transfers allowed but not specific mechanisms.",
+    "jurisdiction_match": true
   }
 }
