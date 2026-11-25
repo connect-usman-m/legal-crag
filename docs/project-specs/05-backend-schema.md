@@ -4,7 +4,7 @@
 **Depends on:** 02-TRD, 03-App Flow
 **Status:** Draft v1.0, 2026-11-24
 
-This document defines every data shape in the backend: chunk records, vector-store metadata, LangGraph state, API request/response models, evaluation datasets and results, trace metadata, and the optional query log. Python code is Pydantic v2 / `TypedDict` and is meant to be copied into `app/schemas/` and `app/graph/state.py`.
+Backend data shapes: chunk records, vector-store metadata, LangGraph state, API request/response models, evaluation datasets and results, trace metadata, and the optional query log. The Python below is the schema for `app/schemas/` and `app/graph/state.py`.
 
 ---
 

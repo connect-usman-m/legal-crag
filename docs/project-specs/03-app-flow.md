@@ -4,7 +4,7 @@
 **Depends on:** 01-PRD, 02-TRD
 **Status:** Draft v1.0, 2026-11-24
 
-This document describes how a user moves through the app and how a request moves through the system, including every branch, failure path and data handoff.
+User routes and request flows, including branches, failure paths and data handoffs.
 
 ---
 
@@ -133,7 +133,7 @@ web: rewrite → Tavily (6) → rerank → top 2
 context = S1,S2 (corpus) + S3,S4 (web)
 generate: must attribute each claim; if corpus and web disagree, say so
 ```
-Edge case: the filter keeps 0 chunks (all scores in [0.3, 0.5)). Context = web only and the decision **stays AMBIGUOUS**, with `warnings: ["no_corpus_chunks_above_keep"]`, so the branch label stays truthful.
+Edge case: the filter keeps 0 chunks (all scores in [0.3, 0.5)). Context = web only and the decision **stays AMBIGUOUS**, with `warnings: ["no_corpus_chunks_above_keep"]`, so the UI still reports AMBIGUOUS.
 
 ### 4.3 INCORRECT → web_correct
 ```
@@ -145,7 +145,7 @@ UI shows "Outside curated corpus" banner
 ```
 
 ### 4.4 Abstain (any branch)
-The generator returns `abstained: true` when the context doesn't support an answer. Response: `answer` = a short explanation of what is missing, `sources` = the sources considered (all with `used: false`), `confidence = 0`, label `None`. The UI renders the dedicated "Not enough evidence" card (see 04).
+The generator returns `abstained: true` when the context doesn't support an answer. Response: `answer` = a short explanation of what is missing, `sources` = the sources considered (all with `used: false`), `confidence = 0`, label `None`. The "Not enough evidence" card lists what was checked and what was missing (see 04).
 
 ## 5. System flow — `POST /query` (mode = naive)
 

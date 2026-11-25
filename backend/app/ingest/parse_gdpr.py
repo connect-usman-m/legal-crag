@@ -141,9 +141,7 @@ def parse_gdpr_text(text: str) -> list[dict]:
                 and not ARTICLE_HEADING.match(article_title)
             ):
                 title_line_index = index + 1
-                paragraph = 1
-            else:
-                paragraph = 1
+            paragraph = 1
             continue
 
         if (
@@ -173,10 +171,7 @@ def parse_gdpr_text(text: str) -> list[dict]:
                 buffer.append(line)
             continue
 
-        if buffer and (POINT.match(line) or line[0].islower()):
-            buffer.append(line)
-        else:
-            buffer.append(line)
+        buffer.append(line)
 
     flush_paragraph()
     flush_recital()

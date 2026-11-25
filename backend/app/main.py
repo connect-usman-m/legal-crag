@@ -13,7 +13,8 @@ from slowapi.util import get_remote_address
 
 from app.api.deps import Runtime
 from app.api.routes_meta import router as meta_router
-from app.api.routes_query import compare_router, query_router
+from app.api.routes_query import compare_router
+from app.api.routes_query import router as query_router
 from app.core.config import Settings
 from app.schemas.api import ErrorResponse
 
@@ -70,17 +71,13 @@ def create_app(settings: Settings | None = None, runtime: Runtime | None = None)
 
     @app.exception_handler(HTTPException)
     async def http_error(request: Request, exc: HTTPException):
-        if exc.status_code == 401:
-            name = "unauthorized"
-        elif exc.status_code == 429:
-            name = "rate_limited"
-        elif exc.status_code == 503:
-            name = "index_not_ready"
-        elif exc.status_code == 504:
-            name = "timeout"
-        else:
-            name = "internal_error"
-        return _error(name, str(exc.detail), request, exc.status_code)
+        names = {
+            401: "unauthorized",
+            429: "rate_limited",
+            503: "index_not_ready",
+            504: "timeout",
+        }
+        return _error(names.get(exc.status_code, "internal_error"), str(exc.detail), request, exc.status_code)
 
     return app
 

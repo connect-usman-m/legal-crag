@@ -46,7 +46,15 @@ def test_abstention_counts_only_when_acceptable():
 
 
 def test_manual_override_wins():
-    records = [{"qid": "T06", "mode": "naive", "grade": "correct", "answer_correct": True}]
+    records = [
+        {
+            "qid": "T06",
+            "mode": "naive",
+            "grade": "correct",
+            "abstained": False,
+            "answer_correct": True,
+        }
+    ]
     overrides = [
         {
             "qid": "T06",

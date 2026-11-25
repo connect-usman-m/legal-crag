@@ -1,4 +1,5 @@
 import asyncio
+import hashlib
 import json
 import sys
 from datetime import datetime, timezone
@@ -17,6 +18,7 @@ from app.graph.nodes.generate import generate  # noqa: E402
 from app.retrieval import faiss_store  # noqa: E402
 from app.schemas.eval import EvalItem, EvalRecord, EvalRun  # noqa: E402
 from app.schemas.retrieval import ContextSource  # noqa: E402
+from eval.answer import answer_correct  # noqa: E402
 from eval.grade import apply_manual_overrides, grade_answer, load_overrides  # noqa: E402
 from eval.judge_dev import load_items, load_thresholds  # noqa: E402
 from eval.report import build_summary, render_markdown  # noqa: E402
@@ -37,7 +39,7 @@ def build_record(item: EvalItem, mode: str, payload: dict[str, Any], grade: str,
         "abstained": payload.get("abstained", False),
         "grade": grade,
         "grade_source": grade_source,
-        "answer_correct": grade == "correct" or (grade == "abstained" and item.acceptable_abstain),
+        "answer_correct": answer_correct(grade, payload.get("abstained", False), item.acceptable_abstain),
         "unsupported_claims": payload.get("unsupported_claims", 0),
         "citation_valid": not report.get("invalid_ids", []),
         "citation_coverage": report.get("coverage", 0.0),
@@ -208,9 +210,9 @@ async def main() -> None:
                 "keep": settings.keep_threshold,
             },
             "prompt_versions": {"evaluator": settings.evaluator_prompt_version, "generate": "V1", "grader": "V1"},
-            "frozen_test_set_sha256": __import__("hashlib")
-            .sha256((BACKEND_ROOT / "eval" / "datasets" / "test_set.jsonl").read_bytes())
-            .hexdigest(),
+            "frozen_test_set_sha256": hashlib.sha256(
+                (BACKEND_ROOT / "eval" / "datasets" / "test_set.jsonl").read_bytes()
+            ).hexdigest(),
             "langsmith_tracing": settings.langsmith_tracing,
         },
         langsmith_experiment=None,

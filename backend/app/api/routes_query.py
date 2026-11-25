@@ -95,9 +95,8 @@ def _to_response(state: dict[str, Any], request: QueryRequest, settings: Setting
     )
 
 
-async def run_crag_query(state: dict[str, Any], settings: Settings | None = None, runtime: Runtime | None = None):
-    active = runtime or _runtime
-    result = await active.graph.ainvoke(
+async def run_crag_query(state: dict[str, Any], settings: Settings, runtime: Runtime) -> dict[str, Any]:
+    result = await runtime.graph.ainvoke(
         state,
         config={
             "run_name": "crag_graph",
@@ -108,9 +107,8 @@ async def run_crag_query(state: dict[str, Any], settings: Settings | None = None
     return result
 
 
-async def run_naive_query(state: dict[str, Any], settings: Settings | None = None, runtime: Runtime | None = None):
-    active = runtime or _runtime
-    results = faiss_store.similarity_search(state["question"], k=active.settings.naive_k)
+async def run_naive_query(state: dict[str, Any], settings: Settings, runtime: Runtime) -> dict[str, Any]:
+    results = faiss_store.similarity_search(state["question"], k=runtime.settings.naive_k)
     sources = [
         {
             "sid": f"S{index}",
@@ -126,15 +124,12 @@ async def run_naive_query(state: dict[str, Any], settings: Settings | None = Non
     from app.schemas.retrieval import ContextSource
 
     context = [ContextSource.model_validate(source) for source in sources]
-    draft = await generate({**state, "context_sources": context}, active.settings)
-    cited = await cite({**state, **draft, "context_sources": context}, active.settings)
+    draft = await generate({**state, "context_sources": context}, runtime.settings)
+    cited = await cite({**state, **draft, "context_sources": context}, runtime.settings)
     return {**state, **draft, **cited, "warnings": draft.get("warnings", []) + cited.get("warnings", [])}
 
 
-_runtime: Runtime = Runtime(Settings())
-
-
-async def _run(payload: dict[str, Any], settings: Settings) -> dict[str, Any]:
+async def _run(payload: dict[str, Any], settings: Settings, runtime: Runtime) -> dict[str, Any]:
     request = QueryRequest.model_validate(payload["request"])
     state = {
         "request_id": payload["request_id"],
@@ -144,18 +139,14 @@ async def _run(payload: dict[str, Any], settings: Settings) -> dict[str, Any]:
         "timings_ms": {},
     }
     if request.mode == "crag":
-        return await run_crag_query(state, settings)
-    return await run_naive_query(state, settings)
-
-
-query_router = router
+        return await run_crag_query(state, settings, runtime)
+    return await run_naive_query(state, settings, runtime)
 
 
 @router.post("", response_model=QueryResponse, dependencies=[Depends(require_demo_key)])
 async def query(request: QueryRequest, http_request: Request):
-    global _runtime
-    _runtime = http_request.app.state.runtime
     settings = http_request.app.state.settings
+    runtime = http_request.app.state.runtime
     request_id = str(uuid4())
     start = perf_counter()
     try:
@@ -165,6 +156,7 @@ async def query(request: QueryRequest, http_request: Request):
                 lambda: _run(
                     {"request": request.model_dump(), "request_id": request_id, "mode": request.mode},
                     settings,
+                    runtime,
                 ),
                 settings,
                 langsmith_extra=LangSmithExtra(project_name=settings.langsmith_project),
@@ -183,9 +175,8 @@ compare_router = APIRouter(tags=["compare"])
 
 @compare_router.post("/compare", response_model=CompareResponse, dependencies=[Depends(require_demo_key)])
 async def compare(request: CompareRequest, http_request: Request):
-    global _runtime
-    _runtime = http_request.app.state.runtime
     settings = http_request.app.state.settings
+    runtime = http_request.app.state.runtime
     query_request = QueryRequest(question=request.question)
 
     async def one(mode: str):
@@ -197,7 +188,7 @@ async def compare(request: CompareRequest, http_request: Request):
         start = perf_counter()
         state = await traced_query(
             payload,
-            lambda: _run(payload, settings),
+            lambda: _run(payload, settings, runtime),
             settings,
             langsmith_extra=LangSmithExtra(project_name=settings.langsmith_project),
         )

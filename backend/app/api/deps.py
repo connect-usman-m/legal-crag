@@ -6,21 +6,14 @@ from fastapi import Header, HTTPException, Request
 from app.core.config import Settings
 
 
-class _Unset:
-    pass
-
-
-UNSET = _Unset()
-
-
 @dataclass
 class Runtime:
     settings: Settings
-    graph: Any = UNSET
-    embedder: Any = UNSET
-    reranker: Any = UNSET
-    chroma: Any = UNSET
-    faiss: Any = UNSET
+    graph: Any = None
+    embedder: Any = None
+    reranker: Any = None
+    chroma: Any = None
+    faiss: Any = None
 
 
 def get_settings(request: Request) -> Settings:

@@ -101,17 +101,32 @@ def test_query_validation_error_envelope(client):
     assert response.json()["error"] == "validation_error"
 
 
+def test_query_uses_request_runtime(monkeypatch):
+    settings = _settings()
+    app = create_app(settings, runtime=_FakeRuntime(settings))
+    seen = []
+
+    async def fake_crag(state, settings, runtime):
+        seen.append(runtime)
+        return {"answer": "scoped", "sources": [], "retrieval_decision": "CORRECT"}
+
+    monkeypatch.setattr("app.api.routes_query.run_crag_query", fake_crag)
+
+    assert TestClient(app).post("/query", json={"question": "What is the deadline?"}).status_code == 200
+    assert seen == [app.state.runtime]
+
+
 def test_compare_calls_both_modes(monkeypatch):
     settings = _settings()
     app = create_app(settings, runtime=_FakeRuntime(settings))
 
     calls = []
 
-    async def fake_crag(state, settings):
+    async def fake_crag(state, settings, runtime):
         calls.append("crag")
         return {"answer": "crag", "sources": [], "retrieval_decision": "CORRECT"}
 
-    async def fake_naive(state, settings):
+    async def fake_naive(state, settings, runtime):
         calls.append("naive")
         return {"answer": "naive", "sources": [], "retrieval_decision": None}
 

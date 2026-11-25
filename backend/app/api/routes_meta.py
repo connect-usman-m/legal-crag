@@ -33,7 +33,7 @@ async def health(settings=Depends(get_settings), runtime=Depends(get_runtime)):
         "tavily_key": bool(settings.tavily_api_key),
         "langsmith": bool(settings.langsmith_api_key) if settings.langsmith_tracing else True,
     }
-    ready = all(checks.values())
+    ready = all(value for name, value in checks.items() if name != "langsmith")
     return HealthResponse(
         status="ok" if ready else "degraded",
         ready=ready,

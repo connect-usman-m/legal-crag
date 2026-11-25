@@ -30,9 +30,10 @@ Legal document QA with Corrective RAG over GDPR and three EDPB guidelines. The a
 
 - CRAG branch accuracy: 93% (14/15); answer accuracy: naive 33%, CRAG 67%.
 - Citation validity: 100% in both modes. Unsupported-claim counts: naive 1, CRAG 3.
-- p50 latency: naive 9,379 ms; CRAG 15,427 ms. These exceed the TRD targets and are reported as-is.
+- p50 latency: naive 9,379 ms; CRAG 15,427 ms. Both exceed the TRD targets. These are the measured values.
 - Full run: [`backend/eval/results/results.md`](backend/eval/results/results.md); machine-readable output: [`results.json`](backend/eval/results/results.json).
-- LangSmith trace links are unavailable for this run because the configured API key was rejected (`401 Invalid token`). No run was pushed to LangSmith, so no link is fabricated.
+- The configured API key failed (`401 Invalid token`), so this run has no LangSmith trace or link.
+- Public deployment is configured but not verified here: no Netlify/HF credentials were available, and the local `docker compose build` exceeded the 10-minute target on image downloads.
 
 ## How CRAG decides
 
@@ -50,7 +51,22 @@ flowchart TD
     C --> A[answer with sources]
 ```
 
-Decision rule: `max >= UPPER (0.7)` → CORRECT; `max < LOWER (0.3)` → INCORRECT; otherwise AMBIGUOUS. `KEEP (0.5)` filters context but is not part of the decision. Calibrated values are in [`backend/eval/results/calibration_thresholds.json`](backend/eval/results/calibration_thresholds.json).
+Runtime decision rule (defaults in `.env`): `max >= UPPER (0.7)` → CORRECT; `max < LOWER (0.3)` → INCORRECT; otherwise AMBIGUOUS. `KEEP (0.5)` filters context but is not part of the decision. The evaluation run uses calibrated values in [`backend/eval/results/calibration_thresholds.json`](backend/eval/results/calibration_thresholds.json), recorded in the results config.
+
+## Frontend
+
+- `frontend/src/`: React 18 + Vite + TypeScript + Tailwind v4, TanStack Query, React Router.
+- `/` asks one question with mode toggle, example chips, pipeline stepper, decision badge, score table and source cards.
+- `/compare` runs both modes server-side and shows a client-side difference hint plus mobile tabs.
+- `/eval` renders `GET /eval/results` with summary cards, category bars and a sortable/filterable table.
+- `/how-it-works` shows the graph, threshold number line, corpus list and limitations.
+- The UI supports dark mode, keyboard focus, `aria-live` updates and reduced motion.
+
+## Deployment
+
+- `docker compose up --build` serves the API on `:8000` and the UI on `:5173`. The API image bakes the indexes and models so a fresh clone only needs a filled `.env`.
+- `netlify.toml` builds the frontend for Netlify and proxies `/api/*` to `VITE_API_URL`; set that variable and `VITE_DEMO_API_KEY` in the Netlify UI.
+- For Hugging Face Spaces, deploy the backend directory as a Docker Space and set the same secrets from `.env`.
 
 ## Architecture
 

@@ -45,3 +45,7 @@ class ContextSource(BaseModel):
     url: str
     text: str
     relevance: float
+
+
+def render_sources(sources: list[ContextSource]) -> str:
+    return "\n\n".join(f"[{source.sid}] ({source.kind}) {source.label}\n{source.text}" for source in sources)

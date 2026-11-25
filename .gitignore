@@ -12,6 +12,7 @@ backend/data/faiss/*
 !backend/data/faiss/.gitkeep
 node_modules/
 dist/
+.test-dist/
 .pytest_cache/
 .ruff_cache/
 .mypy_cache/

@@ -48,7 +48,7 @@ flowchart LR
     G -. traces .-> LS
 ```
 
-**Key point:** Chroma and FAISS are built from the **same** `chunks.jsonl` using the **same** embedder. The only differences between naive and CRAG are the relevance gate and web correction. That makes the comparison fair.
+**Key point:** Chroma and FAISS are built from the **same** `chunks.jsonl` using the **same** embedder. The only differences between naive and CRAG are the relevance gate and web correction. Both modes share the same data and generator, so the comparison isolates the gate.
 
 ## 2. Technology stack
 
@@ -190,7 +190,7 @@ Expected size: about 1,200–1,800 chunks in total. This is small enough for exa
 question → embed → FAISS top-k (k=5) → generate (same GENERATE prompt) → cite → response
 ```
 - `retrieval_decision = null` and `mode = "naive"` in the response.
-- It uses the **same generator prompt, including the abstain instruction**, so any CRAG gain comes from the gate and web correction, not from prompt differences. Expect naive RAG to abstain sometimes. Report that honestly.
+- It uses the **same generator prompt, including the abstain instruction**, so any CRAG gain comes from the gate and web correction, not from prompt differences. Naive RAG may abstain too; record those cases in the results.
 
 ## 6. CRAG graph specification
 
@@ -236,7 +236,7 @@ flowchart TD
   - `0.6–0.8` — on the same legal topic and useful, but doesn't fully answer.
   - `0.3–0.5` — tangentially related (same law, different obligation).
   - `0.0–0.2` — unrelated, **or about a different jurisdiction/instrument than the question asks about**.
-- The jurisdiction rule is the key legal-domain addition. A GDPR chunk scores ≤ 0.2 for a CCPA question even when the topic (fines) matches.
+- The jurisdiction rule is the legal-domain change from the CRAG paper. A GDPR chunk scores ≤ 0.2 for a CCPA question even when the topic (fines) matches.
 - 3 few-shot examples (one per band) live in `prompts.py` as `EVALUATOR_PROMPT_V1`. Prompts are versioned and the version is logged to LangSmith metadata.
 - Temperature 0. On a JSON parse failure: retry once, then mark that chunk `score=null, error=true` and leave it out of the decision.
 
@@ -403,6 +403,6 @@ CI (GitHub Actions): lint (ruff), type-check (mypy, light), unit + node + graph 
 ## 13. Known limitations (state them in the README)
 
 - The LLM-as-judge is a stand-in for CRAG's fine-tuned evaluator; its calibration is checked empirically, not guaranteed.
-- 15 questions is a demonstration, not a benchmark. The README says so.
+- 15 questions is a demonstration, not a benchmark. Document this in the README.
 - Web results can be wrong or out of date; they are labelled and weighted by trust, not verified.
 - Confidence is a heuristic score, not a probability.

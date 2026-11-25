@@ -74,8 +74,13 @@ def render_markdown(run: dict) -> str:
         ]
     )
     labels = {"covered": "Covered", "not_covered": "Not covered", "ambiguous": "Ambiguous"}
+    totals = {
+        category: sum(record["mode"] == "crag" for record in run["records"] if record["category"] == category)
+        for category in summary["by_category"]
+    }
     for category, counts in summary["by_category"].items():
-        lines.append(f"| {labels[category]} | {counts['naive']}/5 | {counts['crag']}/5 |")
+        total = totals[category]
+        lines.append(f"| {labels[category]} | {counts['naive']}/{total} | {counts['crag']}/{total} |")
     lines.extend(
         [
             "",

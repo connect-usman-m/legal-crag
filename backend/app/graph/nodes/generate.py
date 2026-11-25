@@ -4,11 +4,7 @@ from typing import Any
 from app.core.config import Settings
 from app.llm.groq_client import get_generator
 from app.llm.prompts import GENERATE_PROMPT_V1
-from app.schemas.retrieval import ContextSource
-
-
-def render_sources(sources: list[ContextSource]) -> str:
-    return "\n\n".join(f"[{source.sid}] ({source.kind}) {source.label}\n{source.text}" for source in sources)
+from app.schemas.retrieval import render_sources
 
 
 async def generate(state: dict[str, Any], settings: Settings | None = None) -> dict[str, Any]:

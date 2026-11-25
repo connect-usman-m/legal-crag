@@ -688,5 +688,221 @@
     "verdict": "partial",
     "reason": "Mentions transfers allowed but not specific mechanisms.",
     "jurisdiction_match": true
+  },
+  "V3|Within how many hours must a breach be notified?|edpb_breach_09_2022:s40:c01": {
+    "score": 0.95,
+    "verdict": "relevant",
+    "reason": "States the exact 72‑hour notification rule.",
+    "jurisdiction_match": true
+  },
+  "V3|Within how many hours must a breach be notified?|edpb_breach_09_2022:s62:c01": {
+    "score": 0.95,
+    "verdict": "relevant",
+    "reason": "States the exact 72‑hour notification rule.",
+    "jurisdiction_match": true
+  },
+  "V3|Within how many hours must a breach be notified?|gdpr:art33:p1": {
+    "score": 0.95,
+    "verdict": "relevant",
+    "reason": "States the exact 72‑hour notification rule.",
+    "jurisdiction_match": true
+  },
+  "V3|Within how many hours must a breach be notified?|edpb_breach_09_2022:s58:c01": {
+    "score": 0.95,
+    "verdict": "relevant",
+    "reason": "States the 72‑hour notification rule.",
+    "jurisdiction_match": true
+  },
+  "V3|Within how many hours must a breach be notified?|edpb_breach_09_2022:s65:c01": {
+    "score": 0.9,
+    "verdict": "relevant",
+    "reason": "States 72‑hour notification requirement.",
+    "jurisdiction_match": true
+  },
+  "V3|Within how many hours must a breach be notified?|edpb_breach_09_2022:s35:c01": {
+    "score": 0.95,
+    "verdict": "relevant",
+    "reason": "States the exact 72‑hour notification rule.",
+    "jurisdiction_match": true
+  },
+  "V3|Tell me the main points from EU data protection law.|gdpr:rec9": {
+    "score": 0.4,
+    "verdict": "partial",
+    "reason": "Recital outlines context, not main points.",
+    "jurisdiction_match": true
+  },
+  "V3|Tell me the main points from EU data protection law.|gdpr:rec12": {
+    "score": 0.5,
+    "verdict": "partial",
+    "reason": "Recital outlines purpose, not specific rules.",
+    "jurisdiction_match": true
+  },
+  "V3|Tell me the main points from EU data protection law.|gdpr:art68:p1": {
+    "score": 0.4,
+    "verdict": "partial",
+    "reason": "Establishes EDPB, a key EU body, but not a comprehensive list of main points.",
+    "jurisdiction_match": true
+  },
+  "V3|Tell me the main points from EU data protection law.|edpb_access_01_2022:s30:c01": {
+    "score": 0.6,
+    "verdict": "partial",
+    "reason": "Provides a key point (right of access) but not a full overview.",
+    "jurisdiction_match": true
+  },
+  "V3|Tell me the main points from EU data protection law.|gdpr:rec3": {
+    "score": 0.5,
+    "verdict": "partial",
+    "reason": "Recital outlines general purpose, not specific provisions.",
+    "jurisdiction_match": true
+  },
+  "V3|Tell me the main points from EU data protection law.|edpb_access_01_2022:s1:c02": {
+    "score": 0.6,
+    "verdict": "partial",
+    "reason": "Provides key access rights but omits other main points.",
+    "jurisdiction_match": true
+  },
+  "V3|EU data-protection law|gdpr:art68:p1": {
+    "score": 0.7,
+    "verdict": "partial",
+    "reason": "Establishes EDPB, part of EU data‑protection law.",
+    "jurisdiction_match": true
+  },
+  "V3|EU data-protection law|gdpr:rec12": {
+    "score": 0.4,
+    "verdict": "partial",
+    "reason": "Recital motivates rule but does not state the governing rule.",
+    "jurisdiction_match": true
+  },
+  "V3|EU data-protection law|gdpr:art68:p2": {
+    "score": 0.6,
+    "verdict": "partial",
+    "reason": "Relevant GDPR article but incomplete answer.",
+    "jurisdiction_match": true
+  },
+  "V3|EU data-protection law|gdpr:art76:p2": {
+    "score": 0.1,
+    "verdict": "irrelevant",
+    "reason": "Does not address the question.",
+    "jurisdiction_match": true
+  },
+  "V3|EU data-protection law|gdpr:rec17": {
+    "score": 0.3,
+    "verdict": "partial",
+    "reason": "Recital mentions EU data‑protection framework but does not state a specific rule.",
+    "jurisdiction_match": true
+  },
+  "V3|EU data-protection law|gdpr:rec4": {
+    "score": 0.4,
+    "verdict": "partial",
+    "reason": "Recital provides background, not a rule.",
+    "jurisdiction_match": true
+  },
+  "V3|Summarize EU data-protection law in 10 bullet points.|gdpr:rec12": {
+    "score": 0.4,
+    "verdict": "partial",
+    "reason": "Recital provides context, not a concise summary of EU law.",
+    "jurisdiction_match": true
+  },
+  "V3|Summarize EU data-protection law in 10 bullet points.|gdpr:art97:p4": {
+    "score": 0.4,
+    "verdict": "partial",
+    "reason": "Recital only, not a rule; gives context but not a summary of law.",
+    "jurisdiction_match": true
+  },
+  "V3|Summarize EU data-protection law in 10 bullet points.|edpb_breach_09_2022:s2:c05": {
+    "score": 0.1,
+    "verdict": "irrelevant",
+    "reason": "Does not provide a summary of EU data‑protection law.",
+    "jurisdiction_match": true
+  },
+  "V3|Summarize EU data-protection law in 10 bullet points.|gdpr:rec172": {
+    "score": 0.5,
+    "verdict": "partial",
+    "reason": "Recital provides background, not core rule.",
+    "jurisdiction_match": true
+  },
+  "V3|Summarize EU data-protection law in 10 bullet points.|gdpr:rec163": {
+    "score": 0.1,
+    "verdict": "irrelevant",
+    "reason": "Recital about statistics, not data protection.",
+    "jurisdiction_match": false
+  },
+  "V3|Summarize EU data-protection law in 10 bullet points.|gdpr:art97:p1": {
+    "score": 0.7,
+    "verdict": "partial",
+    "reason": "Provides a specific GDPR requirement but not a full summary.",
+    "jurisdiction_match": true
+  },
+  "V3|Summarize EU data-protection law|gdpr:art68:p1": {
+    "score": 0.7,
+    "verdict": "partial",
+    "reason": "Establishes EU board, part of EU data‑protection framework.",
+    "jurisdiction_match": true
+  },
+  "V3|Summarize EU data-protection law|gdpr:rec12": {
+    "score": 0.5,
+    "verdict": "partial",
+    "reason": "Recital outlines EU legal basis, but does not provide specific GDPR rules.",
+    "jurisdiction_match": true
+  },
+  "V3|Summarize EU data-protection law|gdpr:art75:p4": {
+    "score": 0.4,
+    "verdict": "partial",
+    "reason": "Provides a specific GDPR article, not a summary of EU law.",
+    "jurisdiction_match": true
+  },
+  "V3|Summarize EU data-protection law|gdpr:rec172": {
+    "score": 0.4,
+    "verdict": "partial",
+    "reason": "Recital provides background, not substantive law.",
+    "jurisdiction_match": true
+  },
+  "V3|Summarize EU data-protection law|gdpr:art68:p2": {
+    "score": 0.3,
+    "verdict": "partial",
+    "reason": "Mentions a Board detail, not a summary.",
+    "jurisdiction_match": true
+  },
+  "V3|Summarize EU data-protection law|gdpr:rec163": {
+    "score": 0.0,
+    "verdict": "irrelevant",
+    "reason": "Recital 163 concerns statistics, not data protection.",
+    "jurisdiction_match": true
+  },
+  "V3|Summarize US data-protection law|gdpr:art23:p2": {
+    "score": 0.0,
+    "verdict": "irrelevant",
+    "reason": "GDPR text does not address US law.",
+    "jurisdiction_match": false
+  },
+  "V3|Summarize US data-protection law|gdpr:art98:p1": {
+    "score": 0.0,
+    "verdict": "irrelevant",
+    "reason": "GDPR text irrelevant to US law.",
+    "jurisdiction_match": false
+  },
+  "V3|Summarize US data-protection law|gdpr:art23:p1": {
+    "score": 0.1,
+    "verdict": "irrelevant",
+    "reason": "GDPR text, not US law",
+    "jurisdiction_match": false
+  },
+  "V3|Summarize US data-protection law|gdpr:art45:p2": {
+    "score": 0.0,
+    "verdict": "irrelevant",
+    "reason": "Not US law",
+    "jurisdiction_match": false
+  },
+  "V3|Summarize US data-protection law|edpb_consent_05_2020:s151:c01": {
+    "score": 0.1,
+    "verdict": "irrelevant",
+    "reason": "Chunk discusses GDPR, not US law.",
+    "jurisdiction_match": false
+  },
+  "V3|Summarize US data-protection law|edpb_access_01_2022:s6.4:c01": {
+    "score": 0.1,
+    "verdict": "irrelevant",
+    "reason": "EDPB EU text does not address US law.",
+    "jurisdiction_match": false
   }
 }

@@ -128,7 +128,7 @@
 
 **Done when:** `make eval` reproduces `results.md`, and the README shows the comparison with links to traces.
 
-**Expected shape of results (hypothesis, not a promise):** covered: naive ≈ CRAG; not covered: naive mostly ✗ (answers with GDPR content) or abstains, CRAG mostly ✓ through web; ambiguous: CRAG ahead because it merges sources. If naive abstains well thanks to the shared prompt, say so: the gate's value then shows up as *answering correctly with the right sources* instead of abstaining.
+**Expected shape of results (hypothesis, not a promise):** covered: naive ≈ CRAG; not covered: naive mostly ✗ (answers with GDPR content) or abstains, CRAG mostly ✓ through web; ambiguous: CRAG ahead because it merges sources. Report naive abstentions caused by the shared prompt: the gate's effect is correct answers from the right sources.
 
 ---
 
@@ -159,7 +159,7 @@
 | SSE streaming of node progress (`/query/stream`) | A real stepper instead of a simulated one |
 | Knowledge-strip refinement on CORRECT (decompose-then-recompose, as in the CRAG paper) | Fidelity to the paper; less noise in the context |
 | Run the evaluator on web results | Gates both sources |
-| A third baseline: "naive + always web" | Separates the gate's effect from the effect of web access, which makes the analysis much stronger |
+| A third baseline: "naive + always web" | Isolates the gate's effect from web access |
 | Larger eval (50 questions) using RAGAS-style faithfulness metrics | More credible numbers |
 | Metadata filtering by `effective_date` / `instrument` | Handles time-period questions |
 

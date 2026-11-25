@@ -8,6 +8,7 @@ from app.llm.groq_client import get_grader
 from app.llm.prompts import GRADER_PROMPT_V1
 from app.schemas.eval import EvalItem
 from app.schemas.llm import GradeOutput
+from eval.answer import answer_correct
 
 BACKEND_ROOT = Path(__file__).resolve().parents[1]
 
@@ -33,14 +34,13 @@ def grade_values(
     acceptable_abstain: bool,
     answer: str = "",
     sources: list[dict[str, Any]] | None = None,
-    settings: Settings | None = None,
 ) -> dict[str, Any]:
     output: GradeOutput = grader.invoke(grade_prompt(item, answer, sources or []))
     verdict = output.verdict
     return {
         "grade": verdict,
         "grade_source": "llm",
-        "answer_correct": verdict == "correct" or (abstained and acceptable_abstain),
+        "answer_correct": answer_correct(verdict, abstained, acceptable_abstain),
         "unsupported_claims": output.unsupported_claims,
         "rationale": output.rationale,
         "reference_points_met": output.reference_points_met,
@@ -68,9 +68,7 @@ def apply_manual_overrides(
             grade = override["grade"]
             record["grade"] = grade
             record["grade_source"] = "manual"
-            record["answer_correct"] = grade == "correct" or (
-                grade == "abstained" and acceptable.get(record["qid"], False)
-            )
+            record["answer_correct"] = answer_correct(grade, record["abstained"], acceptable.get(record["qid"], False))
             if "note" in override:
                 record["manual_note"] = override["note"]
     return records
@@ -90,5 +88,4 @@ async def grade_answer(
         item.acceptable_abstain,
         answer,
         sources,
-        settings,
     )

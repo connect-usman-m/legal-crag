@@ -9,7 +9,7 @@
 
 ## 1. Design goal
 
-**Make the retrieval decision the hero.** Most RAG demos show a chat box and an answer. This UI has to show, within 5 seconds of looking at it, that the system *judged its own evidence* and acted on that judgement. The answer matters, but the decision badge, the chunk scores and the source provenance are what a reviewer remembers.
+Show the retrieval decision above the answer: decision badge, chunk scores and source provenance.
 
 ### Principles
 1. **Provenance before prose:** every statement is visibly tied to a source; corpus and web sources look different.
@@ -38,7 +38,7 @@
 
 ### Semantic colours (decision states)
 
-Avoid red for `INCORRECT`. That decision means "the system corrected itself", not "the answer is wrong", so red would send the wrong message.
+Avoid red for `INCORRECT`. `INCORRECT` means the judge rejected weak evidence and switched sources. Red implies the answer is wrong.
 
 | Decision | User-facing label | Colour token | Icon |
 |---|---|---|---|
@@ -94,12 +94,12 @@ Persistent footer: **"Not legal advice. Demo over GDPR + 3 EDPB guidelines. Web 
 - `ExampleChips`: 6 chips (2 per category) with a small category tag. Clicking fills the input and submits.
 - `PipelineStepper`: horizontal steps. Branch-specific labels: on INCORRECT the third step reads **Web search + re-rank**; on AMBIGUOUS, **Filter + supplement**. Without SSE (P2) the steps animate on a timer and then snap to the real path when the response arrives. Show total `latency_ms`.
 - `DecisionBadge`: large badge with the label + icon; tooltip with `decision_reason`.
-- `ConfidenceMeter`: 5-segment bar + label + number; an info icon explains that the score is a heuristic, not a probability.
+- `ConfidenceMeter`: 5-segment bar + label + number; info icon copy: "Heuristic: source relevance × citation coverage. Not a probability."
 - `AnswerBody`: serif text. `[S#]` markers render as small superscript chips; hovering highlights the matching `SourceCard`, clicking scrolls to it and pulses it.
 - `SourceCard`: citation label (e.g. "GDPR Art. 33(1)" or the web domain), title, 3-line excerpt (expandable), relevance score, type badge, external link icon (EUR-Lex/EDPB URL or web URL), "retrieved on" date for web.
-- `WhyThisRoute` (collapsible): table of **all** retrieved chunks with a horizontal score bar, threshold lines at 0.3/0.5/0.7, the judge verdict and the reason; chunks dropped from context are struck through and labelled "dropped". This panel shows the CRAG gate in action, so polish it.
+- `WhyThisRoute` (collapsible): table of **all** retrieved chunks with a horizontal score bar, threshold lines at 0.3/0.5/0.7, the judge verdict and the reason; chunks dropped from context are struck through and labelled "dropped". This panel is the gate's evidence: render all chunk scores and threshold lines.
 - `WarningChips`: e.g. `web_search_failed`, `low_citation_coverage`.
-- `OutsideCorpusBanner` (INCORRECT only): "This question appears to be outside the curated corpus (GDPR + EDPB). The answer is based on web sources."
+- `OutsideCorpusBanner` (INCORRECT only): "Outside the curated corpus (GDPR + EDPB). This answer uses web sources."
 - `TraceLink`: opens the LangSmith trace in a new tab; hidden if there is no trace URL.
 
 ### 5.2 Not-enough-evidence state (first-class)
@@ -114,12 +114,12 @@ Persistent footer: **"Not legal advice. Demo over GDPR + 3 EDPB guidelines. Web 
 │ Try: rephrase · ask about the GDPR rule instead           │
 └───────────────────────────────────────────────────────────┘
 ```
-Dashed slate border, no confidence meter, the "Why this route?" panel still available. The message frames abstention as working as designed.
+Dashed slate border, no confidence meter, the "Why this route?" panel still available. The card states what was checked and what was missing.
 
 ### 5.3 Compare (`/compare`)
 - A single question input across the top; below it the **DiffHint** strip (see 03 §2.2).
 - Two equal columns: **Naive RAG** | **CRAG**. Each is a compact version of the Ask result (badge, confidence, answer, source list, trace link). On mobile the columns become tabs (`Naive | CRAG`).
-- Highlight the key contrast: if naive cited a corpus chunk that CRAG scored < 0.3, mark that source in the naive column with a small amber note: *"CRAG judged this chunk irrelevant (0.12)."* This is the moment that sells the project in the demo GIF.
+- Highlight the key contrast: if naive cited a corpus chunk that CRAG scored < 0.3, mark that source in the naive column with a small amber note: *"CRAG judged this chunk irrelevant (0.12)."* The GIF shows the judge rejecting evidence naive RAG used.
 
 ### 5.4 Results (`/eval`)
 - **Summary cards (4):** Branch accuracy (CRAG), Answer accuracy Naive vs CRAG, Abstention appropriateness, Citation validity.

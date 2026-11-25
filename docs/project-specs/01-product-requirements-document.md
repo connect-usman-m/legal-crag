@@ -10,7 +10,7 @@
 
 ## 1. Summary
 
-LexGate answers questions about EU data-protection law (GDPR and selected EDPB guidelines) with sources attached. Before it writes an answer, it **checks the retrieved evidence and says whether that evidence was good enough**. If the evidence is weak, it fetches better evidence from the web or declines to answer. It never quietly makes something up.
+LexGate answers questions about EU data-protection law (GDPR and selected EDPB guidelines) with sources attached. The evaluator scores each chunk before generation. Low scores trigger web retrieval. Without supporting evidence, the generator abstains.
 
 It implements **Corrective RAG (CRAG)** as a LangGraph state machine. A relevance gate sits between retrieval and generation and routes every query to one of three branches:
 
@@ -47,14 +47,14 @@ In a legal setting a confident wrong answer does more harm than no answer. Users
 - Legal advice, or production use by lawyers. The UI says **"Not legal advice"** throughout.
 - Multi-jurisdiction coverage in the corpus. The corpus is EU-only on purpose so that out-of-corpus questions are easy to construct.
 - User accounts, chat history or multi-turn conversation (single-turn QA only).
-- Fine-tuning the evaluator. CRAG's paper fine-tunes T5 as the evaluator; this project uses an LLM-as-judge prompt instead and says so.
+- Fine-tuning the evaluator. CRAG's paper fine-tunes T5 as the evaluator; this project uses an LLM-as-judge prompt, documented in the README.
 - Uploading your own documents through the UI (possible stretch goal).
 
 ## 5. Target users and personas
 
 | Persona | Need | What they look at |
 |---|---|---|
-| **Hiring manager / tech interviewer** (primary) | Judge in about 5 minutes whether Waleed understands production RAG | README results table, live demo, LangSmith trace screenshots, `retrieval_decision` in the response |
+| **Hiring manager / tech interviewer** (primary) | Judge in about 5 minutes whether Muhammad Usman Akram understands production RAG | README results table, live demo, LangSmith trace screenshots, `retrieval_decision` in the response |
 | **Engineer reviewing the repo** | Check code quality, graph design and test discipline | `graph/`, `nodes/`, tests, eval harness, Docker setup |
 | **Curious end user** | Get a sourced answer to a GDPR question | Query page, citations, the "Not enough evidence" state |
 
@@ -80,7 +80,7 @@ Every chunk carries `jurisdiction = "EU"`, `instrument`, `effective_date`, and a
 - **US-2** As a user, I can see which branch fired (*Answered from corpus* / *Corpus + web* / *Web fallback*) and why: the per-chunk relevance scores.
 - **US-3** As a user, I can see a confidence level (High / Medium / Low) and the number behind it.
 - **US-4** As a user, when the system lacks evidence, I get a clear **"Not enough evidence to answer"** response rather than a guess.
-- **US-5** As a user, I can see which sources come from the curated corpus and which come from the web, distinguished visually.
+- **US-5** As a user, I can see which sources come from the curated corpus and which come from the web, marked by different icons and borders.
 
 ### Comparison and transparency
 - **US-6** As a reviewer, I can run the same question through **Naive RAG** and **CRAG** side by side.
@@ -143,7 +143,7 @@ Every chunk carries `jurisdiction = "EU"`, `instrument`, `effective_date`, and a
 
 ## 12. Open questions
 
-1. Should compare mode also show a **"naive + always web"** baseline to isolate the effect of the gate from the effect of web access? (Recommended as a stretch goal: it makes the analysis more convincing.)
+1. Should compare mode also show a **"naive + always web"** baseline? (Recommended as a stretch goal: it isolates the gate's effect from web access.)
 2. Should answers on the INCORRECT branch carry an explicit "outside the curated corpus" warning banner? (Proposed: yes.)
 3. Where to host the demo: Hugging Face Spaces (Docker, enough RAM for local models) plus Netlify for the frontend is the current proposal.
 

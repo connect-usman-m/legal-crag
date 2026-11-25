@@ -1,5 +1,27 @@
 # Changelog
 
+## Slop cleanup
+
+- Audited code and prose with the installed deslop and stop-slop skills.
+- Removed no-op branches, duplicated calls and helpers, module-global request state, defensive wrappers, hardcoded trace metadata and dead UI labels.
+- Consolidated answer-correctness logic into one tested helper and made trace metadata and report totals use runtime data.
+- Rewrote flagged prose in the README, changelog, specs and UI strings.
+
+## Phase 6 fixes
+
+- Replaced the How it works diagram with the actual LangGraph topology and readable text in dark mode.
+- Fixed the Ask button by wrapping its click handler instead of passing the React event into submission.
+- Made dark mode the default theme before React loads.
+
+## Phase 6 — Frontend, deployment and demo assets
+
+- Added the React 18 + Vite + TypeScript frontend with Tailwind v4 tokens, TanStack Query and React Router.
+- Implemented Ask, Compare, Results and How it works pages, including the decision badge, score table, citation chips, source cards, abstention state, warnings, dark mode and accessibility states.
+- Added frontend Dockerfile, nginx config, Compose web service and Netlify deployment config.
+- Added pure-logic tests for decision tokens, citation formatting and compare hints.
+- Made LangSmith an optional health check so an invalid key does not block the UI.
+- Demo GIF, screenshots and public deployment are missing. agent-browser was not installed, deployment credentials were unavailable, and the Compose build exceeded 10 minutes.
+
 ## Phase 5 — Evaluation harness and README
 
 - Verified reference points against primary sources where reachable; recorded source URLs in the frozen test set.

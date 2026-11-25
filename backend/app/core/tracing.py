@@ -4,19 +4,23 @@ from uuid import uuid4
 from langsmith import traceable
 
 from app.core.config import Settings
+from app.graph.state import chunk_field
 
 
 def new_trace_id() -> str:
     return str(uuid4())
 
 
-def _score_field(score, name: str):
-    return getattr(score, name, score.get(name) if isinstance(score, dict) else None)
-
-
-def apply_trace_metadata(run_tree, payload: dict[str, Any], result: dict[str, Any], **thresholds: float) -> None:
-    chunk_scores = [_score_field(score, "score") for score in result.get("chunk_scores", [])]
-    kept_chunks = sum(bool(_score_field(score, "kept")) for score in result.get("chunk_scores", []))
+def apply_trace_metadata(
+    run_tree,
+    payload: dict[str, Any],
+    result: dict[str, Any],
+    settings: Settings,
+    **thresholds: float,
+) -> None:
+    scores = [chunk_field(score, "score") for score in result.get("chunk_scores", [])]
+    chunk_scores = [float(score) for score in scores if isinstance(score, (int, float))]
+    kept_chunks = sum(bool(chunk_field(score, "kept")) for score in result.get("chunk_scores", []))
     run_tree.add_metadata(
         {
             "request_id": payload["request_id"],
@@ -30,8 +34,8 @@ def apply_trace_metadata(run_tree, payload: dict[str, Any], result: dict[str, An
             "citation_coverage": result.get("citation_report", {}).get("coverage", 0.0),
             "warnings": result.get("warnings", []),
             "thresholds": thresholds,
-            "prompt_versions": {"evaluator": "V3", "generate": "V1"},
-            "corpus_version": "gdpr_v1",
+            "prompt_versions": {"evaluator": settings.evaluator_prompt_version, "generate": "V1"},
+            "corpus_version": settings.chroma_collection,
         }
     )
     if result.get("retrieval_decision"):
@@ -57,6 +61,7 @@ async def traced_query(
             run_tree,
             payload,
             result,
+            settings,
             upper=settings.upper_threshold,
             lower=settings.lower_threshold,
             keep=settings.keep_threshold,

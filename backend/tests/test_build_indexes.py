@@ -9,7 +9,6 @@ from app.ingest.manifest import build_manifest, validate_stores
 
 def test_manifest_counts_sources_and_records_embed_model():
     manifest = build_manifest(
-        sqlite=object(),
         source_files=[
             ("gdpr", "raw/gdpr.pdf", "abc"),
             ("edpb_consent_05_2020", "raw/consent.pdf", "def"),

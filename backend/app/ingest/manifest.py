@@ -28,7 +28,6 @@ def build_manifest(
     token_count: int,
     embed_model: str,
     embed_dim: int,
-    **_: object,
 ) -> dict:
     by_source: dict[str, dict] = {}
     for source_id, path, checksum in source_files:

@@ -5,7 +5,7 @@ from app.core.config import Settings
 from app.graph.confidence import compute_confidence
 from app.llm.groq_client import get_generator
 from app.llm.prompts import GENERATE_PROMPT_V1
-from app.schemas.retrieval import ContextSource
+from app.schemas.retrieval import render_sources
 
 CITATION = re.compile(r"[\[\u3010]S(\d+)[\]\u3011]")
 EXCLUDED_PREFIXES = ("Not legal advice", "NOT ENOUGH EVIDENCE", "#", "- ", "* ")
@@ -53,10 +53,6 @@ def renumber_answer(answer: str, ordered_ids: list[str]) -> str:
     return CITATION.sub(lambda match: f"[S{mapping.get(match.group(1), match.group(1))}]", answer)
 
 
-def render_sources(sources: list[ContextSource]) -> str:
-    return "\n\n".join(f"[{source.sid}] ({source.kind}) {source.label}\n{source.text}" for source in sources)
-
-
 async def regenerate(state: dict[str, Any], settings: Settings) -> str:
     prompt = GENERATE_PROMPT_V1.format(question=state["question"], context=render_sources(state["context_sources"]))
     prompt += "\n\nCorrective instruction: every factual sentence must end with a valid [S#] marker from the context."
@@ -86,7 +82,6 @@ async def cite(state: dict[str, Any], settings: Settings | None = None) -> dict[
     for index, sid in enumerate(ordered_ids, start=1):
         source = by_sid[sid].model_copy(update={"sid": f"S{index}"})
         sources.append(source)
-    answer = renumber_answer(answer, ordered_ids)
 
     abstained = answer.startswith("NOT ENOUGH EVIDENCE")
     confidence, label = compute_confidence(
