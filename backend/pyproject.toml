@@ -10,6 +10,7 @@ dependencies = [
     "langchain-chroma",
     "langchain-huggingface",
     "sentence-transformers",
+    "torch",
     "faiss-cpu",
     "chromadb",
     "tavily-python",
@@ -33,6 +34,14 @@ dev = [
 
 [tool.uv]
 package = false
+
+[tool.uv.sources]
+torch = [{ index = "pytorch-cpu" }]
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
 
 [tool.pytest.ini_options]
 pythonpath = ["."]

@@ -5,3 +5,4 @@
 - Uses test-driven development for any logic; rejects placeholder code, TODO stubs, and comments that merely restate the code. Confidence: 0.9
 - Never hardcodes or prints API keys and keeps `.env` out of git; asks before adding dependencies not already listed in the project docs. Confidence: 0.9
 - Prefers phase-gated execution on plan-driven projects: implement only the single specified phase, stop when its "Done when" criteria pass, report what was created plus lint/test output and remaining uncertainties, then wait for explicit go-ahead before starting the next phase; wants each completed phase committed and pushed to GitHub before moving on. Confidence: 0.85
+- Does not want CommandCodeBot/the assistant credited as a GitHub contributor or commit co-author; wants to be the sole attributed author. Confidence: 0.75

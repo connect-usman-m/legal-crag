@@ -1,15 +1,17 @@
 import pytest
 
 from app.graph.nodes.generate import generate, render_sources
+from app.schemas.llm import GenerateOutput
 from app.schemas.retrieval import ContextSource
 
 
 class _FakeGenerator:
     def invoke(self, _prompt):
-        class _Response:
-            content = "Notify within 72 hours [S1]."
-
-        return _Response()
+        return GenerateOutput(
+            answer="Notify within 72 hours [S1].",
+            used_source_ids=["S1"],
+            abstained=False,
+        )
 
 
 @pytest.mark.asyncio

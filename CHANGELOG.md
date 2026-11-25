@@ -1,5 +1,12 @@
 # Changelog
 
+## Phase 4 — Generation, citations, API and tracing
+
+- Added final structured generation prompt and citation enforcement with invalid-marker detection, coverage, renumbering and one corrective regeneration.
+- Added confidence scoring, FastAPI app factory, `/query`, `/compare`, `/health`, `/corpus/stats` and `/eval/results` routes with error envelopes and request IDs.
+- Added demo API-key security, CORS, slowapi rate limits, LangSmith root tracing metadata and trace links.
+- Added backend Dockerfile with CPU-only torch, Compose service with data volume and TDD coverage for API contracts, citations, confidence and tracing.
+
 ## Phase 3 — Branches
 
 - Added the `CRAGState` TypedDict with warning and timing reducers.

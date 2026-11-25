@@ -3,22 +3,20 @@ REWRITE_PROMPT_V1 = """Turn the question into a short keyword search query. Keep
 Question: {question}
 """
 
-GENERATE_PROMPT_V1 = """You answer questions about EU data-protection law from numbered sources only.
+GENERATE_PROMPT_V1 = """Answer the legal question using only the numbered source blocks.
 
 Rules:
-1. Use only the numbered sources below. Never use outside knowledge, including your own knowledge of the law.
-2. Every sentence that states a fact ends with one or more [S#] markers.
-3. If corpus and web sources disagree, say so and cite both.
-4. If the sources do not answer the question, reply with: NOT ENOUGH EVIDENCE: <what is missing>.
-5. Do not present web content as the text of the regulation. Label it.
-6. Plain-English answer, at most 200 words, no legal advice.
+1. Never use outside knowledge, including your own knowledge of the law.
+2. Every factual sentence ends with one or more [S#] markers that exist in the sources.
+3. If sources disagree, say so and cite both. Label web content as web, not as regulation text.
+4. If the sources do not answer the question, set abstained=true and answer with NOT ENOUGH EVIDENCE: <what is missing>.
+5. Plain English, at most 200 words, no legal advice.
+6. Return JSON with answer, used_source_ids and abstained only.
 
 Question: {question}
 
 Sources:
 {context}
-
-Answer:
 """
 
 EVALUATOR_PROMPT_V1 = """Score how relevant one source chunk is to a legal question. Use the anchored bands below.

@@ -5,6 +5,7 @@ from typing import Any
 from langgraph.graph import END, START, StateGraph
 
 from app.core.config import Settings
+from app.graph.nodes.cite import cite
 from app.graph.nodes.evaluate import evaluate
 from app.graph.nodes.filter_supplement import filter_and_supplement
 from app.graph.nodes.generate import generate
@@ -36,6 +37,7 @@ def build_graph(
         "web_correct": partial(web_correct, settings=config),
         "filter_supplement": partial(filter_and_supplement, settings=config),
         "generate": partial(generate, settings=config),
+        "cite": partial(cite, settings=config),
     }
     chosen = nodes or default_nodes
 
@@ -55,7 +57,11 @@ def build_graph(
     )
     for branch in ("passthrough", "web_correct", "filter_supplement"):
         builder.add_edge(branch, "generate")
-    builder.add_edge("generate", END)
+    if "cite" in chosen:
+        builder.add_edge("generate", "cite")
+        builder.add_edge("cite", END)
+    else:
+        builder.add_edge("generate", END)
     return builder.compile()
 
 

@@ -1,21 +1,14 @@
-import re
 from time import perf_counter
 from typing import Any
 
 from app.core.config import Settings
+from app.llm.groq_client import get_generator
 from app.llm.prompts import GENERATE_PROMPT_V1
-from app.pipelines.naive_rag import get_generator
 from app.schemas.retrieval import ContextSource
-
-CITATION = re.compile(r"[\[\u3010]S(\d+)[\]\u3011]")
 
 
 def render_sources(sources: list[ContextSource]) -> str:
-    blocks = []
-    for source in sources:
-        kind = source.kind
-        blocks.append(f"[{source.sid}] ({kind}) {source.label}\n{source.text}")
-    return "\n\n".join(blocks)
+    return "\n\n".join(f"[{source.sid}] ({source.kind}) {source.label}\n{source.text}" for source in sources)
 
 
 async def generate(state: dict[str, Any], settings: Settings | None = None) -> dict[str, Any]:
@@ -31,13 +24,11 @@ async def generate(state: dict[str, Any], settings: Settings | None = None) -> d
             "timings_ms": {"generate": int((perf_counter() - start) * 1000)},
         }
     prompt = GENERATE_PROMPT_V1.format(question=state["question"], context=render_sources(sources))
-    response = get_generator(config).invoke(prompt)
-    answer = re.sub(r"[\u3010]S(\d+)[\u3011]", r"[S\1]", str(response.content)).strip()
-    used = [source.sid for source in sources if f"[S{source.sid[1:]}]" in answer]
+    output = get_generator(config).invoke(prompt)
     return {
-        "draft_answer": answer,
-        "used_source_ids": used,
-        "abstained": answer.startswith("NOT ENOUGH EVIDENCE"),
+        "draft_answer": output.answer,
+        "used_source_ids": output.used_source_ids,
+        "abstained": output.abstained,
         "generation_attempts": 1,
         "timings_ms": {"generate": int((perf_counter() - start) * 1000)},
     }
